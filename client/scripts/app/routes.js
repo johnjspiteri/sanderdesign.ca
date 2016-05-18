@@ -13,9 +13,9 @@
 						templateUrl: 'document/document.html',
 						controller: 'Document'
 					},
-					'navigation@app': {
+					'navigation@': {
 						templateUrl: 'navigation/navigation.html',
-						controller: 'Navigation'
+						controller: 'Document'
 					},
 					'header@app': {
 						templateUrl: 'header/header.html'

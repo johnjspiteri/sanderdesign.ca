@@ -1,34 +1,49 @@
-header
-    width: 100%
+.header--container
+	padding 0 0 16px 0
+	margin 0 0 24px 0
 
-    nav
-        margin 0 0 12px 0
+.header
+	width 848px
+	margin 0 auto
 
-        ul
-            width:100%
+	&__brand
+		width 330px
+		padding 0
+		margin 0 0 0 30px
 
-            li
-                height:44px
-                padding: 0 23px
+	&__logo
+		width 330px
 
-                a
-                    width 100%
+	&__outline
+		width 32px
+		height 32px
+		margin 17px 26px 0 0
 
-                    h2
-                        font-size 13px
-                        line-height 49px
+	&__white
+		width 12px
+		height 12px
+		margin 10px 0 0 10px
 
-            li.title
-                width: 395px
+	&__name
+		width 214px
 
-                .logo
-                    margin 15px 14px 0 18px
+		h1
+			margin 14px 0 8px 0
+			font-size 24px
+			line-height 24px
 
-                a
-                    width 334px
-                    font-size 16px
-                    line-height 48px
+		h2
+			font-size 19px
+			line-height 19px
 
-                    span
-                        font-size 16px
-                        margin 0 0 0 4px
+	nav
+		width 487px
+		border-right $dotted
+
+	&__tile
+		height 50px
+		padding 0 24px
+
+		h2
+			font-size 18px
+			line-height 59px
