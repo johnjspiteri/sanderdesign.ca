@@ -1,0 +1,98 @@
+doctype
+html(lang='en')
+	head
+		title Contact - Sander Design Landscape Architecture
+		meta(charset="utf-8")
+		meta(name="author" content="Sander Design - Landscape Architecture")
+		meta(name="description" content="Sander Freedman is interested in sustainable design and environmental issues, and has over 21 years experience in environmental related work and design.")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1")
+		
+		
+		link(type="text/css" href="../assets/css/index.css" rel="stylesheet" media="screen" )
+
+	body(onload='initialize();')
+		.header-tag
+		header
+			.header
+				nav
+					ul
+						li.title
+							.logo
+							a.brand.selected(href="../") SANDER DESIGN <span>Landscape Architecture</span>
+						li
+							a(href="../projects/")
+								h2 PROJECTS
+						li
+							a(href="../services/")
+								h2 SERVICES
+						li
+							a(href="../awards/")
+								h2 AWARDS
+						li
+							a(href="../media/")
+								h2 MEDIA
+						li
+							a(href="../about/")
+								h2 ABOUT
+						li.active
+							a(href="#")
+								h2 CONTACT
+
+		.page
+			.write
+				.square.end
+					//- #studio
+					h1 We Can Make Your Space Better
+					p.full Sander Freedman has over 25 years of experience in the landscape architecture and environmental related work. He has experience in both large-scale master plan related projects such as Universal studios Florida and large residential scale development in China. His passion for gardens, architecture, landscape, and interior design coupled with his design experience in both North America an Asia affords him a unique and sensitive approach to design.
+					p.full His sensitivity to the environment began as a kid as a result of living on the edge of a protected natural watershed area in North Toronto where he would walk his dog for hours at a time.  This was further enhanced by his involvement as a program coordinator at Canada Parks and Wilderness Society where he raised awareness for the environment and then later as a co-founder of ERG (Ecological Resource Group), an organization for community naturalization in the Annex neighbourhood to build a healthier urban forest.
+					p.full Sander has a love for projects of all sizes but he never loses sight of the importance of designing healthy livable human scale space that enriches our lives, be it an outdoor residential room, a commercial patio, or a multi-residential environment.
+					p.full Every designed outdoor environment is an opportunity to bring beauty and balance back into our hectic 21st century lives. No matter how large or small the exterior space is be it urban or rural Sander can help you transform it into an outdoor oasis. He will help you realize a work of art and wonderful lifestyle space based on simple principles a combination of instinct and imagination.
+					a#map(href="https://www.google.com/maps?q=401+Richmond+St+W,+Toronto,+Toronto+Division,+Ontario+M5V,+Canada&amp;hl=en&amp;ll=43.647884,-79.395297&amp;spn=0.009564,0.023378&amp;sll=43.647853,-79.393741&amp;sspn=0.009564,0.023378&amp;geocode=FYoDmgIdH4ZE-w&amp;hnear=401+Richmond+St+W,+Toronto,+Toronto+Division,+Ontario+M5V,+Canada&amp;t=m&amp;z=19" target="_blank")
+
+		footer
+			.footer
+				.holder
+					.company
+						h3.title SANDER DESIGN<span>Landscape Architecture</span>
+						a(href="https://maps.google.com/maps?q=401+Richmond+Street+West,+Toronto,+ON,+Canada&hl=en&amp;sll=37.0625,-95.677068&amp;sspn=82.350741,125.332031&amp;oq=401+Richmond+&amp;hnear=401+Richmond+St+W,+Toronto,+Ontario+M5V+3A8,+Canada&amp;t=m&amp;z=17") 353-401 Richmond Street W, Toronto, Ontario, Canada
+
+						.link
+							a(href="mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card") hello@sanderdesign.ca
+							a(href="tel:+1-416-597-1703") 416 597-1703
+					.cv
+						h3 ABOUT
+						p Sander Freedman graduated in Landscape Architecture with an honours degree in 1987 at the University of Guelph.
+					.social
+						a.fa.fa-houzz(href="http://www.houzz.com/pro/sanderdesign/sander-design-landscape-architecture" target="_blank")
+						a.fa.fa-facebook(href="https://www.facebook.com/pages/Sander-Design-Landscape-Architecture/353798814642180" target="_blank")
+						a.fa.fa-linkedin(href="http://ca.linkedin.com/pub/sander-freedman/11/677/27a" target="_blank")
+
+		script(src="http://maps.google.com/maps/api/js?sensor=false")
+		script.
+			function initialize() {
+			var location = new google.maps.LatLng(43.648071,-79.395307);
+			var myOptions = {
+				zoom: 17,
+				center: location,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				mapTypeControl: false,
+				zoomControl: false,
+				panControl: false,
+				draggable: false,
+				disableDoubleClickZoom: true,
+				streetViewControl: false,
+				scrollwheel: false,
+			}
+			var map = new google.maps.Map(document.getElementById("map"), myOptions);
+			var marker = new google.maps.Marker({
+					draggable:true,
+					animation: google.maps.Animation.DROP,
+					position: location,
+					map: map,
+					title:"353-401 Richmond Street West"
+			});
+			marker.setMap(map);
+			}
+
+		script(type="text/javascript")
+				var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-34471419-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();

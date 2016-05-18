@@ -1,0 +1,114 @@
+{
+	"clean": "super-duper-long-game-title",
+	"detail": {
+		"categories": ["Cooperative", "Expansion", "Kids"],
+		"designer": "Michael Blium, Chris Cringle",
+		"expansion_is": {
+			"reference": "",
+			"state": "false",
+			"title": ""
+		},
+		"expansion_has": {
+			"reference": "Teenage Mutant Ninja Turtles",
+			"state": true
+		},
+		"mechanics": ["Betting/Wagering", "Board Randomizer", "Dexterity", "Player Elimination"],
+		"player_age": "4+",
+		"players_max": 8,
+		"players_min": 2,
+		"publisher": "Asterion Games",
+		"recommended_players": 8,
+		"sub_categories": ["Adult", "Comedy"],
+		"theme": "",
+		"time_max": 90,
+		"time_min": 30,
+		"title": "Super Duper Long Game Title",
+		"year": 1962
+	},
+	"images": [{
+		"base64": "",
+		"filename": "1.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	},{
+		"base64": "",
+		"filename": "1.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	}],
+	"rating": 1.5,
+	"thumb": {
+		"base64": "",
+		"filename": "1.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	},
+	"tabs": {
+		"review": {
+			"content": "",
+			"images": [{
+				"base64": "",
+				"filename": "1.jpg",
+				"filesize": "459887",
+				"filetype": "image/jpeg"
+			}]
+		},
+		"setup": {
+			"content": "",
+			"images": [{
+				"filetype": "",
+				"filesize": 0,
+				"filename": "",
+				"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			}]
+		},
+		"tips": {
+			"content": "",
+			"images": [{
+				"filetype": "",
+				"filesize": 0,
+				"filename": "",
+				"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			}]
+		},
+		"expansions": {
+			"content": "",
+			"images": [{
+				"filetype": "",
+				"filesize": 0,
+				"filename": "",
+				"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			}]
+		},
+		"media": {
+			"content": "",
+			"images": [{
+				"filetype": "",
+				"filesize": 0,
+				"filename": "",
+				"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			}]
+		},
+		"faqs": {
+			"content": "",
+			"images": [{
+				"filetype": "",
+				"filesize": 0,
+				"filename": "",
+				"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			}]
+		}
+	},
+	"icons": [{
+		"filetype": "",
+		"filesize": 0,
+		"filename": "",
+		"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+	}],
+	"pdfs": [{
+		"filetype": "",
+		"filesize": 0,
+		"filename": "",
+		"base64": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+	}]
+}

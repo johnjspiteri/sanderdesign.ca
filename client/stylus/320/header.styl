@@ -1,0 +1,92 @@
+.header-tag
+	display none
+
+header
+	position: relative
+	width: 100%
+	padding: 0
+	margin: 0
+	border none
+
+.header
+	float left
+	width 320px
+	padding 0
+	margin 0 0 20px 0
+
+	&__logo
+		float left
+		width 100%
+		height 166px
+		padding 0
+		margin 0
+		background $white
+		border-bottom $border-light
+
+		h1
+			float left
+			width 255px
+			padding 0
+			margin 0
+			font-size 21px
+			line-height 47px
+			text-align left
+			color $black
+
+			span
+				display none
+				margin 0 0 0 4px
+				font-style: italic
+				font-size 15px
+				line-height 23px
+				color:#444
+
+	&__outline
+		float left
+		width 24px
+		height 24px
+		padding 0
+		margin 8px 30px 0 10px
+		background #c3d021
+		border-radius 10px 0 10px 0
+
+	&__white
+		float left
+		width 8px
+		height 8px
+		background $white
+		margin 8px 0 0 8px
+
+	&__tile
+		float left
+		height 42px
+		padding 0 20px
+		margin 0
+		border-left none
+		border-right $dotted
+		background $accent
+		border-bottom $dotted
+		overflow hidden
+
+		h2
+			float left
+			width 100%
+			padding 0
+			margin 0
+			font-size 13px
+			line-height 46px
+			text-align center
+			color #1A1A1A
+			border none
+
+	&__tile.active,
+	&__tile:hover
+		background $white
+
+	nav
+		display: none
+		float: left
+		width: 100%
+		padding: 0
+		margin: 0 0 14px 0
+		border none

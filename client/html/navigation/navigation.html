@@ -1,0 +1,17 @@
+
+<md-sidenav md-component-id="navigation" esc-key="close();" class="md-sidenav md-closed">
+  <div class="side">
+    <div data-ng-click="close();" class="side__tile">
+      <div class="fa fa-long-arrow-left"></div>
+    </div>
+    <div ui-sref="app.frontend.index" data-ng-click="close();" data-ng-class="{active: $state.includes('app.frontend.index')}" class="side__tile">
+      <h4>Home</h4>
+    </div>
+    <div ui-sref="app.frontend.list" data-ng-click="close();" data-ng-class="{active: $state.includes('app.frontend.list') || $state.includes('app.frontend.view')}" class="side__tile">
+      <h4>Board Games</h4>
+    </div>
+    <div ui-sref="app.frontend.contact" data-ng-click="close();" data-ng-class="{active: $state.includes('app.frontend.contact')}" class="side__tile">
+      <h4>Contact</h4>
+    </div>
+  </div>
+</md-sidenav>

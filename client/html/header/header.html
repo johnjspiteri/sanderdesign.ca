@@ -1,0 +1,31 @@
+
+<header>
+  <div class="header">
+    <div class="header__logo">
+      <div class="header__outline">
+        <div class="header__white"></div>
+      </div>
+      <h1 ui-sref="app.index">SANDER DESIGN <span>Landscape Architecture</span></h1>
+    </div>
+    <nav>
+      <div ui-sref="app.projects" data-ng-class="{'active': $state.includes('app.project')}" class="header__tile">
+        <h2>PROJECTS</h2>
+      </div>
+      <div ui-sref="app.services" data-ng-class="{'active': $state.includes('app.services')}" class="header__tile">
+        <h2>SERVICES</h2>
+      </div>
+      <div ui-sref="app.awards" data-ng-class="{'active': $state.includes('app.awards')}" class="header__tile">
+        <h2>AWARDS</h2>
+      </div>
+      <div ui-sref="app.media" data-ng-class="{'active': $state.includes('app.media')}" class="header__tile">
+        <h2>MEDIA</h2>
+      </div>
+      <div ui-sref="app.about" data-ng-class="{'active': $state.includes('app.about')}" class="header__tile">
+        <h2>ABOUT</h2>
+      </div>
+      <div ui-sref="app.contact" data-ng-class="{'active': $state.includes('app.contact')}" class="header__tile">
+        <h2>CONTACT</h2>
+      </div>
+    </nav>
+  </div>
+</header>

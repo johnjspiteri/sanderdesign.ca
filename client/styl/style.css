@@ -1,0 +1,3418 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #e6e6e6;
+  color: #666;
+  font: 13px/20px Arial, Verdana, sans-serif;
+}
+em,
+i {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3 {
+  color: #1a1a1a;
+}
+#contemporary-yard,
+#asian-fusion-leslieville,
+#front-entry-court-bloor-west,
+#contemporary-entry-summerhill,
+#contemporary-court-wychwood-park,
+#outdoor-room-midtown,
+#country-estate-tottenham,
+#arts-and-crafts-deer-park,
+#green-quad-forest-hills,
+#french-country-don-mills,
+#sunken-garden-high-park,
+#formal-garden-lawrence-park,
+#mediterranean-patio-wychwood-park,
+#front-entry-garden-lorne-park,
+#neo-georgian-kingsway,
+#oval-garden-junction,
+#rock-garden-midtown,
+#front-entry-rosedale-west,
+#rustic-oasis-leslieville,
+#formal-gartenanlagen-struckum,
+#urban-deck-midtown,
+#modern-classic-yorkville,
+#zen-garden-don-mills,
+#st-barts-church-regent-park,
+#symposium-cafe-ajax,
+#condo-entrance-yorkville,
+#condo-courtyard-rosedale,
+#condo-rooftop-harbourfront,
+#canada-blooms-2007,
+#canada-blooms-2008,
+#interior-design-show-2008,
+#green-living-show-2009,
+.award,
+#media_1,
+#media_2,
+#media_3,
+#media_4,
+#media_5,
+#media_6,
+#media_7,
+#award_1,
+#award_2,
+#award_3,
+#award_4,
+#award_5,
+#testimonial_1,
+#testimonial_2,
+#services-consultation,
+#services-analysis,
+#services-design,
+#services-inspection,
+#media_see,
+#media_see2,
+#media_me,
+#map,
+#profile,
+#viewer-320,
+#viewer-480,
+#viewer-768,
+#viewer-900,
+ul.orbit-bullets li.has-thumb,
+.testimonials,
+.square #testimonial_1,
+.testimonials .square #testimonial_2,
+#studio {
+  float: left;
+  box-shadow: 1px 1px 3px 1px #999;
+  -webkit-box-shadow: 1px 1px 3px 1px #999;
+  -moz-box-shadow: 1px 1px 3px 1px #999;
+}
+#player {
+  float: left;
+  z-index: 1;
+}
+#viewer-320 img,
+#viewer-480 img,
+#viewer-768 img,
+#viewer-900 img {
+  display: none;
+}
+#viewer-320.orbit,
+#viewer-480.orbit,
+#viewer-768.orbit,
+#viewer-900.orbit {
+  background: none;
+}
+#viewer-320,
+#viewer-480.orbit img,
+#viewer-768.orbit img,
+#viewer-900.orbit img {
+  display: block;
+}
+.orbit-wrapper,
+.orbit {
+  position: relative;
+  width: 1px;
+  height: 1px;
+}
+.orbit {
+  overflow: hidden;
+}
+.orbit .orbit-slide {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.orbit a.orbit-slide {
+  border: none;
+  line-height: 0;
+  display: none;
+}
+.orbit .orbit-slide {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+ul.orbit-bullets {
+  position: relative;
+  z-index: 30;
+  padding: 0;
+}
+ul.orbit-bullets li {
+  float: left;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+ul.orbit-bullets li.has-thumb {
+  z-index: 9999;
+}
+ul.orbit-bullets li.has-thumb img {
+  z-index: 9999;
+  display: inline-block;
+}
+ul.orbit-bullets li.has-thumb:last-child {
+  margin-right: 0;
+}
+.orbit img.fluid-placeholder {
+  visibility: hidden;
+  position: static;
+  display: block;
+  width: 100%;
+}
+.orbit,
+.orbit-wrapper {
+  width: 100% !important;
+}
+.orbit-wrapper .slider-nav span {
+  display: none;
+}
+ul.orbit-bullets {
+  position: relative;
+  z-index: 30;
+  padding: 0;
+}
+ul.orbit-bullets li {
+  float: left;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+ul.orbit-bullets li.has-thumb {
+  z-index: 9999;
+}
+ul.orbit-bullets li.has-thumb img {
+  z-index: 9999;
+  display: inline-block;
+}
+ul.orbit-bullets li.has-thumb:last-child {
+  margin-right: 0;
+}
+.orbit img.fluid-placeholder {
+  visibility: hidden;
+  position: static;
+  display: block;
+  width: 100%;
+}
+.orbit,
+.orbit-wrapper {
+  width: 100% !important;
+}
+.orbit-wrapper .slider-nav span {
+  display: none;
+}
+/* ===== == = === 20em (320px) === = == ===== */
+@media only screen and (min-width: 2em) {
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+  h2,
+  .u {
+    opacity: 0;
+  }
+  h2 a {
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  h3 {
+    letter-spacing: 0.07em;
+    font: 12px/20px Arial, Verdana, sans-serif;
+  }
+  h4 {
+    color: #999;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  a {
+    color: #69f;
+    text-decoration: none;
+  }
+  a:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 0.9em;
+  }
+  a.mailto {
+    text-decoration: underline;
+    color: #666;
+  }
+  p,
+  .top-link {
+    letter-spacing: 0.03em;
+  }
+  img {
+    display: block;
+  }
+  .webkit h3,
+  .webkit dt,
+  .webkit .u_caps {
+    letter-spacing: 1px;
+  }
+  .page {
+    position: relative;
+    width: 320px;
+    background: #fff;
+    margin: 0 auto -350px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    overflow: hidden;
+  }
+  #content {
+    display: block;
+    float: left;
+    width: 320px;
+    margin-top: 40px;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 0 40px 0;
+  }
+  #contentA {
+    display: block;
+    float: left;
+    width: 320px;
+    margin-top: 40px;
+    padding: 0 0 40px 0;
+  }
+  #contentB {
+    display: block;
+    float: left;
+    width: 320px;
+    background: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 0 40px 0;
+  }
+  #contentC {
+    display: block;
+    float: left;
+    width: 320px;
+    background: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 0 40px 0;
+  }
+  #contentD {
+    display: block;
+    float: left;
+    width: 320px;
+    background: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 0 40px 0;
+  }
+  #left,
+  .hide,
+  #header,
+  #headerB,
+  #headerC,
+  #viewer-480,
+  #viewer-768,
+  #viewer-900 {
+    display: none;
+  }
+  #headerD {
+    position: relative;
+    height: 123px;
+    nav: ul;
+    nav: ul li;
+    nav: ul li a;
+  }
+  #headerD nav,
+  #headerD nav.B,
+  #headerD nav.C {
+    width: 320px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #headerD nav.B,
+  #headerD nav.C {
+    margin-left: 8px;
+  }
+  #headerD nav.B ul,
+  #headerD nav.C ul {
+    height: 40px;
+  }
+  #headerD nav.B ul li,
+  #headerD nav.C ul li {
+    float: left;
+  }
+  #headerD nav.B ul li a,
+  #headerD nav.C ul li a {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 104px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerD nav ul li.title a {
+    width: 320px;
+    padding-left: 16px;
+    font-size: 12px;
+    text-align: left;
+  }
+  #headerD nav ul li.title a span {
+    font-style: italic;
+    color: #444;
+  }
+  #headerD nav ul li a.selected,
+  #headerD nav.B ul li a.selected,
+  #headerD nav.C ul li a.selected,
+  #headerD nav ul li.title a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  #headerD nav ul li a:hover,
+  #headerD nav.B ul li a:hover,
+  #headerD nav.C ul li a:hover,
+  #headerD nav ul li.title a.selected {
+    background-color: #f7f7f7;
+  }
+  #headerD {
+    position: relative;
+    height: 123px;
+  }
+  #headerD nav,
+  #headerD nav.B,
+  #headerD nav.C {
+    width: 320px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #headerD nav.B,
+  #headerD nav.C {
+    margin-left: 8px;
+  }
+  #headerD nav ul,
+  #headerD nav.B ul,
+  #headerD nav.C ul {
+    height: 40px;
+  }
+  #headerD nav ul li,
+  #headerD nav.B ul li,
+  #headerD nav.C ul li {
+    float: left;
+  }
+  #headerD nav ul li a,
+  #headerD nav.B ul li a,
+  #headerD nav.C ul li a {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 104px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerD nav ul li.title a {
+    width: 320px;
+    padding-left: 16px;
+    font-size: 12px;
+    text-align: left;
+  }
+  #headerD nav ul li.title a span {
+    font-style: italic;
+    color: #444;
+  }
+  #player {
+    display: block;
+    width: 320px;
+    height: 234px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #viewer-320 {
+    display: block;
+    width: 320px;
+    height: 161px;
+    background: #fff url("../image/loader/large.gif") no-repeat center center;
+  }
+  #320 {
+    width: 320px;
+    height: 161px;
+  }
+  .orbit.with-bullets {
+    margin-bottom: 10px;
+  }
+  ul.orbit-bullets {
+    margin-left: 0px;
+  }
+  ul.orbit-bullets li,
+  ul.orbit-bullets li.active,
+  ul.orbit-bullets li.has-thumb,
+  ul.orbit-bullets li.has-thumb img {
+    width: 74px;
+    height: 44px;
+  }
+  ul.orbit-bullets li.has-thumb {
+    margin-right: 8px;
+  }
+  #side {
+    float: left;
+    width: 320px;
+    height: 88px;
+    margin-top: 40px;
+    border-top: 1px solid #e6e6e6;
+  }
+  #side .square {
+    float: left;
+    width: 320px;
+    height: 44px;
+  }
+  #side .square a {
+    float: left;
+    width: 320px;
+    font-size: 13px;
+    height: 44px;
+    line-height: 44px;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #side .square a.selected {
+    background: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+  }
+  .list {
+    float: left;
+    width: 320px;
+    height: 100%;
+  }
+  .list .square.line {
+    float: left;
+/* background: transparent url(../image/dot1.gif) repeat-y right 0
+		*/
+  }
+  .list .square .listing {
+    float: left;
+    width: 280px;
+    height: 100%;
+    padding: 30px 20px 20px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .list .square .listing h3 {
+    font-size: 17px;
+    line-height: 15px;
+    height: 20px;
+  }
+  .list .square .listing h4 {
+    font-size: 12px;
+    color: #555;
+  }
+  .list .square .listing h5 {
+    font-size: 12px;
+    color: #69f;
+    font-style: italic;
+  }
+  .list .square .listing p {
+    width: 200px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #555;
+  }
+  .progress {
+    float: left;
+    width: 58px;
+    height: 11px;
+    background: url("../image/progress.png") no-repeat;
+  }
+  #contemporary-yard,
+  #asian-fusion-leslieville,
+  #front-entry-court-bloor-west,
+  #contemporary-entry-summerhill,
+  #contemporary-court-wychwood-park,
+  #outdoor-room-midtown,
+  #country-estate-tottenham,
+  #arts-and-crafts-deer-park,
+  #green-quad-forest-hills,
+  #french-country-don-mills,
+  #sunken-garden-high-park,
+  #formal-garden-lawrence-park,
+  #mediterranean-patio-wychwood-park,
+  #front-entry-garden-lorne-park,
+  #neo-georgian-kingsway,
+  #oval-garden-junction,
+  #rock-garden-midtown,
+  #front-entry-rosedale-west,
+  #rustic-oasis-leslieville,
+  #formal-gartenanlagen-struckum,
+  #urban-deck-midtown,
+  #modern-classic-yorkville,
+  #zen-garden-don-mills,
+  #st-barts-church-regent-park,
+  #symposium-cafe-ajax,
+  #condo-entrance-yorkville,
+  #condo-courtyard-rosedale,
+  #condo-rooftop-harbourfront,
+  #canada-blooms-2007,
+  #canada-blooms-2008,
+  #interior-design-show-2008,
+  #green-living-show-2009 {
+    width: 200px;
+    height: 238px;
+    margin: 22px 0 16px 0;
+  }
+  #contemporary-yard {
+    background: url("../image/projects/residential/contemporary-yard/full/320/listing.jpg") no-repeat;
+  }
+  #asian-fusion-leslieville {
+    background: url("../image/projects/residential/asian-fusion-leslieville/full/320/listing.jpg") no-repeat;
+  }
+  #front-entry-court-bloor-west {
+    background: url("../image/projects/residential/front-entry-court-bloor-west/full/320/listing.jpg") no-repeat;
+  }
+  #contemporary-entry-summerhill {
+    background: url("../image/projects/residential/contemporary-entry-summerhill/full/320/listing.jpg") no-repeat;
+  }
+  #contemporary-court-wychwood-park {
+    background: url("../image/projects/residential/contemporary-court-wychwood-park/full/320/listing.jpg") no-repeat;
+  }
+  #outdoor-room-midtown {
+    background: url("../image/projects/residential/outdoor-room-midtown/full/320/listing.jpg") no-repeat;
+  }
+  #country-estate-tottenham {
+    background: url("../image/projects/residential/country-estate-tottenham/full/320/listing.jpg") no-repeat;
+  }
+  #arts-and-crafts-deer-park {
+    background: url("../image/projects/residential/arts-and-crafts-deer-park/full/320/listing.jpg") no-repeat;
+  }
+  #green-quad-forest-hills {
+    background: url("../image/projects/residential/green-quad-forest-hills/full/320/listing.jpg") no-repeat;
+  }
+  #french-country-don-mills {
+    background: url("../image/projects/residential/french-country-don-mills/full/320/listing.jpg") no-repeat;
+  }
+  #sunken-garden-high-park {
+    background: url("../image/projects/residential/sunken-garden-high-park/full/320/listing.jpg") no-repeat;
+  }
+  #formal-garden-lawrence-park {
+    background: url("../image/projects/residential/formal-garden-lawrence-park/full/320/listing.jpg") no-repeat;
+  }
+  #mediterranean-patio-wychwood-park {
+    background: url("../image/projects/residential/mediterranean-patio-wychwood-park/full/320/listing.jpg") no-repeat;
+  }
+  #front-entry-garden-lorne-park {
+    background: url("../image/projects/residential/front-entry-garden-lorne-park/full/320/listing.jpg") no-repeat;
+  }
+  #neo-georgian-kingsway {
+    background: url("../image/projects/residential/neo-georgian-kingsway/full/320/listing.jpg") no-repeat;
+  }
+  #oval-garden-junction {
+    background: url("../image/projects/residential/oval-garden-junction/full/320/listing.jpg") no-repeat;
+  }
+  #rock-garden-midtown {
+    background: url("../image/projects/residential/rock-garden-midtown/full/320/listing.jpg") no-repeat;
+  }
+  #front-entry-rosedale-west {
+    background: url("../image/projects/residential/front-entry-rosedale-west/full/320/listing.jpg") no-repeat;
+  }
+  #rustic-oasis-leslieville {
+    background: url("../image/projects/residential/rustic-oasis-leslieville/full/320/listing.jpg") no-repeat;
+  }
+  #formal-gartenanlagen-struckum {
+    background: url("../image/projects/residential/formal-gartenanlagen-struckum/full/320/listing.jpg") no-repeat;
+  }
+  #urban-deck-midtown {
+    background: url("../image/projects/residential/urban-deck-midtown/full/320/listing.jpg") no-repeat;
+  }
+  #modern-classic-yorkville {
+    background: url("../image/projects/residential/modern-classic-yorkville/full/320/listing.jpg") no-repeat;
+  }
+  #zen-garden-don-mills {
+    background: url("../image/projects/residential/zen-garden-don-mills/full/320/listing.jpg") no-repeat;
+  }
+  #st-barts-church-regent-park {
+    background: url("../image/projects/commercial/st-barts-church-regent-park/full/320/listing.jpg") no-repeat;
+  }
+  #symposium-cafe-ajax {
+    background: url("../image/projects/commercial/symposium-cafe-ajax/full/320/listing.jpg") no-repeat;
+  }
+  #condo-entrance-yorkville {
+    background: url("../image/projects/commercial/condo-entrance-yorkville/full/320/listing.jpg") no-repeat;
+  }
+  #condo-courtyard-rosedale {
+    background: url("../image/projects/commercial/condo-courtyard-rosedale/full/320/listing.jpg") no-repeat;
+  }
+  #condo-rooftop-harbourfront {
+    background: url("../image/projects/commercial/condo-rooftop-harbourfront/full/320/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2007 {
+    background: url("../image/projects/show/canada-blooms-2007/full/320/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2008 {
+    background: url("../image/projects/show/canada-blooms-2008/full/320/listing.jpg") no-repeat;
+  }
+  #interior-design-show-2008 {
+    background: url("../image/projects/show/interior-design-show-2008/full/320/listing.jpg") no-repeat;
+  }
+  #green-living-show-2009 {
+    background: url("../image/projects/show/green-living-show-2009/full/320/listing.jpg") no-repeat;
+  }
+  #award_1,
+  #award_2,
+  #award_3,
+  #award_4,
+  #award_5,
+  #media_1,
+  #media_2,
+  #media_3,
+  #media_4,
+  #media_5,
+  #media_6,
+  #media_7,
+  #services-consultation,
+  #services-analysis,
+  #services-design,
+  #services-inspection {
+    width: 200px;
+    height: 238px;
+    margin: 16px 0 16px 0;
+  }
+  #award_1 {
+    kground: url("../image/award/480/blooms11.jpg") no-repeat;
+    height: 136px;
+  }
+  #award_2 {
+    kground: url("../image/award/480/blooms09.jpg") no-repeat;
+    height: 136px;
+  }
+  #award_3 {
+    kground: url("../image/award/480/oala.jpg") no-repeat;
+    height: 238px;
+  }
+  #award_4 {
+    kground: url("../image/award/480/vaughan.jpg") no-repeat;
+    height: 238px;
+  }
+  #award_5 {
+    kground: url("../image/award/480/blooms08.jpg") no-repeat;
+    height: 136px;
+  }
+  #media_1 {
+    kground: url("../image/media/480/cbq.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_2 {
+    kground: url("../image/media/480/design_talks.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_3 {
+    kground: url("../image/media/480/eco_living.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_4 {
+    kground: url("../image/media/480/ben_nobleman.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_5 {
+    kground: url("../image/media/480/hgtv.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_6 {
+    kground: url("../image/media/480/home_and_decor.jpg") no-repeat;
+    height: 238px;
+  }
+  #media_7 {
+    kground: url("../image/media/480/ideas.jpg") no-repeat;
+    height: 238px;
+  }
+  #services-consultation {
+    kground: url("../image/services/320/consultation.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-analysis {
+    kground: url("../image/services/320/analysis.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-design {
+    kground: url("../image/services/320/design.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-inspection {
+    kground: url("../image/services/320/inspection.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  .write {
+    float: left;
+    width: 320px;
+    background: #fff;
+  }
+  .write .square .writing {
+    float: left;
+    width: 280px;
+    padding: 30px 20px 30px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .write .square .writing h3 {
+    float: left;
+    height: 22px;
+    line-height: 15px;
+    margin-bottom: 2px;
+  }
+  .write .square .writing p {
+    float: left;
+    width: 250px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+  }
+  .write .square .writing.last {
+    float: left;
+    width: 280px;
+    background: none;
+  }
+  .write .squareA .writingA {
+    float: left;
+    width: 280px;
+    padding: 0px 20px 30px 20px;
+  }
+  .write .squareA .writingA #studio,
+  .write .squareA .writingA #profile {
+    display: none;
+  }
+  .write .squareA .writingA h1 {
+    float: left;
+    width: 280px;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 47px;
+    margin: 0 0 42px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .squareA .writingA h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .squareA .writingA h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareA .writingA h6 {
+    display: block;
+    float: left;
+    width: 280px;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 30px 0 10px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA p {
+    float: left;
+    width: 280px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .write .squareA .writingA p.side {
+    float: left;
+    width: 280px;
+    padding: 0;
+  }
+  .write .squareA .writingA.last {
+    float: left;
+    width: 280px;
+    background: none;
+  }
+  .write .squareB {
+    float: left;
+    width: 320px;
+    background: #fff;
+  }
+  .write .squareB .writingB {
+    float: left;
+    width: 280px;
+    padding: 30px 20px 50px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .write .squareB .writingB .left {
+    float: left;
+    width: 210px;
+    height: 88px;
+  }
+  .write .squareB .writingB .right {
+    float: left;
+    width: 60px;
+  }
+  .write .squareB .writingB .right a {
+    float: left;
+    width: 60px;
+    font-size: 17px;
+    line-height: 15px;
+    height: 28px;
+    color: #333;
+    text-align: right;
+  }
+  .write .squareB .writingB .right a span {
+    float: left;
+    width: 60px;
+    font-size: 15px;
+    line-height: 41px;
+    color: #444;
+    text-align: right;
+  }
+  .write .squareB .writingB #profile {
+    display: none;
+  }
+  .write .squareB .writingB h1 {
+    float: left;
+    width: 280px;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareB .writingB h3 {
+    font-size: 17px;
+    line-height: 15px;
+    height: 28px;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  .write .squareB .writingB h4 {
+    font-size: 13px;
+    line-height: 15px;
+    height: 19px;
+    color: #333;
+  }
+  .write .squareB .writingB h5 {
+    font-size: 12px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareB .writingB h6 {
+    float: left;
+    width: 280px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0 25px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareB .writingB p {
+    float: left;
+    width: 270px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    text-align: left;
+  }
+  .write .squareB .writingB.last {
+    width: 280px;
+    background: none;
+  }
+  #map {
+    float: left;
+    width: 280px;
+    height: 220px;
+    margin: 10px 0 0 20px;
+  }
+  .testimonials {
+    float: left;
+    width: 280px;
+  }
+  .testimonials .square .testimonial {
+    float: left;
+    width: 280px;
+    padding: 30px 20px 20px 20px;
+  }
+  .testimonials .square .testimonial p {
+    width: 280px;
+    font-size: 12px;
+    line-height: 19px;
+    color: #666;
+  }
+  .testimonials .square .testimonial h6 {
+    width: 280px;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 19px;
+    color: #333;
+  }
+  .testimonials .square #testimonial_1 {
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin: 0 20px 0 0;
+    background: #ccc url("../image/testimonial/320/testimonialA.jpg") no-repeat;
+  }
+  .testimonials .square #testimonial_2 {
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin: 0 20px 0 0;
+    background: #ccc url("../image/testimonial/320/testimonialB.jpg") no-repeat;
+  }
+  .push {
+    height: 370px;
+    clear: both;
+    background: #fff;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 320px;
+    height: 390px;
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+    border-top: 1px solid #e6e6e6;
+    margin: 0;
+  }
+  footer .holder {
+    float: left;
+    width: 320px;
+    height: 390px;
+  }
+  footer .holder .about {
+    display: none;
+  }
+  footer .holder #location {
+    float: left;
+    width: 320px;
+    height: 170px;
+  }
+  footer .holder #location .address {
+    float: left;
+    width: 280px;
+    padding: 25px 20px 0 20px;
+  }
+  footer .holder #location .address h3 {
+    float: left;
+    width: 280px;
+    margin: 4px 0 16px 0;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    olor: #666;
+    text-align: left;
+  }
+  footer .holder #location .address a {
+    float: left;
+    width: 182px;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #666;
+    text-align: left;
+  }
+  footer .holder #location .addressB {
+    float: left;
+    width: 280px;
+    padding: 0 20px 0 20px;
+  }
+  footer .holder #location .addressB h3 {
+    display: none;
+  }
+  footer .holder #location .addressB a {
+    float: left;
+    width: 182px;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #666;
+    text-align: left;
+  }
+  footer .holder .cv {
+    float: left;
+    width: 210px;
+    height: 120px;
+    padding: 10px 20px 0 20px;
+  }
+  footer .holder .cv h3 {
+    float: left;
+    width: 200px;
+    margin: 4px 0 16px 0;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #666;
+    text-align: left;
+  }
+  footer .holder .cv p {
+    float: left;
+    width: 200px;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #777;
+  }
+  footer .holder .social {
+    display: block;
+    float: left;
+    width: 240px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    padding: 0 0 0 0;
+  }
+  footer .holder .social a#facebook {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/facebook.png") no-repeat;
+  }
+  footer .holder .social a#linked {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/linked.png") no-repeat;
+  }
+  footer .holder .social a#houzz {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/houzz.png") no-repeat;
+  }
+}
+@media only screen and (min-width: 30em) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h2,
+  .u {
+    opacity: 0;
+  }
+  h2 a {
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  h3 {
+    letter-spacing: 0.07em;
+    font: 12px/20px Arial, Verdana, sans-serif;
+  }
+  .hide,
+  #header,
+  #headerB,
+  #headerD,
+  #viewer-320,
+  #viewer-768,
+  #viewer-900 {
+    display: none;
+  }
+  .page {
+    position: relative;
+    width: 480px;
+    background: #fff;
+    margin: 0 auto -170px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    overflow: hidden;
+  }
+  #content,
+  #contentB,
+  #contentC,
+  #contentD {
+    width: 480px;
+    padding: 0 0 40px 0;
+  }
+  #headerC {
+    display: block;
+    position: relative;
+    height: 123px;
+  }
+  #headerC nav,
+  #headerC nav.B {
+    width: 480px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #headerC nav.C {
+    width: 240px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 240px;
+  }
+  #headerC nav.C nav ul {
+    height: 40px;
+  }
+  #headerC nav.C nav ul li {
+    float: left;
+  }
+  #headerC nav.C nav ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 120px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerC nav.C nav.B ul {
+    height: 40px;
+  }
+  #headerC nav.C nav.B ul li {
+    float: left;
+  }
+  #headerC nav.C nav.C ul {
+    height: 40px;
+  }
+  #headerC nav.C nav.C ul li {
+    float: left;
+  }
+  #headerC nav.C nav.B ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 120px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerC nav.C nav.C ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 120px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerC nav.C nav ul li.title a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 120px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerC nav ul li.title a {
+    width: 426px;
+    background: #fff;
+    padding-left: 54px;
+    background: #fff url("../image/logo.png") no-repeat left;
+    font-size: 12px;
+  }
+  #headerC nav ul li.title a text-align:left span {
+    font-style: italic;
+    color: #444;
+  }
+  nav ul li a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  nav.B ul li a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  nav.C ul li a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  nav ul li.title a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  nav ul li a:hover nav.B ul li a:hover,
+  nav ul li a:hover nav.C ul li a:hover {
+    background-color: #f7f7f7;
+  }
+  #player {
+    width: 480px;
+    height: 341px;
+  }
+  #viewer-480 {
+    display: block;
+    width: 480px;
+    height: 242px;
+    background: #fff url("../image/loader/large.gif") no-repeat center center;
+  }
+  #480 {
+    width: 480px;
+    height: 242px;
+  }
+  ul.orbit-bullets li li.active {
+    width: 111px;
+    height: 66px;
+  }
+  ul.orbit-bullets li li.has-thumb {
+    width: 111px;
+    height: 66px;
+  }
+  ul.orbit-bullets li li.has-thumb img {
+    width: 111px;
+    height: 66px;
+    width: 111px;
+    height: 66px;
+  }
+  ul.orbit-bullets li li.has-thumb {
+    margin-right: 12px;
+  }
+  #side {
+    float: left;
+    width: 480px;
+    height: 44px;
+  }
+  #side .square {
+    float: left;
+    width: 239px;
+    height: 44px;
+  }
+  #side .square a {
+    display: block;
+    float: left;
+    width: 239px;
+    font-size: 12px;
+    height: 44px;
+    line-height: 44px;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #side .square a.selected {
+    width: 241px;
+    border-top: none;
+    background: #f7f7f7 url("../image/dot1.gif") repeat-y left 0;
+  }
+  #side .square.line {
+    width: 239px;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  #side .square.line a.selected {
+    width: 240px;
+    border-top: none;
+    background: #f7f7f7 url("../image/dot1.gif") repeat-y right 0;
+  }
+  .list {
+    width: 480px;
+  }
+  .square.line {
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  .square .listing {
+    width: 200px;
+    padding: 30px 20px 20px 20px;
+  }
+  .square .listing h3 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+  }
+  .square .listing h4 {
+    font-size: 12px;
+  }
+  .square .listing p {
+    width: 200px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  #green-living-show-2009 {
+    float: left;
+    background: url("../image/projects/show/green-living-show-2009/full/320/listing.jpg") no-repeat;
+    margin-bottom: 74px;
+  }
+  .write {
+    width: 480px;
+  }
+  .write .square.line {
+    float: left;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  .write .square .writing {
+    float: left;
+    width: 200px;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .write .square .writing h3 {
+    line-height: 15px;
+    height: 26px;
+  }
+  .write .square .writing p {
+    width: 190px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .write .square .writing.last {
+    width: 200px;
+  }
+  .write .square .writing.last .writingA {
+    width: 400px;
+    padding: 20px 40px 40px 40px;
+  }
+  .write .square .writing.last .writingA h1 {
+    display: block;
+    float: left;
+    width: 400px;
+    font-size: 37px;
+    line-height: 45px;
+    margin: 10px 0 30px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .square .writing.last .writingA h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .square .writing.last .writingA h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .square .writing.last .writingA h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .square .writing.last .writingA h6 {
+    display: block;
+    float: left;
+    width: 360px;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 30px 0 10px 20px;
+    color: #333;
+    text-align: center;
+  }
+  .write .square .writing.last .writingA p {
+    float: left;
+    width: 400px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    padding-top: 20px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .write .square .writing.last .writingA p.side {
+    float: left;
+    width: 400px;
+    padding: 0;
+  }
+  .write .square .writing.last .writingA.last {
+    width: 400px;
+    background: none;
+  }
+  .write .square .writing.last .writingA.last {
+    float: left;
+    width: 172px;
+    background: none;
+  }
+  .write .squareB {
+    width: 480px;
+  }
+  .write .squareB .writingB {
+    width: 400px;
+    padding: 30px 40px 40px 40px;
+  }
+  .write .squareB .writingB .left {
+    width: 320px;
+    height: 88px;
+  }
+  .write .squareB .writingB .right {
+    width: 60px;
+  }
+  .write .squareB .writingB .right a {
+    width: 60px;
+    font-size: 19px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .write .squareB .writingB .right a span {
+    width: 60px;
+    font-size: 15px;
+    line-height: 41px;
+  }
+  .write .squareB .writingB h1 {
+    width: 400px;
+    font-size: 41px;
+    line-height: 49px;
+    margin: 0 0 40px 0;
+  }
+  .write .squareB .writingB h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .write .squareB .writingB h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 19px;
+    color: #333;
+  }
+  .write .squareB .writingB h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareB .writingB h6 {
+    width: 360px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 20px 0 20px 20px;
+  }
+  .write .squareB .writingB p {
+    float: left;
+    width: 400px;
+    font-size: 12px;
+    line-height: 18px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .write .squareB .writingB.last {
+    width: 440px;
+    background: none;
+  }
+  #map {
+    width: 440px;
+    height: 220px;
+    margin-top: 10px;
+  }
+  .testimonials {
+    width: 480px;
+  }
+  .testimonials .square .testimonial {
+    width: 440px;
+    padding: 40px 20px 30px 20px;
+  }
+  .testimonials .square .testimonial p {
+    width: 440px;
+    font-size: 12px;
+    line-height: 19px;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust: 100%;
+  }
+  .testimonials .square .testimonial h6 {
+    width: 440px;
+    font-size: 12px;
+    line-height: 19px;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust: 100%;
+  }
+  .testimonials .square #testimonial_1 {
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: #ccc url("../image/testmonial/480/testimonialA.jpg") no-repeat;
+  }
+  .testimonials .square #testimonial_2 {
+    width: 140px;
+    height: 140px;
+    background: #ccc url("../image/testimonial/480/testimonialB.jpg") no-repeat;
+  }
+  .push {
+    height: 170px;
+    clear: both;
+  }
+  footer .holder {
+    width: 480px;
+    height: 220px;
+    margin: 0 auto;
+  }
+  footer .holder #location {
+    width: 230px;
+    height: 110px;
+  }
+  footer .holder #location .address {
+    width: 160px;
+    padding: 25px 20px 0 30px;
+  }
+  footer .holder #location .address h3 {
+    width: 160px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    color: #666;
+    margin: 4px 0 18px 0;
+    text-align: left;
+  }
+  footer .holder #location .address a {
+    width: 160px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    color: #777;
+    text-align: left;
+  }
+  footer .holder #location .addressB {
+    width: 160px;
+    margin: 0;
+    padding: 0px 20px 0 30px;
+  }
+  footer .holder #location .addressB a {
+    width: 160px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    color: #777;
+    text-align: left;
+  }
+  footer .holder .cv {
+    width: 184px;
+    height: 110px;
+    margin: 0;
+    padding: 25px 20px 0 20px;
+  }
+  footer .holder .cv h3 {
+    width: 180px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    color: #666;
+    margin: 4px 0 16px 0;
+  }
+  footer .holder .cv p {
+    width: 180px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    color: #777;
+  }
+  footer .holder .social {
+    display: block;
+    float: left;
+    width: 340px;
+    margin: 0 0 0 30px;
+    padding: 0;
+    padding: 0 0 0 0;
+  }
+  footer .holder .social a#facebook {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/facebook.png") no-repeat;
+  }
+  footer .holder .social a#linked {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/linked.png") no-repeat;
+  }
+  footer .holder .social a#houzz {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/houzz.png") no-repeat;
+  }
+}
+/* ===== == = === 48em (768px) === = == ===== */
+@media only screen and (min-width: 48em) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h2,
+  .u {
+    opacity: 0;
+  }
+  h2 a {
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  h3 {
+    letter-spacing: 0.07em;
+    font: 12px/20px Arial, Verdana, sans-serif;
+  }
+  h4 {
+    color: #999;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  a {
+    color: #69f;
+    text-decoration: none;
+  }
+  a:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 0.9em;
+  }
+  a.mailto {
+    text-decoration: underline;
+    color: #666;
+  }
+  p,
+  .top-link {
+    letter-spacing: 0.03em;
+  }
+  img {
+    display: block;
+  }
+  img .webkit h3,
+  img .webkit dt,
+  img .webkit .u_caps {
+    letter-spacing: 1px;
+  }
+  .pad {
+    padding-bottom: 0px;
+  }
+  .padB {
+    padding-bottom: 78px;
+  }
+  .padC {
+    padding-bottom: 18px;
+  }
+  .page {
+    position: relative;
+    background: #fff;
+    margin: 0 auto -150px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 768px;
+    padding: 0;
+    overflow: hidden;
+  }
+  #content,
+  #contentB,
+  #contentC,
+  #contentD {
+    width: 768px;
+    padding: 0 0 40px 0;
+  }
+  .hide,
+  #header,
+  #headerC,
+  #viewer-320,
+  #viewer-480,
+  #viewer-900 {
+    display: none;
+  }
+  #headerB {
+    display: block;
+    height: 82px;
+    nav: ul;
+    nav: ul li;
+    nav: ul li a;
+  }
+  #headerB nav {
+    width: 768px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #headerB nav.B {
+    width: 342px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 426px;
+  }
+  #headerB nav.B ul {
+    height: 40px;
+  }
+  #headerB nav.B ul li {
+    float: left;
+  }
+  #headerB nav.B ul li a,
+  #headerB nav ul li.title a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff url("../image/dot1.gif") repeat-y left 0;
+    width: 114px;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+  }
+  #headerB nav ul li.title a {
+    width: 372px;
+    padding-left: 54px;
+    background: #fff url("../image/logo.png") no-repeat left;
+    font-size: 12px;
+    text-align: left;
+  }
+  #headerB nav ul li.title a span {
+    font-style: italic;
+    color: #444;
+  }
+  #headerB nav ul li a.selected,
+  #headerB nav.B ul li a.selected,
+  #headerB nav ul li.title a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  #headerB nav ul li a:hover,
+  #headerB nav.B ul li a:hover {
+    background-color: #f7f7f7;
+  }
+  #player {
+    width: 768px;
+    height: 471px;
+    padding-top: 0px;
+  }
+  #viewer-768 {
+    display: block;
+    width: 768px;
+    height: 387px;
+    background: #fff url("../image/loader/large.gif") no-repeat center center;
+  }
+  #768 {
+    width: 768px;
+    height: 387px;
+  }
+  a .orbit-slide {
+    display: block;
+    float: left;
+    width: 768px;
+    height: 456px;
+  }
+  .orbit.with-bullets {
+    margin-bottom: 18px;
+  }
+  ul.orbit-bullets {
+    margin-left: 10px;
+  }
+  li li.active,
+  li li.has-thumb,
+  li li.has-thumb img {
+    width: 74px;
+    height: 44px;
+  }
+  li li.has-thumb {
+    margin-right: 22px;
+  }
+  #side {
+    width: 768px;
+  }
+  #side .square {
+    width: 383px;
+    height: 44px;
+  }
+  #side .square a {
+    width: 384px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 44px;
+  }
+  #side .square a.selected {
+    width: 385px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 44px;
+    border-top: none;
+    background: #f7f7f7 url("../image/dot1.gif") repeat-y left 0;
+  }
+  #side .square.line {
+    width: 383px;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  #side .square.line a.selected {
+    width: 384px;
+    background: #f7f7f7 url("../image/dot1.gif") repeat-y right 0;
+  }
+  .list {
+    width: 768px;
+  }
+  .list .square.plug {
+    float: left;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  .list .square .listing {
+    width: 172px;
+    padding: 30px 0px 20px 20px;
+  }
+  .list .square .listing h3 {
+    width: 172px;
+    font-size: 13px;
+    line-height: 15px;
+    height: 18px;
+  }
+  .list .square .listing h4 {
+    font-size: 12px;
+  }
+  .list .square .listing h5 {
+    font-size: 12px;
+  }
+  .list .square .listing p {
+    width: 152px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #contemporary-yard,
+  #asian-fusion-leslieville,
+  #front-entry-court-bloor-west,
+  #contemporary-entry-summerhill,
+  #contemporary-court-wychwood-park,
+  #outdoor-room-midtown,
+  #country-estate-tottenham,
+  #arts-and-crafts-deer-park,
+  #green-quad-forest-hills,
+  #french-country-don-mills,
+  #sunken-garden-high-park,
+  #formal-garden-lawrence-park,
+  #mediterranean-patio-wychwood-park,
+  #front-entry-garden-lorne-park,
+  #neo-georgian-kingsway,
+  #oval-garden-junction,
+  #rock-garden-midtown,
+  #front-entry-rosedale-west,
+  #rustic-oasis-leslieville,
+  #formal-gartenanlagen-struckum,
+  #urban-deck-midtown,
+  #modern-classic-yorkville,
+  #zen-garden-don-mills,
+  #st-barts-church-regent-park,
+  #symposium-cafe-ajax,
+  #condo-entrance-yorkville,
+  #condo-courtyard-rosedale,
+  #condo-rooftop-harbourfront,
+  #canada-blooms-2007,
+  #canada-blooms-2008,
+  #interior-design-show-2008,
+  #green-living-show-2009 {
+    width: 152px;
+    height: 181px;
+    margin: 22px 0 16px 0;
+  }
+  #contemporary-yard {
+    background: url("../image/projects/residential/contemporary-yard/full/768/listing.jpg") no-repeat;
+  }
+  #asian-fusion-leslieville {
+    background: url("../image/projects/residential/asian-fusion-leslieville/full/768/listing.jpg") no-repeat;
+  }
+  #front-entry-court-bloor-west {
+    background: url("../image/projects/residential/front-entry-court-bloor-west/full/768/listing.jpg") no-repeat;
+  }
+  #contemporary-entry-summerhill {
+    background: url("../image/projects/residential/contemporary-entry-summerhill/full/768/listing.jpg") no-repeat;
+  }
+  #contemporary-court-wychwood-park {
+    background: url("../image/projects/residential/contemporary-court-wychwood-park/full/768/listing.jpg") no-repeat;
+  }
+  #outdoor-room-midtown {
+    background: url("../image/projects/residential/outdoor-room-midtown/full/768/listing.jpg") no-repeat;
+  }
+  #country-estate-tottenham {
+    background: url("../image/projects/residential/country-estate-tottenham/full/768/listing.jpg") no-repeat;
+  }
+  #arts-and-crafts-deer-park {
+    background: url("../image/projects/residential/arts-and-crafts-deer-park/full/768/listing.jpg") no-repeat;
+  }
+  #green-quad-forest-hills {
+    background: url("../image/projects/residential/green-quad-forest-hills/full/768/listing.jpg") no-repeat;
+  }
+  #french-country-don-mills {
+    background: url("../image/projects/residential/french-country-don-mills/full/768/listing.jpg") no-repeat;
+  }
+  #sunken-garden-high-park {
+    background: url("../image/projects/residential/sunken-garden-high-park/full/768/listing.jpg") no-repeat;
+  }
+  #formal-garden-lawrence-park {
+    background: url("../image/projects/residential/formal-garden-lawrence-park/full/768/listing.jpg") no-repeat;
+  }
+  #mediterranean-patio-wychwood-park {
+    background: url("../image/projects/residential/mediterranean-patio-wychwood-park/full/768/listing.jpg") no-repeat;
+  }
+  #front-entry-garden-lorne-park {
+    background: url("../image/projects/residential/front-entry-garden-lorne-park/full/768/listing.jpg") no-repeat;
+  }
+  #neo-georgian-kingsway {
+    background: url("../image/projects/residential/neo-georgian-kingsway/full/768/listing.jpg") no-repeat;
+  }
+  #oval-garden-junction {
+    background: url("../image/projects/residential/oval-garden-junction/full/768/listing.jpg") no-repeat;
+  }
+  #rock-garden-midtown {
+    background: url("../image/projects/residential/rock-garden-midtown/full/768/listing.jpg") no-repeat;
+  }
+  #front-entry-rosedale-west {
+    background: url("../image/projects/residential/front-entry-rosedale-west/full/768/listing.jpg") no-repeat;
+  }
+  #rustic-oasis-leslieville {
+    background: url("../image/projects/residential/rustic-oasis-leslieville/full/768/listing.jpg") no-repeat;
+  }
+  #formal-gartenanlagen-struckum {
+    background: url("../image/projects/residential/formal-gartenanlagen-struckum/full/768/listing.jpg") no-repeat;
+  }
+  #urban-deck-midtown {
+    background: url("../image/projects/residential/urban-deck-midtown/full/768/listing.jpg") no-repeat;
+  }
+  #modern-classic-yorkville {
+    background: url("../image/projects/residential/modern-classic-yorkville/full/768/listing.jpg") no-repeat;
+  }
+  #zen-garden-don-mills {
+    background: url("../image/projects/residential/zen-garden-don-mills/full/768/listing.jpg") no-repeat;
+  }
+  #st-barts-church-regent-park {
+    background: url("../image/projects/commercial/st-barts-church-regent-park/full/768/listing.jpg") no-repeat;
+  }
+  #symposium-cafe-ajax {
+    background: url("../image/projects/commercial/symposium-cafe-ajax/full/768/listing.jpg") no-repeat;
+  }
+  #condo-entrance-yorkville {
+    background: url("../image/projects/commercial/condo-entrance-yorkville/full/768/listing.jpg") no-repeat;
+  }
+  #condo-courtyard-rosedale {
+    background: url("../image/projects/commercial/condo-courtyard-rosedale/full/768/listing.jpg") no-repeat;
+  }
+  #condo-rooftop-harbourfront {
+    background: url("../image/projects/commercial/condo-rooftop-harbourfront/full/768/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2007 {
+    background: url("../image/projects/show/canada-blooms-2007/full/768/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2008 {
+    background: url("../image/projects/show/canada-blooms-2008/full/768/listing.jpg") no-repeat;
+  }
+  #interior-design-show-2008 {
+    background: url("../image/projects/show/interior-design-show-2008/full/768/listing.jpg") no-repeat;
+  }
+  #green-living-show-2009 {
+    background: url("../image/projects/show/green-living-show-2009/full/768/listing.jpg") no-repeat;
+    margin-bottom: 92px;
+  }
+  #award_1,
+  #award_2,
+  #award_3,
+  #award_4,
+  #award_5,
+  #media_1,
+  #media_2,
+  #media_3,
+  #media_4,
+  #media_5,
+  #media_6,
+  #media_7,
+  #services-consultation,
+  #services-analysis,
+  #services-design,
+  #services-inspection {
+    width: 152px;
+    height: 181px;
+    margin: 16px 0 16px 0;
+  }
+  #award_1 {
+    background: url("../image/award/768/blooms11.jpg") no-repeat;
+    height: 103px;
+  }
+  #award_2 {
+    background: url("../image/award/768/blooms09.jpg") no-repeat;
+    height: 103px;
+  }
+  #award_3 {
+    background: url("../image/award/768/oala.jpg") no-repeat;
+  }
+  #award_4 {
+    background: url("../image/award/768/vaughan.jpg") no-repeat;
+  }
+  #award_5 {
+    background: url("../image/award/768/blooms08.jpg") no-repeat;
+    height: 103px;
+  }
+  #media_1 {
+    background: url("../image/media/768/cbq.jpg") no-repeat;
+  }
+  #media_2 {
+    background: url("../image/media/768/design_talks.jpg") no-repeat;
+  }
+  #media_3 {
+    background: url("../image/media/768/eco_living.jpg") no-repeat;
+  }
+  #media_4 {
+    background: url("../image/media/768/ben_nobleman.jpg") no-repeat;
+  }
+  #media_5 {
+    background: url("../image/media/768/hgtv.jpg") no-repeat;
+  }
+  #media_6 {
+    background: url("../image/media/768/home_and_decor.jpg") no-repeat;
+  }
+  #media_7 {
+    background: url("../image/media/768/ideas.jpg") no-repeat;
+  }
+  #media_see {
+    background: url("../image/media/768/see.jpg") no-repeat;
+  }
+  #services-consultation {
+    background: url("../image/services/768/consultation.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-analysis {
+    background: url("../image/services/768/analysis.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-design {
+    background: url("../image/services/768/design.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-inspection {
+    background: url("../image/services/768/inspection.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  .write {
+    width: 768px;
+  }
+  .write .square.line,
+  .write .square.plug {
+    float: left;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+  }
+  .write .square .writing {
+    width: 152px;
+    padding: 20px 20px 40px 20px;
+  }
+  .write .square .writing h3 {
+    font-size: 12px;
+    line-height: 15px;
+    height: 18px;
+  }
+  .write .square .writing p {
+    width: 160px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .write .square .writing.last {
+    width: 192px;
+    background: none;
+  }
+  .write .squareA .writingA {
+    width: 688px;
+    padding: 0px 40px 40px 40px;
+  }
+  .write .squareA .writingA #studio {
+    display: block;
+    float: left;
+    width: 688px;
+    height: 280px;
+    margin: 0 0 20px 0;
+  }
+  .write .squareA .writingA #profile {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 209px;
+    margin: 0 30px 10px 0;
+    background: #fff url("../image/profile/768/1.jpg") no-repeat;
+  }
+  .write .squareA .writingA h1 {
+    display: block;
+    float: left;
+    width: 688px;
+    font-size: 39px;
+    line-height: 49px;
+    margin: 20px 0 40px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .squareA .writingA h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .squareA .writingA h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareA .writingA h6 {
+    display: block;
+    float: left;
+    width: 508px;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 30px 0 10px 100px;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA p {
+    float: left;
+    width: 688px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    padding-top: 20px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .write .squareA .writingA p.side {
+    float: none;
+    width: 688px;
+    text-align: left;
+  }
+  .write .squareA .writingA.last {
+    width: 688px;
+    background: none;
+  }
+  .write .squareA .writingA.last {
+    float: left;
+    width: 172px;
+    background: none;
+  }
+  .write .squareB .writingB {
+    width: 708px;
+    padding: 30px 30px 40px 30px;
+  }
+  .write .squareB .writingB .left {
+    width: 608px;
+    height: 78px;
+  }
+  .write .squareB .writingB .right {
+    width: 80px;
+  }
+  .write .squareB .writingB .right a {
+    width: 80px;
+    font-size: 19px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .write .squareB .writingB .right a span {
+    width: 80px;
+    font-size: 15px;
+    line-height: 41px;
+  }
+  .write .squareB .writingB h1 {
+    width: 708px;
+    font-size: 45px;
+    line-height: 53px;
+    margin: 10px 0 40px 0;
+  }
+  .write .squareB .writingB h3 {
+    font-size: 19px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .write .squareB .writingB h4 {
+    font-size: 13px;
+    line-height: 15px;
+    height: 19px;
+  }
+  .write .squareB .writingB h5 {
+    font-size: 12px;
+  }
+  .write .squareB .writingB h6 {
+    width: 540px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0 25px 84px;
+  }
+  .write .squareB .writingB p {
+    width: 708px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .write .squareB .writingB.last {
+    width: 708px;
+    background: none;
+  }
+  #map {
+    width: 708px;
+    height: 280px;
+    margin: 10px 0 60px 30px;
+  }
+  .testimonials {
+    float: left;
+    width: 768px;
+    padding: 0;
+    margin: 0;
+  }
+  .testimonials .square {
+    float: left;
+    width: 383px;
+  }
+  .testimonials .square .testimonial {
+    float: left;
+    width: 344px;
+    padding: 40px 20px 50px 20px;
+  }
+  .testimonials .square .testimonial p {
+    float: left;
+    width: 344px;
+    color: #666;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 30px 0 0 0;
+    background: #fff;
+  }
+  .testimonials .square .testimonial h6 {
+    float: left;
+    width: 344px;
+    color: #666;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 18px 0 40px 0;
+    background: #fff;
+  }
+  .testimonials .square #testimonial_1 {
+    float: left;
+    width: 344px;
+    height: 162px;
+    background: #ccc url("../image/testimonial/768/testimonialA.jpg") no-repeat;
+  }
+  .testimonials .square #testimonial_2 {
+    float: left;
+    width: 344px;
+    height: 162px;
+    background: #ccc url("../image/testimonial/768/testimonialB.jpg") no-repeat;
+  }
+  .testimonials .square.line {
+    float: left;
+    width: 384px;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+    padding: 0;
+  }
+  .push {
+    height: 140px;
+    clear: both;
+  }
+  footer {
+    width: 748px;
+    margin: 0 auto;
+    height: 180px;
+    padding: 0 0 0 20px;
+  }
+  footer .holder {
+    width: 748px;
+    height: 180px;
+  }
+  footer .holder #location {
+    width: 244px;
+    height: 190px;
+  }
+  footer .holder #location .address {
+    width: 152px;
+    height: 13px;
+    margin: 0;
+    padding: 25px 0 0 20px;
+    background: none;
+  }
+  footer .holder #location .address h3 {
+    width: 152px;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+  footer .holder #location .address a {
+    width: 162px;
+    line-height: 1.6em;
+    font-size: 0.9em;
+  }
+  footer .holder #location .addressB {
+    width: 174px;
+    margin: 0;
+    padding: 25px 0 0 20px;
+  }
+  footer .holder #location .addressB h3 {
+    display: block;
+    float: left;
+    width: 172px;
+    line-height: 1.4em;
+    font-size: 1em;
+    color: #666;
+    margin: 4px 0 16px 0;
+    text-align: left;
+  }
+  footer .holder #location .addressB a {
+    width: 162px;
+    line-height: 1.6em;
+    font-size: 0.9em;
+  }
+  footer .holder .cv {
+    width: 260px;
+    margin: 0;
+    padding: 25px 0 0 20px;
+    float: left;
+  }
+  footer .holder .cv h3 {
+    width: 216px;
+    line-height: 1.4em;
+    font-size: 1em;
+    color: #666;
+    margin: 4px 0 16px 0;
+    text-align: left;
+  }
+  footer .holder .cv p {
+    width: 216px;
+    line-height: 1.6em;
+    font-size: 0.9em;
+    color: #777;
+  }
+  footer .holder .social {
+    display: block;
+    float: left;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    padding: 0 0 0 0;
+  }
+  footer .holder .social a#facebook {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/facebook.png") no-repeat;
+  }
+  footer .holder .social a#linked {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/linked.png") no-repeat;
+  }
+  footer .holder .social a#houzz {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 28px 16px 0 0;
+    background: url("../image/houzz.png") no-repeat;
+  }
+}
+/* ===== == = === 56.25em (900px) === = == ===== */
+@media only screen and (min-width: 56.25em) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h2,
+  a {
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+  h3 {
+    letter-spacing: 0.07em;
+    font: 12px/20px Arial, Verdana, sans-serif;
+  }
+  h4 {
+    color: #999;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  a {
+    color: #69f;
+    text-decoration: none;
+  }
+  a:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 0.9em;
+  }
+  a.mailto {
+    text-decoration: underline;
+    color: #666;
+  }
+  p,
+  .top-link {
+    letter-spacing: 0.03em;
+  }
+  img {
+    display: block;
+  }
+  .webkit h3,
+  .webkit dt,
+  .webkit .u_caps {
+    letter-spacing: 1px;
+  }
+  dl {
+    padding: 10px 11px 60px 11px;
+  }
+  dt {
+    padding-top: 20px;
+  }
+  dd {
+    color: #999;
+    font-size: 12px;
+  }
+  .pad {
+    padding-bottom: 0;
+  }
+  .padB {
+    padding-bottom: 88px;
+  }
+  .page {
+    position: relative;
+    background: #fff;
+    margin: 0 auto -130px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 1000px;
+    padding: 0;
+    overflow: hidden;
+  }
+  #content {
+    width: 1000px;
+    margin: 40px 0 0 0;
+  }
+  #contentB {
+    width: 848px;
+    margin: 40px 0 40px 0;
+  }
+  #contentC {
+    float: left;
+    width: 848px;
+    margin: 40px 0 0 0;
+    border-top: 1px solid #e6e6e6;
+  }
+  #contentD {
+    float: left;
+    width: 848px;
+    margin: 40px 0 40px 150px;
+    border-top: 1px solid #e6e6e6;
+    background: none;
+  }
+  #headerB,
+  #headerC,
+  #headerD,
+  #viewer-320,
+  #viewer-480,
+  #viewer-768 {
+    display: none;
+  }
+  #header {
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+    height: 40px;
+  }
+  #header nav {
+    width: 1000px;
+  }
+  #header nav ul {
+    height: 40px;
+  }
+  #header nav ul li {
+    float: left;
+  }
+  #header nav ul li a {
+    display: block;
+    width: 106px;
+    height: 40px;
+    font-size: 11px;
+    line-height: 40px;
+    background: transparent url("../image/dot1.gif") repeat-y left 0;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.1em;
+  }
+  #header nav ul li a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  #header nav ul li a:hover {
+    background-color: #f7f7f7;
+  }
+  #header nav ul li.title a {
+    font-size: 12px;
+    text-align: left;
+    width: 295px;
+    color: #1a1a1a;
+    height: 40px;
+    background: #fff url("../image/logo.png") no-repeat left;
+    padding: 0 20px 0 48px;
+  }
+  #header nav ul li.title a span {
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+    color: #444;
+    height: 40px;
+  }
+  #header nav ul li.title a.selected {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    height: 40px;
+  }
+  #player {
+    width: 1000px;
+    height: 603px;
+  }
+  #viewer-900 {
+    display: block;
+    width: 1000px;
+    height: 504px;
+    background: #fff url("../image/loader/large.gif") no-repeat center center;
+  }
+  #900 {
+    width: 1000px;
+    height: 504px;
+  }
+  .orbit.with-bullets {
+    margin-bottom: 18px;
+  }
+  ul.orbit-bullets {
+    margin-left: 11px;
+  }
+  ul.orbit-bullets li,
+  ul.orbit-bullets li.active,
+  ul.orbit-bullets li.has-thumb,
+  ul.orbit-bullets li.has-thumb img {
+    width: 101px;
+    height: 60px;
+  }
+  ul.orbit-bullets li.has-thumb {
+    margin-right: 24px;
+  }
+  #side {
+    width: 151px;
+    height: 1392px;
+    margin: 40px 0 0 1px;
+  }
+  #side .square {
+    width: 151px;
+    height: 328px;
+    padding: 0 0 0 0;
+  }
+  #side .square.line {
+    width: 151px;
+    height: 328px;
+    background: none;
+  }
+  #side .square.line a.selected {
+    width: 131px;
+    height: 297px;
+    padding: 30px 0 0 20px;
+    background: #f7f7f7;
+    border-top: none;
+    border-right: none;
+  }
+  #side .square a.selected {
+    width: 131px;
+    height: 297px;
+    padding: 30px 0 0 20px;
+    font-size: 13px;
+    line-height: 21px;
+    background: #f7f7f7;
+    border-top: none;
+    border-right: none;
+  }
+  #side .square a {
+    width: 131px;
+    height: 297px;
+    padding: 30px 0 0 20px;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: left;
+    border-top: none;
+    background: none;
+  }
+  #side .square a.end {
+    width: 131px;
+    height: 297px;
+  }
+  .list {
+    width: 848px;
+    background: none;
+    background: url("../image/dot1.gif") repeat-y left 0;
+  }
+  .list .square .listing {
+    width: 182px;
+    padding: 30px 10px 20px 20px;
+  }
+  .list .square .listing h3 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 20px;
+  }
+  .list .square .listing h4 {
+    font-size: 12px;
+    color: #666;
+  }
+  .list .square .listing h5 {
+    font-size: 12px;
+    color: #69f;
+    font-style: italic;
+  }
+  .list .square .listing p {
+    width: 152px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .list .square .listingB {
+    float: left;
+    width: 172px;
+    height: 100%;
+    padding: 30px 20px 138px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .list .square .listingC {
+    float: left;
+    width: 172px;
+    height: 100%;
+    padding: 30px 20px 60px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .progress {
+    float: left;
+    width: 58px;
+    height: 11px;
+    background: url("../image/progress.png") no-repeat;
+  }
+  #contemporary-yard,
+  #asian-fusion-leslieville,
+  #front-entry-court-bloor-west,
+  #contemporary-entry-summerhill,
+  #contemporary-court-wychwood-park,
+  #outdoor-room-midtown,
+  #country-estate-tottenham,
+  #arts-and-crafts-deer-park,
+  #green-quad-forest-hills,
+  #french-country-don-mills,
+  #sunken-garden-high-park,
+  #formal-garden-lawrence-park,
+  #mediterranean-patio-wychwood-park,
+  #front-entry-garden-lorne-park,
+  #neo-georgian-kingsway,
+  #oval-garden-junction,
+  #rock-garden-midtown,
+  #front-entry-rosedale-west,
+  #rustic-oasis-leslieville,
+  #formal-gartenanlagen-struckum,
+  #urban-deck-midtown,
+  #modern-classic-yorkville,
+  #zen-garden-don-mills,
+  #st-barts-church-regent-park,
+  #symposium-cafe-ajax,
+  #condo-entrance-yorkville,
+  #condo-courtyard-rosedale,
+  #condo-rooftop-harbourfront,
+  #canada-blooms-2007,
+  #canada-blooms-2008,
+  #interior-design-show-2008,
+  #green-living-show-2009 {
+    width: 172px;
+    height: 205px;
+    margin: 16px 0 16px 0;
+  }
+  #contemporary-yard {
+    background: url("../image/projects/residential/contemporary-yard/full/900/listing.jpg") no-repeat;
+  }
+  #asian-fusion-leslieville {
+    background: url("../image/projects/residential/asian-fusion-leslieville/full/900/listing.jpg") no-repeat;
+  }
+  #front-entry-court-bloor-west {
+    background: url("../image/projects/residential/front-entry-court-bloor-west/full/900/listing.jpg") no-repeat;
+  }
+  #contemporary-entry-summerhill {
+    background: url("../image/projects/residential/contemporary-entry-summerhill/full/900/listing.jpg") no-repeat;
+  }
+  #contemporary-court-wychwood-park {
+    background: url("../image/projects/residential/contemporary-court-wychwood-park/full/900/listing.jpg") no-repeat;
+  }
+  #outdoor-room-midtown {
+    background: url("../image/projects/residential/outdoor-room-midtown/full/900/listing.jpg") no-repeat;
+  }
+  #country-estate-tottenham {
+    background: url("../image/projects/residential/country-estate-tottenham/full/900/listing.jpg") no-repeat;
+  }
+  #arts-and-crafts-deer-park {
+    background: url("../image/projects/residential/arts-and-crafts-deer-park/full/900/listing.jpg") no-repeat;
+  }
+  #green-quad-forest-hills {
+    background: url("../image/projects/residential/green-quad-forest-hills/full/900/listing.jpg") no-repeat;
+  }
+  #french-country-don-mills {
+    background: url("../image/projects/residential/french-country-don-mills/full/900/listing.jpg") no-repeat;
+  }
+  #sunken-garden-high-park {
+    background: url("../image/projects/residential/sunken-garden-high-park/full/900/listing.jpg") no-repeat;
+  }
+  #formal-garden-lawrence-park {
+    background: url("../image/projects/residential/formal-garden-lawrence-park/full/900/listing.jpg") no-repeat;
+  }
+  #mediterranean-patio-wychwood-park {
+    background: url("../image/projects/residential/mediterranean-patio-wychwood-park/full/900/listing.jpg") no-repeat;
+  }
+  #front-entry-garden-lorne-park {
+    background: url("../image/projects/residential/front-entry-garden-lorne-park/full/900/listing.jpg") no-repeat;
+  }
+  #neo-georgian-kingsway {
+    background: url("../image/projects/residential/neo-georgian-kingsway/full/900/listing.jpg") no-repeat;
+  }
+  #oval-garden-junction {
+    background: url("../image/projects/residential/oval-garden-junction/full/900/listing.jpg") no-repeat;
+  }
+  #rock-garden-midtown {
+    background: url("../image/projects/residential/rock-garden-midtown/full/900/listing.jpg") no-repeat;
+  }
+  #front-entry-rosedale-west {
+    background: url("../image/projects/residential/front-entry-rosedale-west/full/900/listing.jpg") no-repeat;
+  }
+  #rustic-oasis-leslieville {
+    background: url("../image/projects/residential/rustic-oasis-leslieville/full/900/listing.jpg") no-repeat;
+  }
+  #formal-gartenanlagen-struckum {
+    background: url("../image/projects/residential/formal-gartenanlagen-struckum/full/900/listing.jpg") no-repeat;
+  }
+  #urban-deck-midtown {
+    background: url("../image/projects/residential/urban-deck-midtown/full/900/listing.jpg") no-repeat;
+  }
+  #modern-classic-yorkville {
+    background: url("../image/projects/residential/modern-classic-yorkville/full/900/listing.jpg") no-repeat;
+  }
+  #zen-garden-don-mills {
+    background: url("../image/projects/residential/zen-garden-don-mills/full/900/listing.jpg") no-repeat;
+  }
+  #st-barts-church-regent-park {
+    background: url("../image/projects/commercial/st-barts-church-regent-park/full/900/listing.jpg") no-repeat;
+  }
+  #symposium-cafe-ajax {
+    background: url("../image/projects/commercial/symposium-cafe-ajax/full/900/listing.jpg") no-repeat;
+  }
+  #condo-entrance-yorkville {
+    background: url("../image/projects/commercial/condo-entrance-yorkville/full/900/listing.jpg") no-repeat;
+  }
+  #condo-courtyard-rosedale {
+    background: url("../image/projects/commercial/condo-courtyard-rosedale/full/900/listing.jpg") no-repeat;
+  }
+  #condo-rooftop-harbourfront {
+    background: url("../image/projects/commercial/condo-rooftop-harbourfront/full/900/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2007 {
+    background: url("../image/projects/show/canada-blooms-2007/full/900/listing.jpg") no-repeat;
+  }
+  #canada-blooms-2008 {
+    background: url("../image/projects/show/canada-blooms-2008/full/900/listing.jpg") no-repeat;
+  }
+  #interior-design-show-2008 {
+    background: url("../image/projects/show/interior-design-show-2008/full/900/listing.jpg") no-repeat;
+  }
+  #green-living-show-2009 {
+    background: url("../image/projects/show/green-living-show-2009/full/900/listing.jpg") no-repeat;
+  }
+  #award_1,
+  #award_2,
+  #award_3,
+  #award_4,
+  #award_5,
+  #media_1,
+  #media_2,
+  #media_3,
+  #media_4,
+  #media_5,
+  #media_6,
+  #media_7,
+  #services-consultation,
+  #services-analysis,
+  #services-design,
+  #services-inspection,
+  #media_see,
+  #media_see2,
+  #media_me {
+    width: 172px;
+    height: 205px;
+    margin: 16px 0 16px 0;
+  }
+  #award_1 {
+    background: url("../image/award/900/blooms11.jpg") no-repeat;
+    height: 117px;
+  }
+  #award_2 {
+    background: url("../image/award/900/blooms09.jpg") no-repeat;
+    height: 117px;
+  }
+  #award_3 {
+    background: url("../image/award/900/oala.jpg") no-repeat;
+  }
+  #award_4 {
+    background: url("../image/award/900/vaughan.jpg") no-repeat;
+  }
+  #award_5 {
+    background: url("../image/award/900/blooms08.jpg") no-repeat;
+    height: 117px;
+  }
+  #media_1 {
+    background: url("../image/media/900/cbq.jpg") no-repeat;
+  }
+  #media_2 {
+    background: url("../image/media/900/design_talks.jpg") no-repeat;
+  }
+  #media_3 {
+    background: url("../image/media/900/eco_living.jpg") no-repeat;
+  }
+  #media_4 {
+    background: url("../image/media/900/ben_nobleman.jpg") no-repeat;
+  }
+  #media_5 {
+    background: url("../image/media/900/hgtv.jpg") no-repeat;
+  }
+  #media_6 {
+    background: url("../image/media/900/home_and_decor.jpg") no-repeat;
+  }
+  #media_7 {
+    background: url("../image/media/900/ideas.jpg") no-repeat;
+  }
+  #media_see {
+    background: url("../image/media/900/see.jpg") no-repeat;
+  }
+  #media_see2 {
+    background: url("../image/media/900/see2.jpg") no-repeat;
+  }
+  #media_me {
+    background: url("../image/media/900/me.jpg") no-repeat;
+  }
+  #services-consultation {
+    background: url("../image/services/900/consultation.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-analysis {
+    background: url("../image/services/900/analysis.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-design {
+    background: url("../image/services/900/design.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  #services-inspection {
+    background: url("../image/services/900/inspection.jpg") no-repeat;
+    margin: 16px 0 26px 0;
+  }
+  .write {
+    width: 1000px;
+  }
+  .write .square #back {
+    display: block;
+    float: left;
+    width: 110px;
+    padding: 40px 20px 40px 20px;
+  }
+  .write .square .writing {
+    width: 210px;
+    padding: 20px 20px 40px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .write .square .writing #profile {
+    float: left;
+    width: 190px;
+    height: 234px;
+    margin: 0 20px 10px 0;
+    background: url("../image/profile/900/1.jpg") no-repeat;
+  }
+  .write .square .writing h1 {
+    display: block;
+    float: left;
+    width: 800px;
+    font-size: 45px;
+    line-height: 51px;
+    margin: 10px 0 50px 0;
+    color: #333;
+    text-align: center;
+  }
+  .write .square .writing h3 {
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .square .writing h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .square .writing h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .square .writing h6 {
+    display: block;
+    float: left;
+    width: 520px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0 25px 70px;
+    color: #333;
+  }
+  .write .square .writing p {
+    width: 190px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+  }
+  .write .square .writing p {
+    float: left;
+  }
+  .write .square .writing.last {
+    width: 768px;
+    background: none;
+  }
+  .write .square .writing p.full {
+    float: left;
+    width: 920px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    padding: 0 20px 0 20px;
+  }
+  .write .square .writing.last {
+    float: left;
+    width: 172px;
+    background: none;
+  }
+  .write .squareA .writingA {
+    width: 860px;
+    padding: 20px 70px 0px 70px;
+  }
+  .write .squareA .writingA #studio {
+    width: 860px;
+    height: 280px;
+    margin: 0 0 20px 0;
+  }
+  .write .squareA .writingA #profile {
+    display: block;
+    float: left;
+    width: 190px;
+    height: 234px;
+    margin: 0 30px 20px 0;
+    background: #fff url("http://sanderdesign.ca/assets/image/profile/900/1.jpg") no-repeat;
+  }
+  .write .squareA .writingA h1 {
+    display: block;
+    float: left;
+    width: 760px;
+    font-size: 45px;
+    line-height: 55px;
+    margin: 0px 50px 50px 50px;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .squareA .writingA h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .squareA .writingA h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareA .writingA h6 {
+    display: block;
+    float: left;
+    width: 620px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 30px 0 10px 120px;
+    color: #333;
+    text-align: center;
+  }
+  .write .squareA .writingA p {
+    float: left;
+    width: 860px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    padding-top: 20px;
+  }
+  .write .squareA .writingA.last {
+    width: 768px;
+    background: none;
+  }
+  .write .squareA .writingA p.side {
+    width: 860px;
+    padding: 0;
+    text-align: left;
+  }
+  .write .squareB .writingB {
+    width: 848px;
+    padding: 30px 20px 60px 20px;
+    margin-left: 125px;
+    border-left: 1px solid #e6e6e6;
+  }
+  .write .squareB .writingB .left {
+    width: 668px;
+    height: 78px;
+  }
+  .write .squareB .writingB .right {
+    width: 100px;
+  }
+  .write .squareB .writingB .right a {
+    width: 100px;
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .squareB .writingB .right a span {
+    width: 100px;
+    font-size: 15px;
+    line-height: 41px;
+  }
+  .write .squareB .writingB h1 {
+    width: 800px;
+    font-size: 45px;
+    line-height: 51px;
+    margin: 10px 0 50px 0;
+  }
+  .write .squareB .writingB h3 {
+    font-size: 21px;
+    line-height: 15px;
+    height: 30px;
+  }
+  .write .squareB .writingB h4 {
+    font-size: 14px;
+    line-height: 15px;
+    height: 22px;
+    color: #333;
+  }
+  .write .squareB .writingB h5 {
+    font-size: 13px;
+    color: #69f;
+    font-style: italic;
+  }
+  .write .squareB .writingB h6 {
+    width: 520px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0 25px 70px;
+  }
+  .write .squareB .writingB p {
+    width: 808px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+  }
+  .write .squareB .writingB p.start {
+    float: left;
+    width: 528px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+  }
+  .write .squareB .writingB.last {
+    width: 768px;
+    background: none;
+  }
+  .write .square .writingC {
+    float: left;
+    width: 172px;
+    padding: 20px 20px 60px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .write .square .writingC h3 {
+    line-height: 15px;
+    height: 18px;
+  }
+  .write .square .writingC p {
+    width: 160px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+  }
+  #map {
+    width: 860px;
+    height: 280px;
+    margin: 50px 0 60px 70px;
+  }
+  .testimonials {
+    float: left;
+    width: 1000px;
+  }
+  .testimonials .square {
+    float: left;
+    width: 499px;
+  }
+  .testimonials .square.line {
+    float: left;
+    width: 500px;
+    background: transparent url("../image/dot1.gif") repeat-y right 0;
+    padding: 0;
+  }
+  .testimonials .square .testimonial {
+    float: left;
+    width: 460px;
+    padding: 20px 20px 20px 20px;
+  }
+  .testimonials .square .testimonial p {
+    float: left;
+    width: 440px;
+    color: #666;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 30px 0 0 0;
+    background: #fff;
+  }
+  .testimonials .square .testimonial h6 {
+    float: left;
+    width: 440px;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 12px 0 40px 0;
+    background: #fff;
+  }
+  .testimonials .square #testimonial_1 {
+    display: block;
+    float: left;
+    width: 462px;
+    height: 182px;
+    background: #ccc url("../image/testimonial/900/testimonialA.jpg") no-repeat;
+  }
+  .testimonials .square #testimonial_2 {
+    display: block;
+    float: left;
+    width: 462px;
+    height: 182px;
+    background: #ccc url("../image/testimonial/900/testimonialB.jpg") no-repeat;
+  }
+  .push {
+    height: 130px;
+    clear: both;
+  }
+  footer {
+    overflow: hidden;
+    margin: 0 auto;
+    height: 130px;
+    font-size: 12px;
+    color: #666;
+    width: 1000px;
+    padding: 0;
+    border-top: 1px solid #e6e6e6;
+  }
+  footer .holder {
+    position: relative;
+    display: block;
+    width: 1000px;
+    height: 130px;
+  }
+  footer .holder #location {
+    width: 460px;
+    height: 120px;
+    margin-left: 40px;
+  }
+  footer .holder #location .address {
+    width: 190px;
+    height: 120px;
+    margin: 0;
+    padding: 14px 0 0 20px;
+  }
+  footer .holder #location .address h3 {
+    width: 182px;
+    line-height: 1.4em;
+    font-size: 1em;
+    margin: 4px 0 12px 0;
+  }
+  footer .holder #location .address a {
+    width: 182px;
+    line-height: 1.7em;
+    font-size: 1em;
+  }
+  footer .holder #location .addressB {
+    width: 193px;
+    height: 120px;
+    margin: 0;
+    padding: 14px 0 0 20px;
+  }
+  footer .holder #location .addressB h3 {
+    width: 182px;
+    line-height: 1.4em;
+    font-size: 1em;
+    margin: 4px 0 12px 0;
+  }
+  footer .holder #location .addressB a {
+    width: 182px;
+    line-height: 1.7em;
+    font-size: 1em;
+  }
+  footer .holder .cv {
+    width: 320px;
+    height: 120px;
+    padding: 14px 0 0 20px;
+  }
+  footer .holder .cv h3 {
+    width: 220px;
+    line-height: 1.4em;
+    font-size: 1em;
+    color: #666;
+    margin: 4px 0 12px 0;
+  }
+  footer .holder .cv p {
+    width: 250px;
+    line-height: 1.7em;
+    font-size: 1em;
+    color: #777;
+  }
+  footer .holder .social {
+    display: block;
+    float: left;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    padding: 14px 0 0 0;
+  }
+  footer .holder .social a#facebook {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 34px 14px 0 0;
+    background: url("../image/facebook.png") no-repeat;
+  }
+  footer .holder .social a#linked {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 34px 14px 0 0;
+    background: url("../image/linked.png") no-repeat;
+  }
+  footer .holder .social a#houzz {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 34px 14px 0 0;
+    background: url("../image/houzz.png") no-repeat;
+  }
+}

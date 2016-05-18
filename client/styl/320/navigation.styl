@@ -1,0 +1,131 @@
+md-sidenav.md-closed
+	display: none
+
+md-sidenav
+	position: fixed;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 225px
+	max-width: 225px
+	height 100%
+	min-height 100%
+	bottom: 0
+	background none
+	outline none
+	overflow: none
+	box-sizing: border-box;
+	left: 0
+	top: 0
+	background: $primary
+	border-right $grey-gradient-border
+	z-index: 999999
+	-webkit-transform: translate3d(0%, 0, 0)
+	transform: translate3d(0%, 0, 0)
+	overflow scroll
+
+md-sidenav.md-closed
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+
+md-sidenav.md-closed-remove
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+md-sidenav.md-closed-add.md-closed-add-active, md-sidenav.md-closed-remove.md-closed-remove-active
+	transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+md-sidenav.md-locked-open-add,
+md-sidenav.md-locked-open-remove
+	position: static;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+
+.side
+	float: left
+	width 184px
+	padding 0 20px 0 20px
+	margin 18px 0 0 0
+
+	&__tile
+		float right
+		width 182px
+		height 44px
+		padding 0
+		margin 0 0 10px 0
+		background $rules
+		border $rules-border
+		border-bottom $rules-border-bottom
+		border-radius 4px
+		text-align center
+		text-shadow $dark-shadow
+		cursor pointer
+		outline none
+
+		h4
+			float: left
+			width 100%
+			padding: 0
+			margin: 0
+			font-weight 700
+			font-size 23px
+			line-height 46px
+			color $white
+			text-align: center
+			text-shadow $dark-shadow
+			outline none
+
+		.fa-long-arrow-left
+			float left
+			width 100%
+			left 0
+			padding 0
+			margin 0
+			font-size 32px
+			line-height 48px
+			color $white
+			border none
+			text-align center
+			text-shadow $dark-shadow
+			cursor pointer
+			outline none
+
+	&__tile.active
+		background $grey-gradient
+		border $grey-gradient-border
+		border-bottom $grey-gradient-border-bottom
+
+	&__soon
+		position absolute
+		width 80px
+		height 18px
+		padding 0 6px
+		background #FFF4D5
+		margin -16px 0 0 -14px
+		border-radius 4px
+
+		h6
+			float left
+			width 80px
+			height 18px
+			font-style italic
+			font-size 11px
+			line-height 19px
+			color $black
+			text-align center
+			text-shadow $shadow
+
+		.triangle
+			position absolute
+			width: 0
+			height: 0
+			margin 18px 0 0 58px
+			border-style: solid
+			border-width: 6px 6px 0 6px
+			border-color: #FFF4D5 transparent transparent transparent
+			z-index 9999

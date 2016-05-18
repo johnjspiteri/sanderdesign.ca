@@ -1,0 +1,16 @@
+md-sidenav(md-component-id="navigation", class="md-sidenav md-closed", esc-key='close();')
+	.side
+		.side__tile(data-ng-click="close();")
+			.fa.fa-long-arrow-left
+
+		.side__tile(ui-sref="app.frontend.index", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.index')}")
+			h4 Home
+		.side__tile(ui-sref="app.frontend.list", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.list') || $state.includes('app.frontend.view')}")
+			h4 Board Games
+		//- .side__tile
+		//- 	.side__soon
+		//- 		h6 COMING SOON
+		//- 		.triangle
+		//- 	h4 Community
+		.side__tile(ui-sref="app.frontend.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.contact')}")
+			h4 Contact

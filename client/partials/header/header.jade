@@ -1,0 +1,19 @@
+header
+	.header
+		.header__logo
+			.header__outline
+				.header__white
+			h1(ui-sref='app.index') SANDER DESIGN <span>Landscape Architecture</span>
+		nav
+			.header__tile(ui-sref="app.projects", data-ng-class="{'active': $state.includes('app.project')}")
+				h2 PROJECTS
+			.header__tile(ui-sref="app.services", data-ng-class="{'active': $state.includes('app.services')}")
+				h2 SERVICES
+			.header__tile(ui-sref="app.awards", data-ng-class="{'active': $state.includes('app.awards')}")
+				h2 AWARDS
+			.header__tile(ui-sref="app.media", data-ng-class="{'active': $state.includes('app.media')}")
+				h2 MEDIA
+			.header__tile(ui-sref="app.about", data-ng-class="{'active': $state.includes('app.about')}")
+				h2 ABOUT
+			.header__tile(ui-sref="app.contact", data-ng-class="{'active': $state.includes('app.contact')}")
+				h2 CONTACT
