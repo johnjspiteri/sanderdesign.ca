@@ -1,14 +1,26 @@
 .page
-	.preview
-		.product
-			div
-				img(src="assets/img/projects/residential/contemporary-court-wychwood-park/1.jpg" alt="")
-			div
-				img(src="assets/img/projects/residential/formal-garden-lawrence-park/1.jpg" alt="")
-			div
-				img(src="assets/img/projects/residential/modern-classic-yorkville/1.jpg" alt="")
-			div
-				img(src="assets/img/projects/residential/contemporary-entry-summerhill/1.jpg" alt="")
+	//- .preview
+	//- 	.product
+	//- 		div
+	//- 			img(src="assets/img/projects/residential/contemporary-court-wychwood-park/1.jpg" alt="")
+	//- 		div
+	//- 			img(src="assets/img/projects/residential/formal-garden-lawrence-park/1.jpg" alt="")
+	//- 		div
+	//- 			img(src="assets/img/projects/residential/modern-classic-yorkville/1.jpg" alt="")
+	//- 		div
+	//- 			img(src="assets/img/projects/residential/contemporary-entry-summerhill/1.jpg" alt="")
+
+	.product-images
+		slick.index(dots="true", autoplay="true", speed="400", autoplay-Speed="4100", slidesToShow='1', draggable="true", arrows="false", easing="linear", accessibility="true", swipe='true', lazyLoad="progressive", variableWidth="false", infinite="true",)
+			//- div(data-ng-repeat='slide in slides', data-thumb='data:{{slide.image.filetype}};base64,{{slide.image.base64}}')
+			div(data-thumb='/img/projects/residential/contemporary-court-wychwood-park/1.jpg')
+				img(src="/img/projects/residential/contemporary-court-wychwood-park/1.jpg" alt="")
+			div(data-thumb='/img/projects/residential/formal-garden-lawrence-park/1.jpg')
+				img(src="/img/projects/residential/formal-garden-lawrence-park/1.jpg" alt="")
+			div(data-thumb='/img/projects/residential/modern-classic-yorkville/1.jpg')
+				img(src="/img/projects/residential/modern-classic-yorkville/1.jpg" alt="")
+			div(data-thumb='/img/projects/residential/contemporary-entry-summerhill/1.jpg')
+				img(src="/img/projects/residential/contemporary-entry-summerhill/1.jpg" alt="")
 
 	.write
 		.square.line
@@ -29,11 +41,11 @@
 
 	.testimonials
 		.testimonial.line
-			img(src="assets/img/testimonial/320/testimonialA.jpg" class="testimonial-image" alt="")
+			img(src="/img/testimonial/320/testimonialA.jpg" class="testimonial-image" alt="")
 			p “I would highly recommend Sander Design. They listened, were responsive to my needs and did not try to sell me stuff I did not want for the sake of it. In terms of the project… they are the only team I have worked with in a very long time that delivered as promised on time and budget.”
 			h6 L. Proteau - Toronto, Ontario
 
 		.testimonial.end
-			img(src="assets/img/testimonial/320/testimonialB.jpg" class="testimonial-image" alt="")
+			img(src="/img/testimonial/320/testimonialB.jpg" class="testimonial-image" alt="")
 			p “Sander, you have transformed my rear yard in to an urban oasis; complete with a  water feature. It has become such a terrific space. I regularly receive comments such as “this looks like a magazine photo”, “wow, who designed your yard?”. My front yard is receiving similar positive feedback from passing pedestrians and neighbours; the comments are particularly focused on the unique, modern appearance. Well done Sander, thank you!”
 			h6 W. Nichols - Toronto, Ontario

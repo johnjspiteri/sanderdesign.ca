@@ -1,28 +1,69 @@
-header
-    width: 100%
+.header
+	margin 0 0 20px 0
 
-    nav ul
-        width 100%
+	&__brand
+		width 250px
+		height 72px
+		margin 0 0 0 20px
 
-        li
-            height 44px
-            padding 0 32px
+	&__logo
+		width 250px
 
-            a
-                line-height 46px
-                font-size 14px
+	&__name
+		width 194px
 
-        li.title
-            width: 100%
+		h1
+			margin 14px 0 6px 0
+			font-size 22px
+			line-height 22px
 
-            .logo
-                margin 15px 22px 0 40px
+		h2
+			font-size 17px
+			line-height 17px
 
-            a
-                width: 384px
-                font-size 16px
-                line-height 48px
+	&__outline
+		width 30px
+		height 30px
+		margin 12px 20px 12px 0
 
-                span
-                    font-size 16px
-                    margin 0 0 0 8px
+	&__white
+		width 12px
+		height 12px
+		margin 9px 0 0 9px
+
+	&__mobile
+		display: none
+
+	nav
+		display block
+		float left
+		width 498px
+		padding 0
+		margin 0 0 14px 0
+		border none
+
+	&__tile
+		float right
+		height 44px
+		padding 0 20px
+		margin 0
+		border-left $dotted
+		border-right none
+		background $accent
+		border-bottom $dotted
+		overflow hidden
+
+		h2
+			float left
+			width 100%
+			padding 0
+			margin 0
+			font-size 17px
+			line-height 54px
+			text-align center
+			color #1A1A1A
+			border none
+
+	&__tile.active,
+	&__tile:hover
+		background $white

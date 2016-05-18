@@ -1,23 +1,25 @@
 @require 'normalize.styl'
 @require 'base.styl'
+@require 'icon.styl'
 
 @media (min-width : 20px)
 	// @require '320/navigation.styl'
 	@require '320/header.styl'
 	// @require '320/footer.styl'
-	// @require '320/page.styl'
-	// @require '320/product.styl'
-	// @require '320/list.styl'
-	// @require '320/write.styl'
+	@require '320/page.styl'
+	@require '320/slide.styl'
+	@require '320/list.styl'
+	@require '320/write.styl'
 
-// @media (min-width : 360px)
-// 	@require '360/navigation.styl'
-// 	@require '360/header.styl'
-// 	@require '360/footer.styl'
-// 	@require '360/page.styl'
-// 	@require '360/product.styl'
-// 	@require '360/list.styl'
-// 	@require '360/write.styl'
+@media (min-width : 360px)
+	// 	@require '360/navigation.styl'
+	@require '360/header.styl'
+	@require '360/footer.styl'
+	@require '360/slide.styl'
+	@require '360/page.styl'
+	@require '360/product.styl'
+	@require '360/list.styl'
+	@require '360/write.styl'
 //
 // @media (min-width : 480px)
 // 	@require '480/navigation.styl'
@@ -37,8 +39,8 @@
 // 	@require '560/list.styl'
 // 	@require '560/write.styl'
 //
-// @media (min-width : 768px)
-// 	@require '768/header.styl'
+@media (min-width : 768px)
+	@require '768/header.styl'
 // 	@require '768/footer.styl'
 // 	@require '768/page.styl'
 // 	@require '768/product.styl'
