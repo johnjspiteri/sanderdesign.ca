@@ -1,31 +1,28 @@
-.page
-	.product-images
+.container
+	.slider
 		slick.index(dots="true", autoplay="true", speed="400", autoplay-Speed="4100", slidesToShow='1', draggable="true", arrows="false", easing="linear", accessibility="true", swipe='true', lazyLoad="progressive", variableWidth="false", infinite="true",)
-			//- div(data-ng-repeat='slide in slides', data-thumb='data:{{slide.image.filetype}};base64,{{slide.image.base64}}')
-			div(data-thumb='/img/projects/residential/contemporary-court-wychwood-park/1.jpg')
-				img(src="/img/projects/residential/contemporary-court-wychwood-park/1.jpg" alt="")
-			div(data-thumb='/img/projects/residential/formal-garden-lawrence-park/1.jpg')
-				img(src="/img/projects/residential/formal-garden-lawrence-park/1.jpg" alt="")
-			div(data-thumb='/img/projects/residential/modern-classic-yorkville/1.jpg')
-				img(src="/img/projects/residential/modern-classic-yorkville/1.jpg" alt="")
-			div(data-thumb='/img/projects/residential/contemporary-entry-summerhill/1.jpg')
-				img(src="/img/projects/residential/contemporary-entry-summerhill/1.jpg" alt="")
+			div(data-ng-repeat='slide in slides')
+				img(src='{{slide.path}}', alt='')
 
-	.write
+	.squares
 		.square.line
-			h3 CONSULTATION
+			.row
+				h3 CONSULTATION
 			p Providing fresh and insightful ideas to help you visualize your dream landscape, or to improve your existing environment.
 
 		.square.plug
-			h3 SITE ANALYSIS
+			.row
+				h3 SITE ANALYSIS
 			p Complete review of existing site conditions and opportunities. Including topography, climate, planting and architecture.
 
 		.square.line
-			h3 LANDSCAPE DESIGN
+			.row
+				h3 LANDSCAPE DESIGN
 			p We return with a proposal that integrates project ideas and possibilities. Here we bring your project concept to reality.
 
-		.square
-			h3 TENDER/INSPECTION
+		.square.last
+			.row
+				h3 TENDER/INSPECTION
 			p Detail, custom fabrication and approval drawings, tender package, sourcing materials and site supervision.
 
 	.testimonials

@@ -1,28 +1,33 @@
 
-<div class="page">
-  <div class="product-images">
+<div class="container">
+  <div class="slider">
     <slick dots="true" autoplay="true" speed="400" autoplay-Speed="4100" slidesToShow="1" draggable="true" arrows="false" easing="linear" accessibility="true" swipe="true" lazyLoad="progressive" variableWidth="false" infinite="true" class="index">
-      <div data-thumb="/img/projects/residential/contemporary-court-wychwood-park/1.jpg"><img src="/img/projects/residential/contemporary-court-wychwood-park/1.jpg" alt=""/></div>
-      <div data-thumb="/img/projects/residential/formal-garden-lawrence-park/1.jpg"><img src="/img/projects/residential/formal-garden-lawrence-park/1.jpg" alt=""/></div>
-      <div data-thumb="/img/projects/residential/modern-classic-yorkville/1.jpg"><img src="/img/projects/residential/modern-classic-yorkville/1.jpg" alt=""/></div>
-      <div data-thumb="/img/projects/residential/contemporary-entry-summerhill/1.jpg"><img src="/img/projects/residential/contemporary-entry-summerhill/1.jpg" alt=""/></div>
+      <div data-ng-repeat="slide in slides"><img src="{{slide.path}}" alt=""/></div>
     </slick>
   </div>
-  <div class="write">
+  <div class="squares">
     <div class="square line">
-      <h3>CONSULTATION</h3>
+      <div class="row">
+        <h3>CONSULTATION</h3>
+      </div>
       <p>Providing fresh and insightful ideas to help you visualize your dream landscape, or to improve your existing environment.</p>
     </div>
     <div class="square plug">
-      <h3>SITE ANALYSIS</h3>
+      <div class="row">
+        <h3>SITE ANALYSIS</h3>
+      </div>
       <p>Complete review of existing site conditions and opportunities. Including topography, climate, planting and architecture.</p>
     </div>
     <div class="square line">
-      <h3>LANDSCAPE DESIGN</h3>
+      <div class="row">
+        <h3>LANDSCAPE DESIGN</h3>
+      </div>
       <p>We return with a proposal that integrates project ideas and possibilities. Here we bring your project concept to reality.</p>
     </div>
-    <div class="square">
-      <h3>TENDER/INSPECTION</h3>
+    <div class="square last">
+      <div class="row">
+        <h3>TENDER/INSPECTION</h3>
+      </div>
       <p>Detail, custom fabrication and approval drawings, tender package, sourcing materials and site supervision.</p>
     </div>
   </div>
