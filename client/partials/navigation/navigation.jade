@@ -1,13 +1,15 @@
-md-sidenav(md-component-id="navigation", class="md-sidenav md-closed", esc-key='close();')
-	.side
-		.side__tile(data-ng-click="close();")
+md-sidenav(md-component-id="navigation", md-is-open='true', class="md-sidenav md-closed", esc-key='close();')
+	.navigation
+		.navigation__tile(data-ng-click="close();")
 			.fa.fa-long-arrow-left
 
-		.side__tile(ui-sref="app.projects.list", data-ng-click="close();", data-ng-class="{active: $state.includes('app.projects.list') || $state.includes('app.projects.view')}")
+		.navigation__tile(ui-sref="app.index", data-ng-click="close();", data-ng-class="{active: $state.includes('app.index')}")
+			h4 HOME
+		.navigation__tile(ui-sref="app.projects.list", data-ng-click="close();", data-ng-class="{active: $state.includes('app.projects.list') || $state.includes('app.projects.view')}")
 			h4 PROJECTS
-		.side__tile(ui-sref="app.services", data-ng-click="close();", data-ng-class="{active: $state.includes('app.services')}")
+		.navigation__tile(ui-sref="app.services", data-ng-click="close();", data-ng-class="{active: $state.includes('app.services')}")
 			h4 SERVICES
-		.side__tile(ui-sref="app.frontend.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.contact')}")
+		.navigation__tile(ui-sref="app.frontend.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.contact')}")
 			h4 ABOUT
-		.side__tile(ui-sref="app.frontend.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.contact')}")
+		.navigation__tile(ui-sref="app.frontend.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.frontend.contact')}")
 			h4 CONTACT

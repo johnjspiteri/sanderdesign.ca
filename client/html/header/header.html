@@ -9,7 +9,7 @@
           </div>
           <div class="header__name">
             <h1 ui-sref="app.index">SANDER DESIGN</h1>
-            <h2>Landscape Architecture</h2>
+            <p>Landscape Architecture</p>
           </div>
           <div data-ng-click="open();" class="header__mobile">
             <div class="fa fa-bars"></div>
@@ -26,7 +26,7 @@
         <div ui-sref="app.services" data-ng-class="{'active': $state.includes('app.services')}" class="header__tile">
           <h2>SERVICES</h2>
         </div>
-        <div ui-sref="app.projects.list" data-ng-class="{'active': $state.includes('app.projects.list')}" class="header__tile">
+        <div ui-sref="app.list" data-ng-class="{'active': $state.includes('app.list') || $state.includes('app.view')}" class="header__tile">
           <h2>PROJECTS</h2>
         </div>
       </nav>

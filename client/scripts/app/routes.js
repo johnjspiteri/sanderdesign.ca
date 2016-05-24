@@ -21,7 +21,8 @@
 						templateUrl: 'header/header.html'
 					},
 					'footer@': {
-						templateUrl: 'footer/footer.html'
+						templateUrl: 'footer/footer.html',
+						controller: 'Footer'
 					}
 				}
 			});

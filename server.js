@@ -57,7 +57,7 @@ if ('development' === env || 'test' === env) {
 	app.use(express.static(__dirname + '/client/script'));
 }
 
-app.use('/api/portfolio', require('./api/portfolio'));
+app.use('/api/project', require('./api/project'));
 app.use('/api/contact', require('./api/contact'));
 
 

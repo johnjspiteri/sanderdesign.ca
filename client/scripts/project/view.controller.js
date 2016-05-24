@@ -11,7 +11,7 @@
 	}
 
 	angular
-		.module('app.portfolio')
+		.module('app.project')
 		.controller('View', View);
 
 	View.$inject = ['$document', '$scope', '$state', 'viewResolve', 'ngMeta'];

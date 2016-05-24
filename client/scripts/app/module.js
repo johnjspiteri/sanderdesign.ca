@@ -5,7 +5,7 @@
 		.module('app', [
 			'app.common',
 			'app.index',
-			'app.portfolio',
+			'app.project',
 			'app.about',
 			'app.contact',
 			'app.error'

@@ -12,6 +12,7 @@
   </head>
   <body data-ng-class="{&quot;locked&quot;:display}">
     <div ui-view="navigation"></div>
+    <div ui-view="document" class="page"></div>
     <div ui-view="footer"></div>
     <div id="panel" ng-show="display"></div>
     <script src="/scripts/vendor/jquery/dist/jquery.min.js"></script>
@@ -39,14 +40,15 @@
     <script src="/scripts/common/escape.directive.js"></script>
     <script src="/scripts/document/controller.js"></script>
     <script src="/scripts/navigation/controller.js"></script>
+    <script src="/scripts/footer/controller.js"></script>
     <script src="/scripts/index/module.js"></script>
     <script src="/scripts/index/route.js"></script>
     <script src="/scripts/index/controller.js"></script>
-    <script src="/scripts/portfolio/module.js"></script>
-    <script src="/scripts/portfolio/route.js"></script>
-    <script src="/scripts/portfolio/service.js"></script>
-    <script src="/scripts/portfolio/list.controller.js"></script>
-    <script src="/scripts/portfolio/view.controller.js"></script>
+    <script src="/scripts/project/module.js"></script>
+    <script src="/scripts/project/route.js"></script>
+    <script src="/scripts/project/service.js"></script>
+    <script src="/scripts/project/list.controller.js"></script>
+    <script src="/scripts/project/view.controller.js"></script>
     <script src="/scripts/about/module.js"></script>
     <script src="/scripts/about/route.js"></script>
     <script src="/scripts/contact/module.js"></script>

@@ -12,7 +12,7 @@ html(lang='en', ng-app='app')
 
 	body(data-ng-class='{"locked":display}')
 		div(ui-view='navigation')
-		//- .page(ui-view='document')
+		.page(ui-view='document')
 		div(ui-view='footer')
 		div(id='panel', ng-show='display')
 
@@ -45,16 +45,17 @@ html(lang='en', ng-app='app')
 
 		script(src='/scripts/document/controller.js')
 		script(src='/scripts/navigation/controller.js')
+		script(src='/scripts/footer/controller.js')
 
 		script(src='/scripts/index/module.js')
 		script(src='/scripts/index/route.js')
 		script(src='/scripts/index/controller.js')
 
-		script(src='/scripts/portfolio/module.js')
-		script(src='/scripts/portfolio/route.js')
-		script(src='/scripts/portfolio/service.js')
-		script(src='/scripts/portfolio/list.controller.js')
-		script(src='/scripts/portfolio/view.controller.js')
+		script(src='/scripts/project/module.js')
+		script(src='/scripts/project/route.js')
+		script(src='/scripts/project/service.js')
+		script(src='/scripts/project/list.controller.js')
+		script(src='/scripts/project/view.controller.js')
 
 		script(src='/scripts/about/module.js')
 		script(src='/scripts/about/route.js')

@@ -1,8 +1,8 @@
 (function() {
 	"use strict";
 
-	function portfolio ($resource) {
-		return $resource("/api/portfolio/:id", { id: "@_id" },
+	function project ($resource) {
+		return $resource("/api/project/:id", { id: "@_id" },
 			{
 				'create':  { method: 'POST' },
 				'query':   { method: 'GET', isArray: true },
@@ -15,9 +15,9 @@
 	}
 
 	angular
-		.module('app.portfolio')
-		.factory('portfolio', portfolio);
+		.module('app.project')
+		.factory('project', project);
 
-	portfolio.$inject = ['$resource'];
+	project.$inject = ['$resource'];
 
 })();

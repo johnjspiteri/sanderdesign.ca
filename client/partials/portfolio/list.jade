@@ -1,0 +1,20 @@
+.container
+	.search
+		.search__option
+			p Category
+			select(ng-model='search.category', data-ng-options='category for category in categories | orderBy:"toString()"')
+		.search__option
+			p Sub-Category
+			select(ng-model='search.status', data-ng-options='state for state in statuses | orderBy:"toString()"')
+
+	.side
+		a.selected.line(href="#") RESIDENTIAL
+		a.commercial(href="commercial/") COMMERCIAL
+
+	.list
+		a(href="residential/contemporary-yard/")
+			.listing.first
+				h3 Contemporary Yard
+				h4 Etobicoke - <span>Toronto</span>
+				.item
+					img(src="../assets/img/projects/residential/contemporary-yard/listing.jpg" alt="")

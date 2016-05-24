@@ -5,7 +5,7 @@ footer
 .footer
 	float: left
 	width 100%
-	padding: 28px 0 28px 0
+	padding: 32px 0 24px 0
 	border-top $white-border
 	background $accent
 
@@ -17,57 +17,72 @@ footer
 		h1
 			float left
 			width 280px
-			margin 0 0 14px 0
+			margin 0 0 15px 0
 			font-weight 600
-			font-size 20px
-			line-height 20px
+			font-size 21px
+			line-height 21px
 			color $black
 			text-align left
 			color $black
 			border none
 
-		h2
+		p
 			float left
 			width 100%
 			padding 0
-			margin 0 0 28px 0
+			margin 0 0 22px 0
 			font-style italic
 			font-weight 400
-			font-size 17px
-			line-height 17px
+			font-size 20px
+			line-height 20px
 			color $paragraph
 			border none
 
 		a
 			float left
-			margin 0 0 4px 0
-			font-size 16px
-			line-height 28px
-			color $paragraph
+			padding 0 0 3px 0
+			margin 0 0 12px 0
+			font-size 18px
+			line-height 30px
+			color $black
+			border-bottom 1px solid $green
 			text-align left
-
-		p
-			float: left
-			width: 240px
-			font-size: 16px
-			line-height: 28px
-			color: $paragraph
 
 	&__company
 		float left
-		width 230px
-		padding 0 0 42px 30px
+		width 220px
+		padding 0 0 38px 30px
+		margin 0
 
 	&__link
 		float left
 		width 230px
 		padding 0
-		margin 2px 0 0 0
+		margin 4px 0 0 0
+
+		a
+			float left
+			padding 0 0 4px 0
+			margin 0 0 16px 0
+			font-style italic
+			font-size 20px
+			line-height 24px
+			color $paragraph
+			border-bottom 1px solid $green
+			text-align left
 
 	&__cv
 		float left
-		width 210px
-		padding 0 20px 38px 30px
+		width 260px
+		padding 0
+		margin 0 0 34px 30px
+
+		p
+			width: 260px
+			margin 0
+			font-style normal
+			font-size 18px
+			line-height 31px
 
 	&__social
 		float left
@@ -79,11 +94,11 @@ footer
 		.fa-linkedin
 		.fa-houzz
 			float: left
-			width: 48px
-			height: 48px
-			margin: 0 12px 0 0
-			font-size 31px
-			line-height 50px
+			width: 54px
+			height: 50px
+			margin: 0 14px 0 0
+			font-size 33px
+			line-height 54px
 			color #999
 			background: $white
 			border $dotted
@@ -91,7 +106,8 @@ footer
 			text-align center
 
 		.fa-facebook
-			font-size 29px
+			font-size 31px
+			line-height 57px
 			color #3b589c
 
 		.fa-linkedin
@@ -99,3 +115,6 @@ footer
 
 		.fa-houzz
 			color #8ac541
+
+	&__map
+		display: none

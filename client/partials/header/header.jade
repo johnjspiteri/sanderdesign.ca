@@ -7,7 +7,7 @@ header
 						.header__white
 					.header__name
 						h1(ui-sref='app.index') SANDER DESIGN
-						h2 Landscape Architecture
+						p Landscape Architecture
 					.header__mobile(data-ng-click='open();')
 						.fa.fa-bars
 			nav
@@ -17,5 +17,5 @@ header
 					h2 MEDIA
 				.header__tile(ui-sref="app.services", data-ng-class="{'active': $state.includes('app.services')}")
 					h2 SERVICES
-				.header__tile(ui-sref="app.projects.list", data-ng-class="{'active': $state.includes('app.projects.list')}")
+				.header__tile(ui-sref="app.list", data-ng-class="{'active': $state.includes('app.list') || $state.includes('app.view')}")
 					h2 PROJECTS

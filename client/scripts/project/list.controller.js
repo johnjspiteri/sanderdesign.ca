@@ -17,7 +17,7 @@
 	}
 
 	angular
-		.module('app.portfolio')
+		.module('app.project')
 		.controller('List', List);
 
 	List.$inject = ['$document', '$rootScope', '$scope', '$state', '$timeout', 'listResolve', 'ngMeta'];
