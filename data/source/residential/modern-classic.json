@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "modern-classic",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Yorkville",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Modern Classic",
+	"thumb": {},
+	"year": ""
+}

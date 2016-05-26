@@ -1,5 +1,5 @@
 
-<md-sidenav md-component-id="navigation" md-is-open="true" esc-key="close();" class="md-sidenav md-closed">
+<md-sidenav md-component-id="navigation" esc-key="close();" class="md-sidenav md-closed">
   <div class="navigation">
     <div data-ng-click="close();" class="navigation__tile">
       <div class="fa fa-long-arrow-left"></div>
@@ -7,17 +7,14 @@
     <div ui-sref="app.index" data-ng-click="close();" data-ng-class="{active: $state.includes('app.index')}" class="navigation__tile">
       <h4>HOME</h4>
     </div>
-    <div ui-sref="app.projects.list" data-ng-click="close();" data-ng-class="{active: $state.includes('app.projects.list') || $state.includes('app.projects.view')}" class="navigation__tile">
+    <div ui-sref="app.list" data-ng-click="close();" data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}" class="navigation__tile">
       <h4>PROJECTS</h4>
     </div>
     <div ui-sref="app.services" data-ng-click="close();" data-ng-class="{active: $state.includes('app.services')}" class="navigation__tile">
       <h4>SERVICES</h4>
     </div>
-    <div ui-sref="app.frontend.contact" data-ng-click="close();" data-ng-class="{active: $state.includes('app.frontend.contact')}" class="navigation__tile">
+    <div ui-sref="app.about" data-ng-click="close();" data-ng-class="{active: $state.includes('app.about')}" class="navigation__tile">
       <h4>ABOUT</h4>
-    </div>
-    <div ui-sref="app.frontend.contact" data-ng-click="close();" data-ng-class="{active: $state.includes('app.frontend.contact')}" class="navigation__tile">
-      <h4>CONTACT</h4>
     </div>
   </div>
 </md-sidenav>

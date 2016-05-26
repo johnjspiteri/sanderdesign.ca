@@ -5,6 +5,9 @@
 		// $rootScope.$on('$stateChangeError', function(event) {
 		//   $state.go('app.error');
 		// });
+		$rootScope.$on('$stateChangeError', function(event) {
+		  $state.go('app.error');
+		});
 
 		Angularytics.init();
 

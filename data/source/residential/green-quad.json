@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "green-quad",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Forest Hill",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Green Quad",
+	"thumb": {},
+	"year": ""
+}

@@ -1,12 +1,28 @@
 .container
-	.side
-		a.selected.line(href="#") RESIDENTIAL
-		a.commercial(href="commercial/") COMMERCIAL
+	.search
+		.search__option
+			p Category
+			select(data-ng-model='search.category', data-ng-change='updateCategory(search.category);', ng-options="category for category in search.categories")
+			.select-mask
+				h4(data-ng-bind='search.category')
 
-	.list
-		a(href="residential/contemporary-yard/")
-			.listing.first
-				h3 Contemporary Yard
-				h4 Etobicoke - <span>Toronto</span>
-				.item
-					img(src="../assets/img/projects/residential/contemporary-yard/listing.jpg" alt="")
+		.search__option
+			p Style
+			select(data-ng-model='search.style', data-ng-change='updateStyle(search.style)', ng-options="style for style in search.styles")
+			.select-mask
+				h4(data-ng-bind='search.style')
+
+		.search__input
+			p Filter Title
+			input(data-ng-model='search.filter', placeholder='Filter Title')
+
+		.search__reset(data-ng-click='reset()')
+			.fa.fa-times
+
+	.listings
+		.listing(data-ng-repeat='listing in listings | categoryFilter: search.category')
+			.image
+				img()
+			h3(data-ng-bind='listing.title')
+			p(data-ng-bind='listing.location.neighbourhood + " -"')
+			p.blue(data-ng-bind='listing.location.city')

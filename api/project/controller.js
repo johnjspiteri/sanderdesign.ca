@@ -6,17 +6,17 @@ function handleError(res, err) {
 }
 
 var mongoose = require('mongoose');
-var Portfolio = require('./model');
+var Project = require('./model');
 
 exports.index = function (req,res,next) {
-	Portfolio.find({}, {"icons": 0, "images": 0, "pdfs": 0, "rules": 0, "tabs": 0}, function (err, data) {
+	Project.find({}, function (err, data) {
 		if(err) {return handleError(res,err);}
 		return res.status(200).json(data);
 	});
 };
 
 exports.show = function (req, res, next) {
-	Portfolio.findOne({clean:req.params.id}, {}, function (err, data) {
+	Project.findOne({clean:req.params.id}, {}, function (err, data) {
 		if(err) { return handleError(res, err); }
 		if(!data) { return res.sendStatus(404); }
 		return res.json(data);

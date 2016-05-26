@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "oval-garden",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Junction",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Oval Garden",
+	"thumb": {},
+	"year": ""
+}

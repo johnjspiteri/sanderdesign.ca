@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "formal-garden",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Lawrence Park",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Formal Garden",
+	"thumb": {},
+	"year": ""
+}

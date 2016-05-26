@@ -1,0 +1,105 @@
+.search
+	float left
+	width 300px
+	padding 18px 0 14px 20px
+	margin 0 0 18px 0
+	background $green-light
+	border-top $green-light-border
+	border-bottom $green-light-border
+	border-radius: 4px
+
+	p
+		float left
+		width 100%
+		margin 0 0 13px 0
+		font-weight 500
+		font-size 18px
+		line-height 18px
+		color $paragraph
+		text-align center
+		text-shadow $shadow
+
+	&__option
+		float left
+		width 135px
+		padding 0
+		margin 0 10px 12px 0
+
+		select
+			float left
+			width 133px
+			height 46px
+			padding 0
+			margin 0
+			font-weight 400
+			font-size 20px
+			line-height 20px
+			color $black
+			background $white
+			border $white-border
+			border-radius 4px
+			outline none
+			text-align center
+			cursor pointer
+			-webkit-appearance none
+			vertical-align middle
+			-moz-appearance none
+			appearance none
+			z-index 100
+
+		.select-mask
+			position absolute
+			width 133px
+			height 46px
+			margin 31px 0 0 0
+			background $white
+			border $white-border
+			border-radius 4px
+			vertical-align middle
+			z-index 99
+			pointer-events: none
+
+			h4
+				float left
+				width 100%
+				padding 0
+				margin 0
+				font-weight 400
+				font-size 20px
+				line-height 46px
+				color $black
+				text-align center
+				z-index 999
+
+	&__input
+		display: none
+
+	&__reset
+		float left
+		width 278px
+		height 44px
+		padding 0
+		margin 0
+		background $grey-gradient
+		border none
+		border $grey-gradient-border
+		border-bottom $grey-gradient-border-bottom
+		border-radius 4px
+		text-align center
+		-webkit-user-select none
+		-moz-user-select none
+		-ms-user-select none
+		user-select none
+		cursor pointer
+		outline none
+
+		.fa-times
+			float left
+			width 100%
+			padding 0
+			margin 0
+			font-size 24px
+			line-height 45px
+			color $white
+			text-align center
+			text-shadow $dark-shadow

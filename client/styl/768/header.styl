@@ -1,22 +1,22 @@
 .header--container
-	padding 0 0 16px 0
+	padding 0 0 14px 0
 	margin 0 0 24px 0
 
 .header
 	margin 0 auto
 
 	&__brand
-		width 250px
+		width 280px
 		padding 0
 		margin 0 0 0 30px
 
 	&__logo
-		width 250px
+		width 310px
 
 	&__outline
 		width 30px
 		height 30px
-		margin 18px 22px 0 0
+		margin 12px 22px 0 0
 
 	&__white
 		width 12px
@@ -24,16 +24,17 @@
 		margin 9px 0 0 9px
 
 	&__name
-		width 194px
+		width 224px
 
 		h1
 			margin 15px 0 9px 0
-			font-size 22px
-			line-height 22px
+			font-size 21px
+			line-height 21px
 
-		h2
-			font-size 18px
-			line-height 18px
+		p
+			width 100%
+			font-size 20px
+			line-height 20px
 
 	&__mobile
 		display: none
@@ -41,15 +42,16 @@
 	nav
 		display block
 		float left
-		width 488px
+		width 458px
+		height 51px
 		padding 0
 		margin 0
 		border none
 
 	&__tile
 		float right
-		height 20px
-		padding 20px 20px 10px 20px
+		height 50px
+		padding 0 20px 0 20px
 		margin 0
 		background $accent
 		border-left $dotted
@@ -62,11 +64,13 @@
 			margin 0
 			font-weight 400
 			font-size 18px
-			line-height 18px
+			line-height 56px
 			color $black
 			border none
 			text-align center
 
 	&__tile.active,
 	&__tile:hover
-		background $white
+		height 50px
+		background $green-light
+		border-bottom $dotted

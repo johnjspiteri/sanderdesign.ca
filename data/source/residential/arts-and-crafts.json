@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "arts-and-crafts",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Deer Park",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Arts and Crafts",
+	"thumb": {},
+	"year": ""
+}

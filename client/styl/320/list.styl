@@ -1,111 +1,85 @@
-.side
-    float left
-    width: 280px
-    margin 10px 0 0 0
+.listings
+	float: left
+	width: 280px
+	margin 0 0 0 20px
 
-    a
-        float: left
-        width: 139px
-        height: 38px
-        font-size 12px
-        line-height: 41px
-        color: #444
-        text-align: center
-        border-top $dotted
-        border-right $dotted
-        border-bottom $dotted
-        background $accent
+	.listing
+		float: left
+		width 238px
+		padding 22px 20px 14px 20px
+		margin 0 0 10px 0
+		background $white
+		border $border
 
-    a.selected
-        height 39px
-        background: $white
-        border-top $border-light
-        border-right $border-light
-        border-bottom none
+		h3
+			float: left
+			width 238px
+			margin 0 0 18px 0
+			font-style italic
+			font-weight 400
+			font-size 23px
+			line-height 23px
 
-.list
-    float: left
-    width: 100%
-    background #fff
+		p
+			float left
+			margin 0 4px 18px 0
+			font-weight 300
+			font-size 19px
+			line-height 19px
+			color #555
 
-    .listing
-        float: left
-        width 100%
-        padding: 28px 0 28px 0
-        border-bottom:1px solid #e6e6e6
+		p.blue
+			color #69F
 
-        h3
-            width 280px
-            float: left
-            margin 0 0 0 20px
-            font-size: 20px
-            line-height:20px
+		// p
+		// 	float: left
+		// 	width 238px
+		// 	margin 0 0 18px 0
+		// 	font-size: 14px
+		// 	line-height: 22px
+		// 	color: #666
 
-        h4
-            width 280px
-            float: left
-            margin 12px 0 18px 20px
-            font-style italic
-            font-size: 14px
-            line-height 14px
-            color: #555
+		.fa-long-arrow-left
+			float left
+			height 20px
+			padding 0px 14px
+			margin 10px 0 0 20px
+			font-size 15px
+			line-height 20px
+			color $white
+			background #333
+			border-radius 4px
+			text-align center
+			text-decoration none
 
-            span
-                margin 0 0 0 2px
-                color: #69F
-                font-style: italic
+		.image
+			float left
+			width 218px
+			height 238px
+			padding 0
+			margin 0 0 20px 0
+			background $background
+			border $border
+			border-radius 4px
 
-        p
-            float: left
-            width 250px
-            margin 0 30px 18px 20px
-            font-size: 14px
-            line-height: 22px
-            color: #666
+			img
+				float: left
+				width 100%
+				height 100%
 
-        .fa-long-arrow-left
-            float left
-            height 20px
-            padding 0px 14px
-            margin 10px 0 0 20px
-            font-size 15px
-            line-height 20px
-            color $white
-            background #333
-            border-radius 4px
-            text-align center
-            text-decoration none
+		.award
+			float: left
+			width: 200px
+			height: 136px
+			padding: 0
+			margin 0 0 0 20px
+			background #fff
+			border $border
+			box-shadow: 1px 1px 3px 1px #999
+			-webkit-box-shadow: 1px 1px 3px 1px #999
+			-moz-box-shadow: 1px 1px 3px 1px #999;
 
-        .item
-            float: left
-            width: 200px
-            height: 238px
-            padding: 0
-            margin 0 0 0 20px
-            background #fff
-            border $border
-            box-shadow: 1px 1px 3px 1px #999
-            -webkit-box-shadow: 1px 1px 3px 1px #999
-            -moz-box-shadow: 1px 1px 3px 1px #999;
-
-            img
-                float: left
-                width 100%
-                height 100%
-
-        .award
-            float: left
-            width: 200px
-            height: 136px
-            padding: 0
-            margin 0 0 0 20px
-            background #fff
-            border $border
-            box-shadow: 1px 1px 3px 1px #999
-            -webkit-box-shadow: 1px 1px 3px 1px #999
-            -moz-box-shadow: 1px 1px 3px 1px #999;
-
-            img
-                float: left
-                width 100%
-                height 100%
+			img
+				float: left
+				width 100%
+				height 100%

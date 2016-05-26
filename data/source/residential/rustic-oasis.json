@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "rustic-oasis",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "Leslieville",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Rustic Oasis",
+	"thumb": {},
+	"year": ""
+}

@@ -1,0 +1,17 @@
+{
+	"category": "Residential",
+	"clean": "sunken-garden",
+	"description": "",
+	"images": [{}],
+	"location": {
+		"city": "Toronto",
+		"country": "Canada",
+		"neighbourhood": "High Park",
+		"province": "Ontario"
+	},
+	"style": "",
+	"tags": ["Zen", "Design"],
+	"title": "Sunken Garden",
+	"thumb": {},
+	"year": ""
+}
