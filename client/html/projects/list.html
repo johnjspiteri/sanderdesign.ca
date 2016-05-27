@@ -2,30 +2,31 @@
 <div class="container">
   <div class="search">
     <div class="search__option">
-      <p>Category</p>
+      <h6>CATEGORY</h6>
       <select data-ng-model="search.category" data-ng-change="updateCategory(search.category);" ng-options="category for category in search.categories"></select>
       <div class="select-mask">
         <h4 data-ng-bind="search.category"></h4>
       </div>
     </div>
     <div class="search__option">
-      <p>Style</p>
+      <h6>STYLE</h6>
       <select data-ng-model="search.style" data-ng-change="updateStyle(search.style)" ng-options="style for style in search.styles"></select>
       <div class="select-mask">
         <h4 data-ng-bind="search.style"></h4>
       </div>
     </div>
     <div class="search__input">
-      <p>Filter Title</p>
+      <h6>FILTER</h6>
       <input data-ng-model="search.filter" placeholder="Filter Title"/>
     </div>
     <div data-ng-click="reset()" class="search__reset">
+      <h6>RESET</h6>
       <div class="fa fa-times"></div>
     </div>
   </div>
   <div class="listings">
     <div data-ng-repeat="listing in listings | categoryFilter: search.category" class="listing">
-      <div class="image"><img/></div>
+      <div class="image"><img src="/img/projects/residential/arts-and-crafts-deer-park/1.jpg"/></div>
       <h3 data-ng-bind="listing.title"></h3>
       <p data-ng-bind="listing.location.neighbourhood + &quot; -&quot;"></p>
       <p data-ng-bind="listing.location.city" class="blue"></p>
