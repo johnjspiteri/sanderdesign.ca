@@ -25,11 +25,11 @@
     </div>
   </div>
   <div class="listings">
-    <div data-ng-repeat="listing in listings | categoryFilter: search.category" ui-sref="app.view({id:listing.clean})" class="listing">
+    <div data-ng-repeat="project in projects | categoryFilter: search.category" ui-sref="app.view({id:project.clean})" class="listing">
       <div class="image"><img src="/img/projects/residential/arts-and-crafts-deer-park/1.jpg"/></div>
-      <h3 data-ng-bind="listing.title"></h3>
-      <p data-ng-bind="listing.location.neighbourhood + &quot;,&quot;"></p>
-      <p data-ng-bind="listing.location.city" class="blue"></p>
+      <h3 data-ng-bind="project.title"></h3>
+      <p data-ng-bind="project.location.neighbourhood + &quot;,&quot;"></p>
+      <p data-ng-bind="project.location.city" class="blue"></p>
     </div>
   </div>
 </div>

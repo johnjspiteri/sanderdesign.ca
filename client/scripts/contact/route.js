@@ -5,7 +5,7 @@
 		$locationProvider.html5Mode(true);
 		$stateProvider
 			.state('app.contact', {
-				url: '/contact',
+				url: '/contact/',
 				views: {
 					'page@app': {
 						templateUrl: 'contact/contact.html',

@@ -8,7 +8,8 @@
 				url: '/services/',
 				views: {
 					'page@app': {
-						templateUrl: 'services/index.html'
+						templateUrl: 'services/services.html',
+						controller: 'Services'
 					}
 				}
 			});

@@ -4,7 +4,7 @@
 	function List ($document, $rootScope, $scope, $state, listResolve, ngMeta) {
 
 		$rootScope.display = false;
-		$scope.listings = listResolve;
+		$scope.projects = listResolve;
 
 		$scope.search = {
 			category: 'Residential',

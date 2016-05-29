@@ -1,26 +1,17 @@
 (function() {
 	"use strict";
 
-	function Contact ($scope, contact, ngMeta) {
+	function About ($scope, ngMeta) {
 
-		ngMeta.setTitle('Contact Us');
-		ngMeta.setTag('description', 'Here is where you can edit the content on the contact page.');		
+		ngMeta.setTitle('About Us');
+		ngMeta.setTag('description', 'Here is where you can edit the content on the contact page.');
 
-		$scope.submit = function () {
-			contact.create({
-				name: $scope.data.name,
-				email: $scope.data.email,
-				message: $scope.data.message
-			}).$promise.then(function(){
-				$scope.data = {};
-			});
-		};
 	}
 
 	angular
-		.module('app.contact')
-		.controller('Contact', Contact);
+		.module('app.about')
+		.controller('About', About);
 
-	Contact.$inject = ['$scope', 'contact', 'ngMeta'];
+	About.$inject = ['$scope', 'ngMeta'];
 
 })();
