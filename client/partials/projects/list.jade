@@ -21,7 +21,7 @@
 			.fa.fa-times
 
 	.listings
-		.listing(data-ng-repeat='listing in listings | categoryFilter: search.category')
+		.listing(data-ng-repeat='listing in listings | categoryFilter: search.category', ui-sref='app.view({id:listing.clean})')
 			.image
 				img(src="/img/projects/residential/arts-and-crafts-deer-park/1.jpg")
 			h3(data-ng-bind='listing.title')

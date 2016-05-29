@@ -6,6 +6,7 @@
 			'app.common',
 			'app.index',
 			'app.project',
+			'app.services',
 			'app.about',
 			'app.contact',
 			'app.error'

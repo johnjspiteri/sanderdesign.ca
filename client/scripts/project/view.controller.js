@@ -3,10 +3,10 @@
 
 	function View ($document, $scope, $state, viewResolve, ngMeta) {
 
-		$scope.item = viewResolve;
+		$scope.project = viewResolve;
 
-		ngMeta.setTitle($scope.item.detail.title);
-		ngMeta.setTag('description', 'Here is where you can edit the content on board game view page.');
+		// ngMeta.setTitle($scope.item.detail.title);
+		// ngMeta.setTag('description', 'Here is where you can edit the content on board game view page.');
 
 	}
 

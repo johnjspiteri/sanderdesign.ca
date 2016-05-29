@@ -4,19 +4,18 @@
 	function routes($locationProvider, $stateProvider) {
 		$locationProvider.html5Mode(true);
 		$stateProvider
-			.state('app.index', {
-				url: '/',
+			.state('app.services', {
+				url: '/services/',
 				views: {
 					'page@app': {
-						templateUrl: 'index/index.html',
-						controller: "Index"
+						templateUrl: 'services/index.html'
 					}
 				}
 			});
 	}
 
 	angular
-		.module('app.index')
+		.module('app.services')
 		.config(routes);
 
 	routes.$inject = ['$locationProvider', '$stateProvider'];

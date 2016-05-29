@@ -5,7 +5,6 @@
 
 		$rootScope.display = false;
 		$scope.listings = listResolve;
-		console.log($scope.listings);
 
 		$scope.search = {
 			category: 'Residential',

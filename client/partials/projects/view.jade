@@ -1,23 +1,12 @@
-.page
-	.preview
-		.product
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/1.jpg" alt="")
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/2.jpg" alt="")
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/3.jpg" alt="")
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/4.jpg" alt="")
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/5.jpg" alt="")
-			div
-				img(src="../../../assets/img/projects/commercial/condo-rooftop-harbourfront/6.jpg" alt="")
+.container
+	.slider
+		slick.index(dots="true", autoplay="true", speed="400", autoplay-Speed="4100", slidesToShow='1', draggable="true", arrows="false", easing="linear", accessibility="true", swipe='true', lazyLoad="progressive", variableWidth="false", infinite="true",)
+			div(data-ng-repeat='slide in slides')
+				img(src='{{slide.path}}', alt='')
 
-	.list
-		.listing.full
-			h3 Condo Rooftop
-			h4 Harbourfront - Toronto
-			p This project required an updated design for a rooftop patio that had become dated. It was also a part of an entire building makeover to bring up property value and fit better into the mix of modern waterfront condos within which it is now situated. Old concrete tiles where painted attractive contemporary colors to match the new building interior and bring life to the ground plane.
-			p A centre sitting area was created using artificial turf to soften the hard surface and provide a sense of green. Custom planters and furnishings were designed to work with the overall colour theme as well as horizontal screens to hide HVAC units. Planters surround the turf area to help define the central quad sitting area and provide a sense of green where otherwise nothing would grow. The old cement parapet wall was replaced with glass railings to give a sense of transparency and offer open views of the waterfront and Toronto skyline.<br><br><i>"The work that Sander did was absolutely beautiful - I am thrilled with the result"</i>
-			a.fa.fa-long-arrow-left(href="../")
+	.view
+		h3(data-ng-bind='project.title')
+		p(data-ng-bind='project.location.neighbourhood + ","')
+		p.blue(data-ng-bind='project.location.city')
+		p(data-ng-bind='project.description')
+		a.fa.fa-long-arrow-left(ui-sref='app.list')
