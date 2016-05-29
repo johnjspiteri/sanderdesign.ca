@@ -10,8 +10,8 @@
 		$scope.search = {
 			category: 'Residential',
 			categories: ['Residential', 'Commercial', 'Concept', 'Drawing'],
-			style: '',
-			styles: ['Testing', 'This']
+			style: 'Modern',
+			styles: ['Zen', 'Modern']
 		};
 
 		// function modelList(inventory, manufacturer) {
@@ -26,7 +26,7 @@
 		// 	});
 		// }
 
-		ngMeta.setTitle('Board Game Library List');
+		ngMeta.setTitle('Project Listing');
 		ngMeta.setTag('description', 'Here is where you can edit the content on board game list page.');
 
 		$scope.reset = function() {

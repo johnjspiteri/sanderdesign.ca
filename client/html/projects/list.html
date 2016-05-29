@@ -5,14 +5,14 @@
       <h6>CATEGORY</h6>
       <select data-ng-model="search.category" data-ng-change="updateCategory(search.category);" ng-options="category for category in search.categories"></select>
       <div class="select-mask">
-        <h4 data-ng-bind="search.category"></h4>
+        <p data-ng-bind="search.category"></p>
       </div>
     </div>
     <div class="search__option">
       <h6>STYLE</h6>
       <select data-ng-model="search.style" data-ng-change="updateStyle(search.style)" ng-options="style for style in search.styles"></select>
       <div class="select-mask">
-        <h4 data-ng-bind="search.style"></h4>
+        <p data-ng-bind="search.style"></p>
       </div>
     </div>
     <div class="search__input">
@@ -28,7 +28,7 @@
     <div data-ng-repeat="listing in listings | categoryFilter: search.category" class="listing">
       <div class="image"><img src="/img/projects/residential/arts-and-crafts-deer-park/1.jpg"/></div>
       <h3 data-ng-bind="listing.title"></h3>
-      <p data-ng-bind="listing.location.neighbourhood + &quot; -&quot;"></p>
+      <p data-ng-bind="listing.location.neighbourhood + &quot;,&quot;"></p>
       <p data-ng-bind="listing.location.city" class="blue"></p>
     </div>
   </div>
