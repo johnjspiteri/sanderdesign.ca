@@ -7,10 +7,10 @@
 		$scope.projects = listResolve;
 
 		$scope.search = {
-			category: 'Residential',
-			categories: ['Residential', 'Commercial', 'Concept', 'Drawing'],
-			style: 'Modern',
-			styles: ['Zen', 'Modern']
+			category: '',
+			categories: ['', 'Residential', 'Commercial', 'Concept', 'Drawing'],
+			style: '',
+			styles: ['', 'Zen', 'Modern']
 		};
 
 		// function modelList(inventory, manufacturer) {
@@ -30,9 +30,11 @@
 
 		$scope.reset = function() {
 			$scope.search = {
-				category: 'Residential',
+				category: '',
+				categories: ['Residential', 'Commercial', 'Concept', 'Drawing'],
 				filter: '',
 				style: '',
+				styles: ['Zen', 'Modern']
 			};
 		};
 	}
