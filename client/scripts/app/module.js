@@ -7,7 +7,7 @@
 			'app.index',
 			'app.project',
 			'app.services',
-			'app.about',
+			'app.media',
 			'app.contact',
 			'app.error'
 		]);

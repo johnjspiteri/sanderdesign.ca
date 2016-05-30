@@ -21,3 +21,6 @@ footer
 					a.fa.fa-linkedin(href="http://ca.linkedin.com/pub/sander-freedman/11/677/27a", target="_blank")
 
 			.footer__map
+				#map_canvas
+					ui-gmap-google-map(center='map.center', zoom='map.zoom', options='options')
+						ui-gmap-marker(coords='marker.coords', options='marker.options', icon='marker.options.icon', idkey='marker.id')				
