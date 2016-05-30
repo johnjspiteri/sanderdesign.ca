@@ -56,7 +56,7 @@
 				cssEase: 'ease',
 				customPaging: function(slider, i) {
 					var thumb = $(slider.$slides[i]).data('thumb');
-					return '<img src="'+thumb+'"><span>•</span>';				},
+					return '<img src="'+thumb+'"><span></span>';				},
 				dots: true,
 				dotsClass: 'slick-dots',
 				draggable: true,

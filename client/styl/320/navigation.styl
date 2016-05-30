@@ -1,38 +1,38 @@
 md-sidenav.md-closed
-	display: none
+	display none
 
 md-sidenav
-	position: fixed;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	width: 165px
-	max-width: 165px
+	position fixed
+	-webkit-flex-direction column
+	-ms-flex-direction column
+	flex-direction column
+	width 145px
+	max-width 145px
 	height 100%
 	min-height 100%
-	bottom: 0
+	bottom 0
 	background none
 	outline none
-	overflow: none
-	box-sizing: border-box;
-	left: 0
-	top: 0
-	background: $background
-	border-right $grey-gradient-border
-	z-index: 999999
-	-webkit-transform: translate3d(0%, 0, 0)
-	transform: translate3d(0%, 0, 0)
+	overflow none
+	box-sizing border-box
+	left 0
+	top 0
+	background $background
+	border-right $white-border
+	z-index 999999
+	-webkit-transform translate3d(0%, 0, 0)
+	transform translate3d(0%, 0, 0)
 	overflow scroll
 
 md-sidenav.md-closed
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
+	-webkit-transform translate3d(-100%, 0, 0);
+	transform translate3d(-100%, 0, 0);
 
 md-sidenav.md-closed-remove
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+	display -webkit-flex;
+	display -ms-flexbox;
+	display flex;
+	transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 
 md-sidenav.md-closed-add.md-closed-add-active, md-sidenav.md-closed-remove.md-closed-remove-active
 	transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -50,7 +50,7 @@ md-sidenav.md-locked-open-remove
 	float left
 	width 124px
 	max-width 124px
-	padding 12px 20px 0 20px
+	padding 12px 10px 0 10px
 	margin 0
 
 	&__tile
@@ -58,9 +58,9 @@ md-sidenav.md-locked-open-remove
 		width 122px
 		height 40px
 		padding 0
-		margin 0 0 8px 0
-		background $grey-gradient
-		border $grey-gradient-border
+		margin 0 0 9px 0
+		background $white
+		border $white-border
 		border-radius 4px
 		text-align center
 		text-shadow $dark-shadow
@@ -68,16 +68,16 @@ md-sidenav.md-locked-open-remove
 		outline none
 
 		h4
-			float: left
+			float left
 			width 100%
 			padding 0
 			margin 0
 			font-weight 400
-			font-size 18px
-			line-height 41px
-			color $white
-			text-align: center
-			text-shadow $dark-shadow
+			font-size 17px
+			line-height 42px
+			color $black
+			text-align center
+			text-shadow $shadow
 			outline none
 
 		.fa-long-arrow-left
@@ -88,13 +88,17 @@ md-sidenav.md-locked-open-remove
 			margin 0
 			font-size 29px
 			line-height 44px
-			color $white
+			color $black
 			border none
 			text-align center
-			text-shadow $dark-shadow
+			text-shadow $shadow
 			cursor pointer
 			outline none
 
 	&__tile.active
-		background $green
-		border $green-border
+		background $grey-gradient
+		border $grey-gradient-border
+
+		h4
+			color $white
+			text-shadow $dark-shadow
