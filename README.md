@@ -44,3 +44,5 @@ mongoimport --headerline --type json --host $OPENSHIFT_MONGODB_DB_HOST --port $O
 
 
 mongoimport --headerline --type json --host $OPENSHIFT_MONGODB_DB_HOST --port $OPENSHIFT_MONGODB_DB_PORT --username $OPENSHIFT_MONGODB_DB_USERNAME --password $OPENSHIFT_MONGODB_DB_PASSWORD -d $OPENSHIFT_APP_NAME -c projects --file data/min/commercial/condo-courtyard.min.json
+
+
