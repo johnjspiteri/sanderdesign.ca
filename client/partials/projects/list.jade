@@ -1,23 +1,23 @@
 .container
 	.search
 		.search__option
-			h6 CATEGORY
+			//- h6 CATEGORY
 			select(data-ng-model='search.category', data-ng-change='updateCategory(search.category);', ng-options="category for category in search.categories")
 			.select-mask
 				p(data-ng-bind='search.category')
 
 		.search__option
-			h6 STYLE
+			//- h6 STYLE
 			select(data-ng-model='search.style', data-ng-change='updateStyle(search.style)', ng-options="style for style in search.styles")
 			.select-mask
 				p(data-ng-bind='search.style')
 
 		.search__input
-			h6 FILTER
+			//- h6 FILTER
 			input(data-ng-model='search.filter', placeholder='Filter Title')
 
 		.search__reset(data-ng-click='reset()')
-			h6 RESET
+			//- h6 RESET
 			.fa.fa-times
 
 	.listings

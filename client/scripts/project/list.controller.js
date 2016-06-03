@@ -7,10 +7,10 @@
 		$scope.projects = listResolve;
 
 		$scope.search = {
-			category: '',
-			categories: ['', 'Residential', 'Commercial', 'Concept', 'Drawing'],
-			style: '',
-			styles: ['', 'Zen', 'Modern']
+			category: 'Category',
+			categories: ['Category', 'Residential', 'Commercial', 'Concept', 'Drawing'],
+			style: 'Style',
+			styles: ['Style', 'Zen', 'Modern']
 		};
 
 		// function modelList(inventory, manufacturer) {

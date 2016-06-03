@@ -5,7 +5,7 @@
 		return function (listings, value) {
 			var filtered = [];
 
-			if(!value) {
+			if(!value || value === 'Category') {
 				return listings;
 			}
 			angular.forEach(listings, function (listing) {
