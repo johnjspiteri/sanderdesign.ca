@@ -8,8 +8,10 @@ header
 					.header__name
 						h1(ui-sref='app.index') SANDER DESIGN
 						h2 Landscape Architecture
-					.header__mobile(data-ng-click='open();')
-						h3 NAVIGATION
+					.header__mobile
+						h3(data-ng-click='open();') NAVIGATION
+						.fa.fa-paper-plane(href="mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card")
+
 			nav
 				.header__tile(ui-sref="app.index", data-ng-class="{'active': $state.includes('app.index')}")
 					h2 HOME

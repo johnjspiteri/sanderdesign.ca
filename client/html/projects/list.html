@@ -13,12 +13,6 @@
         <p data-ng-bind="search.style"></p>
       </div>
     </div>
-    <div class="search__input">
-      <input data-ng-model="search.filter" placeholder="Filter Title"/>
-    </div>
-    <div data-ng-click="reset()" class="search__reset">
-      <div class="fa fa-times"></div>
-    </div>
   </div>
   <div class="listings">
     <div data-ng-repeat="project in projects | categoryFilter: search.category | filter: search.filter" ui-sref="app.view({id:project.clean})" class="listing">
