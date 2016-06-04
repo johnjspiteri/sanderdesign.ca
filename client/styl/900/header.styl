@@ -1,5 +1,5 @@
 .header--container
-	height 88px
+	height 84px
 	padding 0
 	margin 0 0 28px 0
 	background $white
@@ -10,52 +10,57 @@
 	margin 0 auto
 
 	&__brand
-		width 350px
+		width 380px
 		padding 0
 		margin 0
 		background none
 		border-bottom none
 
 	&__logo
-		width 350px
-		margin 0 0 0 30px
+		width 380px
+		margin 0
 
 	&__outline
-		width 32px
-		height 32px
-		margin 12px 20px 0 0
+		width 30px
+		height 30px
+		margin 13px 24px 0 40px
 
 	&__white
 		width 12px
 		height 12px
-		margin 10px 0 0 10px
+		margin 9px 0 0 9px
 
 	&__name
-		width 274px
+		width 284px
 
 		h1
-			margin 15px 0 8px 0
-			font-size 24px
-			line-height 24px
+			width 100%
+			margin 18px 0 10px 0
+			font-size 21px
+			line-height 21px
 
-		p
+		h2
 			width 100%
 			margin 0
-			font-size 25px
-			line-height 25px
+			font-size 21px
+			line-height 21px
 
 	nav
 		float right
-		padding 0
-		margin 0
 
 	&__tile
-		height 54px
+		height 50px
 		padding 0 24px
+		margin 0
+		background $tile
 		border none
 		border-left $dotted
-		border-bottom $white-border
+		border-bottom $dotted
 
 		h2
-			font-size 20px
-			line-height 61px
+			font-size 18px
+			line-height 56px
+
+	&__tile.active
+		height 50px
+		background $background
