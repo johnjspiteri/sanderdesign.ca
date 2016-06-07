@@ -3,7 +3,6 @@
 
 	function Footer ($scope, uiGmapGoogleMapApi) {
 
-		console.log("Footer");
 		$scope.map = {
 			center: {
 				latitude: 43.648125,

@@ -67,7 +67,7 @@ module.exports = function (grunt) {
 						'client/scripts/vendor/lodash/dist/lodash.min.js',
 						'client/scripts/vendor/slick-carousel/slick/slick.js',
 						'client/scripts/vendor/angular-slick/dist/slick.js',
-						// 'client/scripts/vendor/angularytics/dist/angula.ytics.min.js',
+						'client/scripts/vendor/angularytics/dist/angularytics.min.js',
 						// 'client/scripts/vendor/angular-material/angular.material.js',
 						'client/scripts/vendor/ngMeta/dist/ngMeta.js',
 
@@ -225,10 +225,10 @@ module.exports = function (grunt) {
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
-		// 'uglify',
+		'uglify',
 		'jshint:development',
 		'express:server',
-		// 'minjson',
+		'minjson',
 		// 'open:server',
 		'watch'
 	]);

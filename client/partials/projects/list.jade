@@ -20,7 +20,7 @@
 	.listings
 		.listing(data-ng-repeat='project in projects | categoryFilter: search.category | filter: search.filter', ui-sref='app.view({id:project.clean})')
 			.image
-				img(src="/img/projects/residential/arts-and-crafts-deer-park/1.jpg")
+				img(ng-src='data:{{project.thumb.filetype}};base64,{{project.thumb.base64}}')
 			h3(data-ng-bind='project.title')
 			p(data-ng-bind='project.location.neighbourhood + ","')
 			p.blue(data-ng-bind='project.location.city')

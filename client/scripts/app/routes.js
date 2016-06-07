@@ -20,7 +20,7 @@
 					'header@app': {
 						templateUrl: 'header/header.html'
 					},
-					'footer@': {
+					'footer': {
 						templateUrl: 'footer/footer.html',
 						controller: 'Footer'
 					}

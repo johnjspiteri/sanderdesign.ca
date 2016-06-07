@@ -1,19 +1,19 @@
 (function() {
 	"use strict";
 
-	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
 
 		uiGmapGoogleMapApiProvider.configure({
 			//    key: 'your api key',
 			v: '3.17',
 			libraries: 'weather,geometry,visualization'
 		});
-		//
-		// AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+
+		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
 		ngMetaProvider.useTitleSuffix(true);
 		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
-		ngMetaProvider.setDefaultTag('author', 'Sander Freedmanw');
+		ngMetaProvider.setDefaultTag('author', 'Sander Freedman');
 
 		$urlRouterProvider.otherwise('/404');
 		$urlRouterProvider.rule(function ($injector, $location) {
@@ -38,6 +38,6 @@
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var Project = require('./model');
 
 exports.index = function (req,res,next) {
-	Project.find({}, function (err, data) {
+	Project.find({}, {"images": 0}, function (err, data) {
 		if(err) {return handleError(res,err);}
 		return res.status(200).json(data);
 	});

@@ -4,9 +4,6 @@
 	function List ($document, $scope, $state, listResolve, ngMeta) {
 
 		$scope.projects = listResolve;
-		console.log("Testing This?");
-		console.log($scope.projects);
-
 		$scope.search = {
 			category: 'Category',
 			categories: ['Category', 'Residential', 'Commercial', 'Concept', 'Drawing'],

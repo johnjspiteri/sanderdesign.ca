@@ -5,8 +5,6 @@
 
 		$rootScope.display = false;
 
-		console.log('Test');
-
 		$scope.open = function () {
 			$rootScope.display = true;
 			$mdSidenav('navigation').open();

@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function runBlock ($rootScope, $state, $stateParams, ngMeta) {
+	function runBlock ($rootScope, $state, $stateParams, Angularytics, ngMeta) {
 		// $rootScope.$on('$stateChangeError', function(event) {
 		//   $state.go('app.error');
 		// });
@@ -9,9 +9,7 @@
 		  $state.go('app.error');
 		});
 
-		console.log("Run");
-
-		// Angularytics.init();
+		Angularytics.init();
 
 		$rootScope.$state = $state;
 		$rootScope.$stateParams = $stateParams;
@@ -25,6 +23,6 @@
 		.module('app')
 		.run(runBlock);
 
-	runBlock.$inject = ['$rootScope', '$state', '$stateParams', 'ngMeta'];
+	runBlock.$inject = ['$rootScope', '$state', '$stateParams', 'Angularytics', 'ngMeta'];
 
 })();
