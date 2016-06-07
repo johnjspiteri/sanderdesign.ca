@@ -41,6 +41,80 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		uglify: {
+			options: {
+				beautify: true,
+				mangle: false,
+				preserveComments: true,
+				compress: {
+					// drop_console: false,
+					sequences: false
+				}
+			},
+			target: {
+				files: {
+					'client/scripts/app.min.js': [
+						'client/scripts/vendor/jquery/dist/jquery.min.js',
+						'client/scripts/vendor/angular/angular.min.js',
+						'client/scripts/vendor/angular-animate/angular-animate.min.js',
+						'client/scripts/vendor/angular-cookies/angular-cookies.min.js',
+						'client/scripts/vendor/angular-aria/angular-aria.min.js',
+						'client/scripts/vendor/angular-resource/angular.resource.min.js',
+						'client/scripts/vendor/angular-loading-bar/build/loading-bar.js',
+						'client/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
+						'client/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
+						'client/scripts/vendor/angular-elastic/elastic.js',
+						'client/scripts/vendor/lodash/dist/lodash.min.js',
+						'client/scripts/vendor/slick-carousel/slick/slick.js',
+						'client/scripts/vendor/angular-slick/dist/slick.js',
+						// 'client/scripts/vendor/angularytics/dist/angula.ytics.min.js',
+						// 'client/scripts/vendor/angular-material/angular.material.js',
+						'client/scripts/vendor/ngMeta/dist/ngMeta.js',
+
+					'client/scripts/app/module.js',
+					'client/scripts/app/routes.js',
+					'client/scripts/app/config.js',
+					'client/scripts/app/run.js',
+
+					'client/scripts/common/module.js',
+					'client/scripts/common/escape.directive.js',
+					'client/scripts/common/category.filter.js',
+
+					'client/scripts/document/controller.js',
+					'client/scripts/navigation/controller.js',
+					'client/scripts/footer/controller.js',
+
+					'client/scripts/index/module.js',
+					'client/scripts/index/route.js',
+					'client/scripts/index/controller.js',
+
+					'client/scripts/project/module.js',
+					'client/scripts/project/route.js',
+					'client/scripts/project/service.js',
+					'client/scripts/project/list.controller.js',
+					'client/scripts/project/view.controller.js',
+
+					'client/scripts/services/module.js',
+					'client/scripts/services/route.js',
+					'client/scripts/services/controller.js',
+
+					'client/scripts/media/module.js',
+					'client/scripts/media/route.js',
+					'client/scripts/media/controller.js',
+
+					'client/scripts/contact/module.js',
+					'client/scripts/contact/route.js',
+					'client/scripts/contact/service.js',
+					'client/scripts/contact/controller.js',
+
+					'client/scripts/error/module.js',
+					'client/scripts/error/routes.js',
+
+					]
+				}
+			}
+		},
+
 		stylus: {
 			compile: {
 				options: {
@@ -148,13 +222,13 @@ module.exports = function (grunt) {
 	grunt.registerTask('client', [
 		'concurrent:frontend',
 		'autoprefixer',
-		// 'uglify',
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
+		// 'uglify',
 		'jshint:development',
 		'express:server',
-		'minjson',
+		// 'minjson',
 		// 'open:server',
 		'watch'
 	]);

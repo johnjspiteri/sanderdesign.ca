@@ -1,12 +1,14 @@
 .container
 	.slider
 		slick.index(dots="true", autoplay="true", speed="400", autoplay-Speed="4100", slidesToShow='1', draggable="true", arrows="false", easing="linear", accessibility="true", swipe='true', lazyLoad="progressive", variableWidth="false", infinite="true",)
-			div(data-ng-repeat='slide in slides')
-				img(src='{{slide.path}}', alt='')
+			div(data-ng-repeat='image in project.images')
+				img(ng-src='data:{{image.filetype}};base64,{{image.base64}}')
 
 	.view
+		a(ui-sref='app.list')
+			.fa.fa-long-arrow-left
 		h3(data-ng-bind='project.title')
-		p(data-ng-bind='project.location.neighbourhood + ","')
-		p.blue(data-ng-bind='project.location.city')
+		.row
+			h4(data-ng-bind='project.location.neighbourhood + ","')
+			h4.blue(data-ng-bind='project.location.city')
 		p(data-ng-bind='project.description')
-		a.fa.fa-long-arrow-left(ui-sref='app.list')

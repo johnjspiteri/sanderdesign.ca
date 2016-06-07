@@ -3,7 +3,7 @@
 
 	angular
 		.module('app.common', [
-			'angularytics',
+			// 'angularytics',
 			'chieffancypants.loadingBar',
 			'monospaced.elastic',
 			'ngAnimate',
@@ -11,7 +11,6 @@
 			'ngMaterial',
 			'ngMeta',
 			'ngResource',
-			'ngSanitize',
 			'slick',
 			'ui.router',
 			'uiGmapgoogle-maps',

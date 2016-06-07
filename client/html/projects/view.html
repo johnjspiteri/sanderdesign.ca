@@ -2,13 +2,16 @@
 <div class="container">
   <div class="slider">
     <slick dots="true" autoplay="true" speed="400" autoplay-Speed="4100" slidesToShow="1" draggable="true" arrows="false" easing="linear" accessibility="true" swipe="true" lazyLoad="progressive" variableWidth="false" infinite="true" class="index">
-      <div data-ng-repeat="slide in slides"><img src="{{slide.path}}" alt=""/></div>
+      <div data-ng-repeat="image in project.images"><img ng-src="data:{{image.filetype}};base64,{{image.base64}}"/></div>
     </slick>
   </div>
-  <div class="view">
+  <div class="view"><a ui-sref="app.list">
+      <div class="fa fa-long-arrow-left"></div></a>
     <h3 data-ng-bind="project.title"></h3>
-    <p data-ng-bind="project.location.neighbourhood + &quot;,&quot;"></p>
-    <p data-ng-bind="project.location.city" class="blue"></p>
-    <p data-ng-bind="project.description"></p><a ui-sref="app.list" class="fa fa-long-arrow-left"></a>
+    <div class="row">
+      <h4 data-ng-bind="project.location.neighbourhood + &quot;,&quot;"></h4>
+      <h4 data-ng-bind="project.location.city" class="blue"></h4>
+    </div>
+    <p data-ng-bind="project.description"></p>
   </div>
 </div>

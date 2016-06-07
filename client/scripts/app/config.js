@@ -1,15 +1,15 @@
 (function() {
 	"use strict";
 
-	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, cfpLoadingBarProvider, AngularyticsProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
 
 		uiGmapGoogleMapApiProvider.configure({
 			//    key: 'your api key',
 			v: '3.17',
 			libraries: 'weather,geometry,visualization'
 		});
-
-		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+		//
+		// AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
 		ngMetaProvider.useTitleSuffix(true);
 		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
@@ -38,6 +38,6 @@
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'cfpLoadingBarProvider', 'AngularyticsProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

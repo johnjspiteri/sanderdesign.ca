@@ -1,10 +1,11 @@
 (function() {
 	"use strict";
 
-	function List ($document, $rootScope, $scope, $state, listResolve, ngMeta) {
+	function List ($document, $scope, $state, listResolve, ngMeta) {
 
-		$rootScope.display = false;
 		$scope.projects = listResolve;
+		console.log("Testing This?");
+		console.log($scope.projects);
 
 		$scope.search = {
 			category: 'Category',
@@ -43,6 +44,6 @@
 		.module('app.project')
 		.controller('List', List);
 
-	List.$inject = ['$document', '$rootScope', '$scope', '$state', 'listResolve',  'ngMeta'];
+	List.$inject = ['$document', '$scope', '$state', 'listResolve',  'ngMeta'];
 
 })();

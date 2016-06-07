@@ -1,5 +1,5 @@
 .header--container
-	padding 0 0 0 0
+	padding 0
 	margin 0 0 28px 0
 	background none
 	border none
@@ -15,16 +15,16 @@
 
 	&__logo
 		width 700px
-		margin 0 0 0 50px
+		margin 0 0 0 40px
 
 	&__outline
-		width 30px
-		height 30px
-		margin 20px 24px 16px 0
+		width 28px
+		height 28px
+		margin 18px 24px 14px 0
 
 	&__white
-		width 12px
-		height 12px
+		width 10px
+		height 10px
 		margin 9px 0 0 9px
 
 	&__name
@@ -32,15 +32,15 @@
 
 		h1
 			width 202px
-			margin 25px 0 0 0
-			font-size 22px
-			line-height 22px
+			margin 23px 0 0 0
+			font-size 21px
+			line-height 21px
 
 		h2
 			width 320px
-			margin 25px 0 0 0
-			font-size 22px
-			line-height 22px
+			margin 23px 0 0 0
+			font-size 21px
+			line-height 21px
 
 	&__mobile
 		display none
@@ -55,12 +55,13 @@
 	&__tile
 		float left
 		height 54px
-		padding 0 28px
+		padding 0 30px
 		margin 0
-		background $white
+		background $green-light
 		border none
 		border-right $dotted
-		border-bottom $white-border
+		border-bottom $dotted
+		border-radius none
 		cursor pointer
 
 		h2
@@ -68,14 +69,17 @@
 			width 100%
 			padding 0
 			margin 0
-			font-weight 500
-			font-size 18px
+			font-weight 400
+			font-size 21px
 			line-height 62px
-			color $black
+			color $paragraph
 			border none
 			text-align center
+			text-shadow $shadow
 
-	&__tile.active,
-	&__tile:hover
+	&__tile.active
 		background $background
 		border-bottom none
+
+		h2
+			color $black
