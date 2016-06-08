@@ -3,18 +3,12 @@
 		.search__option(data-ng-class='{\'active\': $state.includes(\'app.index\')}')
 			select(data-ng-model='search.category', data-ng-change='updateCategory(search.category);', ng-options="category for category in search.categories")
 			.select-mask
-				p(data-ng-bind='search.category') <span class='player_caret'></span>
+				p {{search.category}} <span class='caret'></span>
 
 		.search__option
 			select(data-ng-model='search.style', data-ng-change='updateStyle(search.style)', ng-options="style for style in search.styles")
 			.select-mask
-				p(data-ng-bind='search.style') <span class='player_caret'></span>
-	//-
-	//- .search__input
-	//- 	input(data-ng-model='search.filter', placeholder='Filter Title')
-	//-
-	//- .search__reset(data-ng-click='reset()')
-	//- 	.fa.fa-times
+				p {{search.style}} <span class='caret'></span>
 
 .listings--holder
 	.listings

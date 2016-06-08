@@ -3,7 +3,7 @@
 
 	function List ($document, $scope, $state, listResolve, ngMeta) {
 
-		$scope.projects = listResolve;
+		$scope.projects = listResolve;		
 		$scope.search = {
 			category: 'Category',
 			categories: ['Category', 'Residential', 'Commercial', 'Concept', 'Drawing'],

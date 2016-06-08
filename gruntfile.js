@@ -225,7 +225,7 @@ module.exports = function (grunt) {
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
-		'uglify',
+		// 'uglify',
 		'jshint:development',
 		'express:server',
 		'minjson',

@@ -1,8 +1,8 @@
 
 <div class="container">
   <div class="slider">
-    <slick dots="true" autoplay="true" speed="400" autoplay-Speed="4100" slidesToShow="1" draggable="true" arrows="false" easing="linear" accessibility="true" swipe="true" lazyLoad="progressive" variableWidth="false" infinite="true" class="index">
-      <div data-ng-repeat="image in project.images"><img ng-src="data:{{image.filetype}};base64,{{image.base64}}"/></div>
+    <slick dots="true" autoplay="true" speed="400" autoplay-Speed="4100" slidesToShow="1" draggable="true" arrows="false" easing="linear" accessibility="true" swipe="true" lazyLoad="progressive" variableWidth="false" infinite="true">
+      <div data-ng-repeat="image in project.images" data-thumb="data:{{image.filetype}};base64,{{image.base64}}"><img ng-src="data:{{image.filetype}};base64,{{image.base64}}"/></div>
     </slick>
   </div>
   <div class="view"><a ui-sref="app.list">
