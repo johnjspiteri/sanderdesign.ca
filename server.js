@@ -4,7 +4,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 		 var express = require('express'),
-			location = require('./development.json'),
+			location = require('./server/data/development.json'),
 			mongoose = require('mongoose'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
@@ -19,7 +19,6 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 			  server = require('http').createServer(app),
 				 env = app.get('env');
 
-app.set('views', __dirname + '/client/html');
 app.use(morgan('dev'));
 app.use(compression());
 app.use(bodyParser.json({limit: '50mb'}));
@@ -57,11 +56,11 @@ if ('development' === env || 'test' === env) {
 	app.use(express.static(__dirname + '/client/script'));
 }
 
-app.use('/api/project', require('./api/project'));
-app.use('/api/contact', require('./api/contact'));
+app.use('/api/project', require('./server/api/project'));
+app.use('/api/contact', require('./server/api/contact'));
 
 app.all('/*', function(req, res, next) {
-	res.sendFile('client/html/index.html', { root: __dirname });
+	res.sendFile('./client/html/index.html', { root: __dirname });
 });
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));

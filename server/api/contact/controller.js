@@ -46,7 +46,7 @@ exports.email = function (req, res) {
 						message: req.body.message,
 						client_message_id: clientData.messageId,
 						internal_message_id: internalData.messageId
-					}
+					};
 				}
 			});
 		}

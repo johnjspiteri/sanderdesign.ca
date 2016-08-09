@@ -3,14 +3,13 @@ header
 		.header
 			.header__brand
 				.header__logo
-					.header__outline
+					.header__outline(ui-sref='app.index')
 						.header__white
 					.header__name
 						h1(ui-sref='app.index') SANDER DESIGN
 						h2 Landscape Architecture
 					.header__mobile
-						h3(data-ng-click='open();') Navigation
-						.fa.fa-paper-plane(href="mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card")
+						.fa.fa-bars(data-ng-click='open();')
 
 			nav
 				.header__tile(ui-sref="app.index", data-ng-class="{'active': $state.includes('app.index')}")
