@@ -59,7 +59,7 @@ module.exports = function (grunt) {
 						'client/scripts/vendor/angular-animate/angular-animate.min.js',
 						'client/scripts/vendor/angular-cookies/angular-cookies.min.js',
 						'client/scripts/vendor/angular-aria/angular-aria.min.js',
-						'client/scripts/vendor/angular-resource/angular.resource.min.js',
+						'client/scripts/vendor/angular-resource/angular-resource.min.js',
 						'client/scripts/vendor/angular-loading-bar/build/loading-bar.js',
 						'client/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
 						'client/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
@@ -68,8 +68,9 @@ module.exports = function (grunt) {
 						'client/scripts/vendor/slick-carousel/slick/slick.js',
 						'client/scripts/vendor/angular-slick/dist/slick.js',
 						'client/scripts/vendor/angularytics/dist/angularytics.min.js',
-						// 'client/scripts/vendor/angular-material/angular.material.js',
+						'client/scripts/vendor/angular-material/angular-material.js',
 						'client/scripts/vendor/ngMeta/dist/ngMeta.js',
+
 
 					'client/scripts/app/module.js',
 					'client/scripts/app/routes.js',
@@ -239,7 +240,7 @@ module.exports = function (grunt) {
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
-		// 'uglify',
+		'uglify',
 		'jshint:all',
 		'express:server',
 		// 'open:server',
