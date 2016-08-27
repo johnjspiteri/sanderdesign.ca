@@ -236,6 +236,7 @@ module.exports = function (grunt) {
 				tasks: [
 					'stylus',
 					'jade',
+					'jshint:all',
 					// 'minjson',
 				]
 			}
@@ -252,7 +253,6 @@ module.exports = function (grunt) {
 	]);
 	grunt.registerTask('server', [
 		// 'uglify',
-		'jshint:all',
 		'express:server',
 		// 'open:server',
 		// 'pageres:multipleUrls',
