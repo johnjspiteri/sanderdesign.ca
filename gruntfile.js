@@ -41,6 +41,17 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		pageres: {
+			multipleUrls: {
+				options: {
+					urls: ['http://sander-interfaceagency.rhcloud.com', 'http://sander-interfaceagency.rhcloud.com/projects/', 'http://sander-interfaceagency.rhcloud.com/projects/contemporary-court/', 'http://sander-interfaceagency.rhcloud.com/media/', 'http://sander-interfaceagency.rhcloud.com/contact/'],
+					sizes: ['375x1000', '768x1000'],
+					dest: '_notes/screenshots',
+					filename: '{{url}}--{{size}}',
+					crop: false
+				}
+			}
+		},
 		uglify: {
 			options: {
 				beautify: true,
@@ -240,10 +251,11 @@ module.exports = function (grunt) {
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
-		'uglify',
+		// 'uglify',
 		'jshint:all',
 		'express:server',
 		// 'open:server',
+		// 'pageres:multipleUrls',
 		'watch'
 	]);
 };
