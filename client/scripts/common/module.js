@@ -5,7 +5,6 @@
 		.module('app.common', [
 			'angularytics',
 			'chieffancypants.loadingBar',
-			'monospaced.elastic',
 			'ngAnimate',
 			'ngAria',
 			'ngMaterial',
