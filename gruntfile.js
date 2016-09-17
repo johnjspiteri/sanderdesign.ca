@@ -215,6 +215,12 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		open: {
+			server: {
+				path: 'http://<%= config.ip %>:<%= config.port %>',
+				app: 'Safari'
+			}
+		},
 		concurrent: {
 			frontend: {
 				options: {
@@ -241,7 +247,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('server', [
 		'uglify',
 		'express:server',
-		// 'open:server',
+		'open:server',
 		// 'pageres:multipleUrls',
 		'watch'
 	]);

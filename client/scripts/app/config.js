@@ -27,7 +27,7 @@
 			return path + '/';
 		});
 
-		cfpLoadingBarProvider.spinnerTemplate = '<div id="loading-bar-spinner"><div class="spinner-icon"></div></div><div id="panel"></div>';
+		cfpLoadingBarProvider.spinnerTemplate = '<div class=\'loadbar\'><div class=\'loadbar__icon\'></div></div>';
 		cfpLoadingBarProvider.latencyThreshold = 50;
 		cfpLoadingBarProvider.includeSpinner = true;
 		cfpLoadingBarProvider.includeBar = false;
