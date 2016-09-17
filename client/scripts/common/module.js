@@ -4,8 +4,7 @@
 	angular
 		.module('app.common', [
 			'angularytics',
-			'chieffancypants.loadingBar',
-			'monospaced.elastic',
+			'angular-loading-bar',
 			'ngAnimate',
 			'ngAria',
 			'ngMaterial',
