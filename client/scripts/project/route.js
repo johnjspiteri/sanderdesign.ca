@@ -19,7 +19,7 @@
 				}
 			})
 			.state('app.view', {
-				url: '/projects/:id',
+				url: '/projects/:id/',
 				views: {
 					'page@app': {
 						templateUrl: 'projects/view.html',

@@ -15,17 +15,17 @@
 		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
 		ngMetaProvider.setDefaultTag('author', 'Sander Freedman');
 
-		$urlRouterProvider.otherwise('/404');
-		$urlRouterProvider.rule(function ($injector, $location) {
-			var path = $location.url();
-			if (path[path.length - 1] === '/' || path.indexOf('/?') > -1) {
-				return;
-			}
-			if (path.indexOf('?') > -1) {
-				return path.replace('?', '/?');
-			}
-			return path + '/';
-		});
+		// $urlRouterProvider.otherwise('/404');
+		// $urlRouterProvider.rule(function ($injector, $location) {
+		// 	var path = $location.url();
+		// 	if (path[path.length - 1] === '/' || path.indexOf('/?') > -1) {
+		// 		return;
+		// 	}
+		// 	if (path.indexOf('?') > -1) {
+		// 		return path.replace('?', '/?');
+		// 	}
+		// 	return path + '/';
+		// });
 
 		cfpLoadingBarProvider.spinnerTemplate = '<div class=\'loadbar\'><div class=\'loadbar__icon\'></div></div>';
 		cfpLoadingBarProvider.latencyThreshold = 50;
