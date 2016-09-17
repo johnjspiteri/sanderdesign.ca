@@ -46,14 +46,14 @@ if ('production' === env) {
 	app.use(express.static(__dirname + '/client'));
 	app.use(express.static(__dirname + '/client/html'));
 	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/script'));
+	app.use(express.static(__dirname + '/client/scripts'));
 	// app.use(favicon(__dirname + '/client/img/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
 	app.use(express.static(__dirname + '/client'));
 	app.use(express.static(__dirname + '/client/html'));
 	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/script'));
+	app.use(express.static(__dirname + '/client/scripts'));
 }
 
 app.use('/api/project', require('./server/api/project'));

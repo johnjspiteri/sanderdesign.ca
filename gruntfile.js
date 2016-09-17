@@ -185,7 +185,7 @@ module.exports = function (grunt) {
 				tasks: 'client'
 			},
 			express: {
-				files: ['client/scripts/**/*.js', 'server/**/*.js', '!node_modules/**', '!client/scripts/vendor/**'],
+				files: ['client/scripts/**/*.js', 'server/**/*.js', '!node_modules/**', '!client/scripts/vendor/**', '!client/scripts/app.min.js'],
 				tasks: 'server',
 				options: {
 					spawn: false
