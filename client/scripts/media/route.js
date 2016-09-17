@@ -1,8 +1,7 @@
 (function() {
 	"use strict";
 
-	function routes($locationProvider, $stateProvider) {
-		$locationProvider.html5Mode(true);
+	function routes($stateProvider) {
 		$stateProvider
 			.state('app.media', {
 				url: '/media/',
@@ -18,6 +17,6 @@
 		.module('app.media')
 		.config(routes);
 
-	routes.$inject = ['$locationProvider', '$stateProvider'];
+	routes.$inject = ['$stateProvider'];
 
 })();

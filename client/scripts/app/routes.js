@@ -1,29 +1,27 @@
 (function() {
 	"use strict";
 
-	function routes($locationProvider, $stateProvider, ngMetaProvider) {
-		$locationProvider.html5Mode(true);
-
+	function routes($stateProvider, ngMetaProvider) {
 		$stateProvider
 			.state('app', {
 				abstract: true,
 				url: '',
 				views: {
 					'document': {
-						templateUrl: 'document/document.html',
-						controller: 'Document'
+						templateUrl: '/client/html/document/document.html',
+						// controller: 'Document'
 					},
-					'navigation@': {
-						templateUrl: 'navigation/navigation.html',
-						controller: 'Document'
+					// 'navigation@': {
+					// 	templateUrl: 'html/navigation/navigation.html',
+					// 	// controller: 'Document'
+					// },
+					'header': {
+						templateUrl: '/client/html/header/header.html'
 					},
-					'header@app': {
-						templateUrl: 'header/header.html'
-					},
-					'footer': {
-						templateUrl: 'footer/footer.html',
-						controller: 'Footer'
-					}
+					// 'footer': {
+					// 	templateUrl: 'html/footer/footer.html',
+					// 	controller: 'Footer'
+					// }
 				}
 			});
 	}
@@ -32,6 +30,6 @@
 		.module('app')
 		.config(routes);
 
-	routes.$inject = ['$locationProvider', '$stateProvider', 'ngMetaProvider'];
+	routes.$inject = ['$stateProvider', 'ngMetaProvider'];
 
 })();

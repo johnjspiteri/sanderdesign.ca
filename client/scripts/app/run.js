@@ -2,9 +2,7 @@
 	"use strict";
 
 	function runBlock ($rootScope, $state, $stateParams, Angularytics, ngMeta) {
-		// $rootScope.$on('$stateChangeError', function(event) {
-		//   $state.go('app.error');
-		// });
+
 		$rootScope.$on('$stateChangeError', function(event) {
 		  $state.go('app.error');
 		});

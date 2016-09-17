@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
 
 		uiGmapGoogleMapApiProvider.configure({
 			//    key: 'your api key',
@@ -11,21 +11,23 @@
 
 		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
+		$locationProvider.html5Mode(true);
+
 		ngMetaProvider.useTitleSuffix(true);
 		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
 		ngMetaProvider.setDefaultTag('author', 'Sander Freedman');
 
-		$urlRouterProvider.otherwise('/404');
-		$urlRouterProvider.rule(function ($injector, $location) {
-			var path = $location.url();
-			if (path[path.length - 1] === '/' || path.indexOf('/?') > -1) {
-				return;
-			}
-			if (path.indexOf('?') > -1) {
-				return path.replace('?', '/?');
-			}
-			return path + '/';
-		});
+		// $urlRouterProvider.otherwise('/404');
+		// $urlRouterProvider.rule(function ($injector, $location) {
+		// 	var path = $location.url();
+		// 	if (path[path.length - 1] === '/' || path.indexOf('/?') > -1) {
+		// 		return;
+		// 	}
+		// 	if (path.indexOf('?') > -1) {
+		// 		return path.replace('?', '/?');
+		// 	}
+		// 	return path + '/';
+		// });
 
 		cfpLoadingBarProvider.spinnerTemplate = '<div id="loading-bar-spinner"><div class="spinner-icon"></div></div><div id="panel"></div>';
 		cfpLoadingBarProvider.latencyThreshold = 50;
@@ -38,6 +40,6 @@
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

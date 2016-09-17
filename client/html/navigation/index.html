@@ -1,0 +1,23 @@
+
+<md-sidenav md-component-id="navigation" esc-key="close();" class="md-sidenav md-closed">
+  <div class="navigation">
+    <div data-ng-click="close();" class="navigation__tile">
+      <div class="fa fa-long-arrow-left"></div>
+    </div>
+    <div ui-sref="app.index" data-ng-click="close();" data-ng-class="{active: $state.includes('app.index')}" class="navigation__tile">
+      <h4>Home</h4>
+    </div>
+    <div ui-sref="app.list" data-ng-click="close();" data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}" class="navigation__tile">
+      <h4>Projects</h4>
+    </div>
+    <div ui-sref="app.services" data-ng-click="close();" data-ng-class="{active: $state.includes('app.services')}" class="navigation__tile">
+      <h4>Services</h4>
+    </div>
+    <div ui-sref="app.media" data-ng-click="close();" data-ng-class="{active: $state.includes('app.media')}" class="navigation__tile">
+      <h4>Media</h4>
+    </div>
+    <div ui-sref="app.contact" data-ng-click="close();" data-ng-class="{active: $state.includes('app.contact')}" class="navigation__tile">
+      <h4>Contact</h4>
+    </div>
+  </div>
+</md-sidenav>

@@ -5,11 +5,11 @@
 		.module('app', [
 			'app.common',
 			'app.index',
-			'app.project',
-			'app.services',
-			'app.media',
-			'app.contact',
-			'app.error'
+			// 'app.project',
+			// 'app.services',
+			// 'app.media',
+			// 'app.contact',
+			// 'app.error'
 		]);
 
 })();

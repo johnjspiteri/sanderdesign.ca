@@ -6,6 +6,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 		 var express = require('express'),
 			location = require('./server/data/development.json'),
 			mongoose = require('mongoose'),
+				path = require('path'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
 	  methodOverride = require('method-override'),
@@ -43,24 +44,26 @@ mongoose
 	.set('debug', true);
 
 if ('production' === env) {
-	app.use(express.static(__dirname + '/client'));
-	app.use(express.static(__dirname + '/client/html'));
-	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/script'));
+	app.use(express.static(__dirname + '/'));
+	// app.use(express.static(__dirname + '/client'));
+	// app.use(express.static(__dirname + '/client/html'));
+	// app.use(express.static(__dirname + '/client/css'));
+	// app.use(express.static(__dirname + '/client/script'));
 	// app.use(favicon(__dirname + '/client/img/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
-	app.use(express.static(__dirname + '/client'));
-	app.use(express.static(__dirname + '/client/html'));
-	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/script'));
+	app.use(express.static(__dirname + '/'));
+	// app.use(express.static(__dirname + '/client/html'));
+	// app.use(express.static(__dirname + '/client/css'));
+	// app.use(express.static(__dirname + '/client/script'));
 }
 
 app.use('/api/project', require('./server/api/project'));
 app.use('/api/contact', require('./server/api/contact'));
 
 app.all('/*', function(req, res, next) {
-	res.sendFile('./client/html/index.html', { root: __dirname });
+	res.sendFile(path.resolve('./client/html/index.html'));
+	// res.sendFile('./client/html/index.html', { root: __dirname });
 });
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));

@@ -1,16 +1,15 @@
 (function() {
 	"use strict";
 
-	function routes($locationProvider, $stateProvider) {
-		$locationProvider.html5Mode(true);
+	function routes($stateProvider) {
 		$stateProvider
 			.state('app.index', {
 				url: '/',
 				views: {
-					'page@app': {
-						templateUrl: 'index/index.html',
-						controller: "Index"
-					}
+					// 'page@app': {
+					// 	templateUrl: '/client/html/index/index.html',
+					// 	controller: "Index"
+					// }
 				}
 			});
 	}
@@ -19,6 +18,6 @@
 		.module('app.index')
 		.config(routes);
 
-	routes.$inject = ['$locationProvider', '$stateProvider'];
+	routes.$inject = ['$stateProvider'];
 
 })();
