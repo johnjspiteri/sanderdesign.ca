@@ -28,7 +28,6 @@
 			},
 			options: {
 				draggable: false,
-				icon: '/img/car-icon.png',
 			}
 		};
 

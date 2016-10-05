@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 	require('time-grunt')(grunt);
 
 	grunt.initConfig({
-		config: grunt.file.readJSON('server/data/development.json'),
+		config: grunt.file.readJSON('server/config/development.json'),
 		minjson: {
 			compile: {
 				files: {
@@ -15,12 +15,13 @@ module.exports = function (grunt) {
 					'server/data/min/commercial/condo-rooftop.min.json': 'server/data/source/commercial/condo-rooftop.json',
 					'server/data/min/commercial/st-barts-church.min.json': 'server/data/source/commercial/st-barts-church.json',
 					'server/data/min/commercial/symposium-cafe.min.json': 'server/data/source/commercial/symposium-cafe.json',
+
 					'server/data/min/residential/arts-crafts.min.json': 'server/data/source/residential/arts-crafts.json',
 					'server/data/min/residential/arts-crafts-country-garden.min.json': 'server/data/source/residential/arts-crafts-country-garden.json',
 					'server/data/min/residential/asian-fusion.min.json': 'server/data/source/residential/asian-fusion.json',
 					'server/data/min/residential/contemporary-court.min.json': 'server/data/source/residential/contemporary-court.json',
 					'server/data/min/residential/contemporary-entry.min.json': 'server/data/source/residential/contemporary-entry.json',
-					'server/data/min/residential/contemporary-front-entry-garden.min.json': 'server/data/source/residential/contemporary-front-entry-garden.json',
+					'server/data/min/residential/contemporary-front-entry.min.json': 'server/data/source/residential/contemporary-front-entry.json',
 					'server/data/min/residential/contemporary-yard.min.json': 'server/data/source/residential/contemporary-yard.json',
 					'server/data/min/residential/country-estate.min.json': 'server/data/source/residential/country-estate.json',
 					'server/data/min/residential/formal-garden.min.json': 'server/data/source/residential/formal-garden.json',
@@ -161,7 +162,7 @@ module.exports = function (grunt) {
 		},
 		newer: {
 			options: {
-				cache: 'client/cache'
+				cache: 'server/config/cache'
 			}
 		},
 		jshint: {
@@ -235,9 +236,9 @@ module.exports = function (grunt) {
 				},
 				tasks: [
 					'stylus',
-					'jade',
+					'newer:jade',
 					'jshint:all',
-					'minjson',
+					// 'minjson',
 				]
 			}
 		}

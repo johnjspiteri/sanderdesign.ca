@@ -5,4 +5,4 @@ _notes/**
 .Trashes 
 ehthumbs.db
 Thumbs.db
-server/data/config/cache/
+server/config/cache/

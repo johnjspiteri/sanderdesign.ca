@@ -2,7 +2,7 @@
 <div class="container">
   <div class="slider">
     <slick dots="true" autoplay="true" speed="400" autoplay-Speed="4100" slidesToShow="1" draggable="true" arrows="false" easing="linear" accessibility="true" swipe="true" lazyLoad="progressive" variableWidth="false" infinite="true" class="index">
-      <div data-ng-repeat="slide in slides"><img src="{{slide.path}}" alt=""/></div>
+      <div data-ng-repeat="slide in slides"><img ng-src="{{slide.path}}" alt=""/></div>
     </slick>
   </div>
   <div class="squares">

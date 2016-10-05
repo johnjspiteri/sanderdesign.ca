@@ -1,14 +1,12 @@
 (function() {
 	"use strict";
 
-	function View ($document, $scope, $state, viewResolve) {
+	function View ($document, $scope, $state, ngMeta, viewResolve) {
 
-		// console.log("Why nont");
 		$scope.project = viewResolve;
-		console.log($scope.project);
 
-		// ngMeta.setTitle($scope.project.title);
-		// ngMeta.setTag('description', 'Here is where you can edit the content on board game view page.');
+		ngMeta.setTitle($scope.project.title);
+		ngMeta.setTag('description', $scope.project.description);
 
 	}
 
@@ -16,6 +14,6 @@
 		.module('app.project')
 		.controller('View', View);
 
-	View.$inject = ['$document', '$scope', '$state', 'viewResolve'];
+	View.$inject = ['$document', '$scope', '$state', 'ngMeta', 'viewResolve'];
 
 })();

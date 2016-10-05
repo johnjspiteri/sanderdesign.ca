@@ -1,10 +1,10 @@
 /*jslint node: true */
 'use strict';
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
 		 var express = require('express'),
-			location = require('./server/data/development.json'),
+			location = require('./server/config/development.json'),
 			mongoose = require('mongoose'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
@@ -47,7 +47,7 @@ if ('production' === env) {
 	app.use(express.static(__dirname + '/client/html'));
 	app.use(express.static(__dirname + '/client/css'));
 	app.use(express.static(__dirname + '/client/scripts'));
-	// app.use(favicon(__dirname + '/client/img/favicon.ico'));
+	app.use(favicon(__dirname + '/client/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
 	app.use(express.static(__dirname + '/client'));
