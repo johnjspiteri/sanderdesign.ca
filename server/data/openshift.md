@@ -35,3 +35,4 @@ mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port --db sander --colle
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port --db sander --collection projects --file server/data/min/residential/zen-pocket-garden.min.json
 
 <!-- mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port --db sander --collection projects --file server/data/min/residential/young-residence.min.json && -->
+
