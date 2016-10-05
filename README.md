@@ -1,5 +1,7 @@
 # sander
 
+mongoimport --host 127.0.0.1 --port 27017 --db sander --collection projects --file server/data/min/residential/zen-pocket-garden.min.json
+
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --drop --file server/data/min/residential/arts-and-crafts.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/asian-fusion.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/contemporary-court.min.json &&

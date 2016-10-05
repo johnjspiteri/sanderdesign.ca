@@ -8,8 +8,10 @@ header
 					.header__name
 						h1(ui-sref='app.index') SANDER DESIGN
 						h2 Landscape Architecture
-					.header__mobile
-						.fa.fa-bars(data-ng-click='open();')
+					.header__mobile(data-ng-click='open();')
+						.bar
+						.bar.b
+						.bar.c
 
 			nav
 				.header__tile(ui-sref="app.index", data-ng-class="{'active': $state.includes('app.index')}")

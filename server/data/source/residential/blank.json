@@ -1,0 +1,47 @@
+{
+	"category": "Residential",
+	"clean": "",
+	"description": "",
+	"images": [{
+		"base64": "",
+		"filename": "1.jpg",
+		"filesize": "",
+		"filetype": "image/jpeg"
+	}, {
+		"base64": "",
+		"filename": "2.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	}, {
+		"base64": "",
+		"filename": "3.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	}, {
+		"base64": "",
+		"filename": "4.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	}, {
+		"base64": "",
+		"filename": "5.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	}],
+	"location": {
+		"city": "",
+		"country": "Canada",
+		"neighbourhood": "",
+		"province": ""
+	},
+	"style": "",
+	"tags": [""],
+	"title": "",
+	"thumb": {
+		"base64": "",
+		"filename": "thumb.jpg",
+		"filesize": "459887",
+		"filetype": "image/jpeg"
+	},
+	"year": ""
+}
