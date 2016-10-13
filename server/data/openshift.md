@@ -3,7 +3,6 @@ mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander -
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/condo-rooftop.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/st-barts-church.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/symposium-cafe.min.json &&
-
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/arts-crafts.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/arts-crafts-country-garden.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/asian-fusion.min.json &&
@@ -31,7 +30,7 @@ mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander -
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/rustic-oasis.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/sunken-garden.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/urban-deck.min.json &&
-mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/zen-garden.min.json
+mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/zen-garden.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/zen-pocket-garden.min.json
 
 <!-- mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/young-residence.min.json && -->

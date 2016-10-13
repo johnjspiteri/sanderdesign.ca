@@ -8,13 +8,13 @@
 		});
 
 		Angularytics.init();
+		ngMeta.init();
 
 		$rootScope.$state = $state;
 		$rootScope.$stateParams = $stateParams;
 		$rootScope.display = false;
 		$state.go('app.index');
 
-		ngMeta.init();
 	}
 
 	angular

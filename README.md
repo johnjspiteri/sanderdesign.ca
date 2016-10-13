@@ -26,6 +26,7 @@ mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander -
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/urban-deck.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/residential/zen-garden.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/condo-courtyard.min.json &&
+mongoimport --host 127.0.0.1 --port 27017 --db sander --collection projects --drop --file server/data/min/commercial/condo-courtyard.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/condo-entrance.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/condo-rooftop.min.json &&
 mongoimport -u admin -p bKwaSRmGJphJ --host 127.0.0.1 --port 60911 --db sander --collection projects --file server/data/min/commercial/st-barts-church.min.json &&

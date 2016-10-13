@@ -49,17 +49,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		pageres: {
-			multipleUrls: {
-				options: {
-					urls: ['http://sander-interfaceagency.rhcloud.com', 'http://sander-interfaceagency.rhcloud.com/projects/', 'http://sander-interfaceagency.rhcloud.com/projects/contemporary-court/', 'http://sander-interfaceagency.rhcloud.com/media/', 'http://sander-interfaceagency.rhcloud.com/contact/'],
-					sizes: ['375x1000', '768x1000'],
-					dest: '_notes/screenshots',
-					filename: '{{url}}--{{size}}',
-					crop: false
-				}
-			}
-		},
 		uglify: {
 			options: {
 				beautify: true,
@@ -74,14 +63,16 @@ module.exports = function (grunt) {
 				files: {
 					'client/scripts/app.min.js': [
 						'client/scripts/vendor/jquery/dist/jquery.min.js',
+						'client/scripts/vendor/lodash/dist/lodash.min.js',
 						'client/scripts/vendor/angular/angular.min.js',
 						'client/scripts/vendor/angular-animate/angular-animate.min.js',
 						'client/scripts/vendor/angular-aria/angular-aria.min.js',
 						'client/scripts/vendor/angular-resource/angular-resource.min.js',
 						'client/scripts/vendor/angular-loading-bar/build/loading-bar.js',
+						'client/scripts/vendor/angular-simple-logger/dist/angular-simple-logger.js',
 						'client/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
+
 						'client/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
-						'client/scripts/vendor/lodash/dist/lodash.min.js',
 						'client/scripts/vendor/slick-carousel/slick/slick.js',
 						'client/scripts/vendor/angular-slick/dist/slick.js',
 						'client/scripts/vendor/angularytics/dist/angularytics.min.js',
@@ -135,6 +126,24 @@ module.exports = function (grunt) {
 				}
 			},
 		},
+		postcss: {
+			options: {
+				map: true,
+				// map: {
+				// 	inline: false, // save all sourcemaps as separate files...
+				// 	annotation: 'dist/css/maps/' // ...to the specified directory
+				// },
+				processors: [
+					require('pixrem')(), // add fallbacks for rem units
+					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+					// require('cssnano')() // minify the result
+				]
+			},
+			dist: {
+				src: '/public/css/*.css'
+			}
+		},
+
 		jade: {
 			compile: {
 				options: {
@@ -148,16 +157,6 @@ module.exports = function (grunt) {
 					ext: '.html',
 					extDot: 'last'
 				}]
-			}
-		},
-		autoprefixer: {
-			options: {
-				browsers: ['last 8 versions']
-			},
-			dist: {
-				files: {
-					'client/css/index.css': 'client/css/index.css'
-				}
 			}
 		},
 		newer: {
@@ -238,7 +237,7 @@ module.exports = function (grunt) {
 					'stylus',
 					'newer:jade',
 					'jshint:all',
-					// 'minjson',
+					'minjson',
 				]
 			}
 		}
@@ -249,14 +248,12 @@ module.exports = function (grunt) {
 	]);
 	grunt.registerTask('client', [
 		'concurrent:frontend',
-		'autoprefixer',
 		// 'usebanner',
 	]);
 	grunt.registerTask('server', [
-		// 'uglify',
+		'uglify',
 		'express:server',
-		'open:server',
-		// 'pageres:multipleUrls',
+		// 'open:server',
 		'watch'
 	]);
 };

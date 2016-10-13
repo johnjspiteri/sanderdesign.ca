@@ -6,7 +6,6 @@ footer
 				h2 Landscape Architecture
 				a(href="https://maps.google.com/maps?q=401+Richmond+Street+West,+Toronto,+ON,+Canada&hl=en&amp;sll=37.0625,-95.677068&amp;sspn=82.350741,125.332031&amp;oq=401+Richmond+&amp;hnear=401+Richmond+St+W,+Toronto,+Ontario+M5V+3A8,+Canada&amp;t=m&amp;z=17") 353-401 Richmond Street W Toronto, Ontario, Canada
 
-				//- .footer__link
 				a(href="mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card") hello@sanderdesign.ca
 					a(href="tel:+1-416-597-1703") 416 597-1703
 
@@ -22,5 +21,5 @@ footer
 
 			.footer__map
 				#map_canvas
-					ui-gmap-google-map(center='map.center', zoom='map.zoom', options='options')
-						ui-gmap-marker(coords='marker.coords', options='marker.options', icon='marker.options.icon', idkey='marker.id')
+					ui-gmap-google-map(center='map.location', zoom='map.zoom', options='map.options')
+						ui-gmap-marker(coords='map.marker.coords', options='map.marker.options', idkey='map.marker.id')

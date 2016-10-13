@@ -17,8 +17,6 @@ md-sidenav
 	box-sizing border-box
 	left 0
 	top 0
-	// background $white
-	// border-right $black-border
 	z-index 999999
 	-webkit-transform translate3d(0%, 0, 0)
 	transform translate3d(0%, 0, 0)
@@ -53,7 +51,7 @@ md-sidenav.md-locked-open-remove
 	height 100%
 	padding 16px 15px 0 15px
 	margin 0
-	background $white
+	background $background
 	border-right $black-border
 
 	&__tile
@@ -61,11 +59,10 @@ md-sidenav.md-locked-open-remove
 		width 142px
 		padding 0
 		margin 0 0 10px 0
-		background $background
+		background $white
 		border $background-border
 		border-radius 2px
 		text-align center
-		text-shadow $dark-shadow
 		cursor pointer
 		outline none
 
@@ -79,7 +76,6 @@ md-sidenav.md-locked-open-remove
 			line-height 16px
 			color $black
 			text-align center
-			text-shadow $shadow
 			outline none
 
 	&__tile.active
@@ -92,7 +88,7 @@ md-sidenav.md-locked-open-remove
 		height 70px
 		padding 0 4px 0 0
 		margin 0 0 0 -1px
-		background $white
+		background $background
 		border $black-border
 		border-top none
 		border-left none

@@ -4,30 +4,30 @@
 	function Footer ($scope, uiGmapGoogleMapApi) {
 
 		$scope.map = {
-			center: {
+			location: {
 				latitude: 43.648125,
 				longitude: -79.394845
 			},
-			zoom: 14
-		};
-		$scope.options = {
-			disableDefaultUI: false,
-			draggable: false,
-			mapTypeControl: false,
-			maxZoom: 14,
-			minZoom: 14,
-			scrollwheel: false,
-			streetViewControl: false,
-			zoomControl: false,
-		};
-		$scope.marker = {
-			id: 1,
-			coords: {
-				latitude: 43.648125,
-				longitude: -79.394845,
-			},
+			zoom: 15,
 			options: {
+				disableDefaultUI: false,
 				draggable: false,
+				mapTypeControl: false,
+				maxZoom: 15,
+				minZoom: 15,
+				scrollwheel: false,
+				streetViewControl: false,
+				zoomControl: false
+			},
+			marker: {
+				id: 1,
+				coords: {
+					latitude: 43.648125,
+					longitude: -79.394845
+				},
+				options: {
+					draggable: false
+				}
 			}
 		};
 
