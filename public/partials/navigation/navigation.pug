@@ -1,0 +1,15 @@
+md-sidenav.md-sidenav.md-closed(md-component-id="navigation", esc-key='close();')
+	.navigation
+		.navigation__tile(ui-sref="app.index", data-ng-click="close();", data-ng-class="{active: $state.includes('app.index')}")
+			h4 Home
+		.navigation__tile(ui-sref="app.list", data-ng-click="close();", data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}")
+			h4 Projects
+		.navigation__tile(ui-sref="app.services", data-ng-click="close();", data-ng-class="{active: $state.includes('app.services')}")
+			h4 Services
+		.navigation__tile(ui-sref="app.media", data-ng-click="close();", data-ng-class="{active: $state.includes('app.media')}")
+			h4 Media
+		.navigation__tile(ui-sref="app.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.contact')}")
+			h4 Contact
+
+	.navigation__close(data-ng-click="close();")
+		.fa.fa-angle-left

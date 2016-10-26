@@ -3,6 +3,7 @@ mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander -
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/commercial/condo-rooftop.min.json &&
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/commercial/st-barts-church.min.json &&
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/commercial/symposium-cafe.min.json &&
+
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/residential/arts-crafts.min.json &&
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/residential/arts-crafts-country-garden.min.json &&
 mongoimport -u admin -p hJYNik9rbQzY --host 127.0.0.1 --port 65151 --db sander --collection projects --file server/data/min/residential/asian-fusion.min.json &&

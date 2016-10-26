@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 	require('time-grunt')(grunt);
 
 	grunt.initConfig({
-		config: grunt.file.readJSON('server/config/development.json'),
+		location: grunt.file.readJSON('server/config/development.json'),
 		minjson: {
 			compile: {
 				files: {
@@ -15,8 +15,6 @@ module.exports = function (grunt) {
 					'server/data/min/commercial/condo-rooftop.min.json': 'server/data/source/commercial/condo-rooftop.json',
 					'server/data/min/commercial/st-barts-church.min.json': 'server/data/source/commercial/st-barts-church.json',
 					'server/data/min/commercial/symposium-cafe.min.json': 'server/data/source/commercial/symposium-cafe.json',
-
-					'server/data/min/residential/arts-crafts.min.json': 'server/data/source/residential/arts-crafts.json',
 					'server/data/min/residential/arts-crafts-country-garden.min.json': 'server/data/source/residential/arts-crafts-country-garden.json',
 					'server/data/min/residential/asian-fusion.min.json': 'server/data/source/residential/asian-fusion.json',
 					'server/data/min/residential/contemporary-court.min.json': 'server/data/source/residential/contemporary-court.json',
@@ -41,6 +39,7 @@ module.exports = function (grunt) {
 					'server/data/min/residential/oval-garden.min.json': 'server/data/source/residential/oval-garden.json',
 					'server/data/min/residential/rock-garden.min.json': 'server/data/source/residential/rock-garden.json',
 					'server/data/min/residential/rustic-oasis.min.json': 'server/data/source/residential/rustic-oasis.json',
+					'server/data/min/residential/shade-garden.min.json': 'server/data/source/residential/shade-garden.json',
 					'server/data/min/residential/sunken-garden.min.json': 'server/data/source/residential/sunken-garden.json',
 					'server/data/min/residential/urban-deck.min.json': 'server/data/source/residential/urban-deck.json',
 					'server/data/min/residential/young-residence.min.json': 'server/data/source/residential/young-residence.json',
@@ -61,58 +60,56 @@ module.exports = function (grunt) {
 			},
 			target: {
 				files: {
-					'client/scripts/app.min.js': [
-						'client/scripts/vendor/jquery/dist/jquery.min.js',
-						'client/scripts/vendor/lodash/dist/lodash.min.js',
-						'client/scripts/vendor/angular/angular.min.js',
-						'client/scripts/vendor/angular-animate/angular-animate.min.js',
-						'client/scripts/vendor/angular-aria/angular-aria.min.js',
-						'client/scripts/vendor/angular-resource/angular-resource.min.js',
-						'client/scripts/vendor/angular-loading-bar/build/loading-bar.js',
-						'client/scripts/vendor/angular-simple-logger/dist/angular-simple-logger.js',
-						'client/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
-
-						'client/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
-						'client/scripts/vendor/slick-carousel/slick/slick.js',
-						'client/scripts/vendor/angular-slick/dist/slick.js',
-						'client/scripts/vendor/angularytics/dist/angularytics.min.js',
-						'client/scripts/vendor/angular-material/angular-material.js',
-						'client/scripts/vendor/ngMeta/dist/ngMeta.js',
-						'client/scripts/app/module.js',
-						'client/scripts/app/routes.js',
-						'client/scripts/app/config.js',
-						'client/scripts/app/run.js',
-						'client/scripts/common/module.js',
-						'client/scripts/common/escape.directive.js',
-						'client/scripts/common/category.filter.js',
-						'client/scripts/document/controller.js',
-						'client/scripts/navigation/controller.js',
-						'client/scripts/footer/controller.js',
-						'client/scripts/index/module.js',
-						'client/scripts/index/route.js',
-						'client/scripts/index/controller.js',
-						'client/scripts/project/module.js',
-						'client/scripts/project/route.js',
-						'client/scripts/project/service.js',
-						'client/scripts/project/list.controller.js',
-						'client/scripts/project/view.controller.js',
-						'client/scripts/services/module.js',
-						'client/scripts/services/route.js',
-						'client/scripts/services/controller.js',
-						'client/scripts/media/module.js',
-						'client/scripts/media/route.js',
-						'client/scripts/media/controller.js',
-						'client/scripts/contact/module.js',
-						'client/scripts/contact/route.js',
-						'client/scripts/contact/service.js',
-						'client/scripts/contact/controller.js',
-						'client/scripts/error/module.js',
-						'client/scripts/error/routes.js'
+					'public/scripts/app.min.js': [
+						'public/scripts/vendor/jquery/dist/jquery.min.js',
+						'public/scripts/vendor/lodash/dist/lodash.min.js',
+						'public/scripts/vendor/angular/angular.min.js',
+						'public/scripts/vendor/angular-animate/angular-animate.min.js',
+						'public/scripts/vendor/angular-aria/angular-aria.min.js',
+						'public/scripts/vendor/angular-resource/angular-resource.min.js',
+						'public/scripts/vendor/angular-loading-bar/build/loading-bar.js',
+						'public/scripts/vendor/angular-simple-logger/dist/angular-simple-logger.js',
+						'public/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
+						'public/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
+						'public/scripts/vendor/slick-carousel/slick/slick.js',
+						'public/scripts/vendor/angular-slick/dist/slick.js',
+						'public/scripts/vendor/angularytics/dist/angularytics.min.js',
+						'public/scripts/vendor/angular-material/angular-material.js',
+						'public/scripts/vendor/ngMeta/dist/ngMeta.js',
+						'public/scripts/app/module.js',
+						'public/scripts/app/routes.js',
+						'public/scripts/app/config.js',
+						'public/scripts/app/run.js',
+						'public/scripts/common/module.js',
+						'public/scripts/common/escape.directive.js',
+						'public/scripts/common/category.filter.js',
+						'public/scripts/document/controller.js',
+						'public/scripts/navigation/controller.js',
+						'public/scripts/footer/controller.js',
+						'public/scripts/index/module.js',
+						'public/scripts/index/route.js',
+						'public/scripts/index/controller.js',
+						'public/scripts/project/module.js',
+						'public/scripts/project/route.js',
+						'public/scripts/project/service.js',
+						'public/scripts/project/list.controller.js',
+						'public/scripts/project/view.controller.js',
+						'public/scripts/services/module.js',
+						'public/scripts/services/route.js',
+						'public/scripts/services/controller.js',
+						'public/scripts/media/module.js',
+						'public/scripts/media/route.js',
+						'public/scripts/media/controller.js',
+						'public/scripts/contact/module.js',
+						'public/scripts/contact/route.js',
+						'public/scripts/contact/service.js',
+						'public/scripts/contact/controller.js',
+						'public/scripts/error/module.js',
+						'public/scripts/error/routes.js'
 					]
 				}
 			}
 		},
-
 		stylus: {
 			compile: {
 				options: {
@@ -122,7 +119,7 @@ module.exports = function (grunt) {
 					import: ['config.styl'],
 				},
 				files: {
-					'client/css/index.css': 'client/styl/index.styl',
+					'public/css/index.css': 'public/styl/index.styl',
 				}
 			},
 		},
@@ -136,30 +133,47 @@ module.exports = function (grunt) {
 				processors: [
 					require('pixrem')(), // add fallbacks for rem units
 					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-					// require('cssnano')() // minify the result
+					require('cssnano')() // minify the result
 				]
 			},
 			dist: {
 				src: '/public/css/*.css'
 			}
 		},
-
-		jade: {
+		puglint: {
+			lint: {
+				options: {
+					config: {
+						disallowHtmlText: true,
+						validateIndentation: "\t",
+						disallowClassAttributeWithStaticValue: true,
+						requireClassLiteralsBeforeAttributes: true,
+						requireIdLiteralsBeforeAttributes: true,
+						validateDivTags: true,
+						disallowDuplicateAttributes: true,
+						disallowMultipleLineBreaks: true
+					}
+				},
+				src: ['public/partials/**/*.pug']
+			},
+		},
+		pug: {
 			compile: {
 				options: {
-					pretty: true,
+					data: {
+						debug: true
+					}
 				},
 				files: [{
 					expand: true,
-					cwd: 'client/partials',
-					src: '**/*.jade',
-					dest: 'client/html',
+					cwd: 'public/partials',
+					src: '**/*.pug',
+					dest: 'public/html',
 					ext: '.html',
 					extDot: 'last'
 				}]
 			}
-		},
-		newer: {
+		},		newer: {
 			options: {
 				cache: 'server/config/cache'
 			}
@@ -169,13 +183,12 @@ module.exports = function (grunt) {
 				reporter: require('jshint-stylish'),
 			},
 			jshintrc: ".jshintrc",
-			all: [
+			lint: [
 				'gruntfile.js',
-				'client/**/*.js',
+				'public/**/*.js',
 				'server/**/*.js',
-				'!client/scripts/app.min.js',
-				'!client/scripts/vendor/**/*.js',
-				'!server/data/**/*.js',
+				'!public/scripts/app.min.js',
+				'!public/scripts/vendor/**/*.js',
 				'!node_modules/**/*.js'
 			]
 		},
@@ -183,16 +196,22 @@ module.exports = function (grunt) {
 			options: {
 				livereload: true,
 			},
-			stylus: {
-				files: 'client/styl/**/*.styl',
-				tasks: 'client'
+			styles: {
+				files: 'public/styl/**/*.styl',
+				tasks: 'build-styles'
 			},
-			jade: {
-				files: 'client/partials/**/*.jade',
-				tasks: 'client'
+			partials: {
+				files: 'public/partials/**/*.pug',
+				tasks: 'build-partials'
 			},
-			express: {
-				files: ['client/scripts/**/*.js', 'server/**/*.js', '!node_modules/**', '!client/scripts/vendor/**', '!client/scripts/app.min.js'],
+			scripts: {
+				files: [
+					'public/scripts/**/*.js',
+					'server/**/*.js',
+					'!node_modules/**',
+					'!public/scripts/app.min.js',
+					'!public/scripts/vendor/**'
+				],
 				tasks: 'server',
 				options: {
 					spawn: false
@@ -224,36 +243,65 @@ module.exports = function (grunt) {
 		},
 		open: {
 			server: {
-				path: 'http://<%= config.ip %>:<%= config.port %>',
+				path: 'http://<%= location.ip %>:<%= location.port %>',
 				app: 'Safari'
 			}
 		},
 		concurrent: {
-			frontend: {
+			lint: {
 				options: {
 					logConcurrentOutput: true
 				},
 				tasks: [
-					'stylus',
-					'newer:jade',
-					'jshint:all',
-					'minjson',
-				]
-			}
+					'newer:puglint:lint',
+					'newer:jshint:lint'
+				],
+			},
+			build: {
+				options: {
+					logConcurrentOutput: true
+				},
+				tasks: [
+					'newer:stylus:compile',
+					'newer:pug:compile',
+				],
+			},
+			process: {
+				options: {
+					logConcurrentOutput: true
+				},
+				tasks: [
+					'postcss',
+					'uglify'
+				],
+			},
 		}
 	});
 	grunt.registerTask('default', [
-		'client',
-		'server'
+		'concurrent:lint',
+		'concurrent:build',
+		'concurrent:process',
+		'newer:uglify',
+		'express:server',
+		'open:server',
+		'watch'
 	]);
-	grunt.registerTask('client', [
-		'concurrent:frontend',
+	grunt.registerTask('build-styles', [
+		'stylus:compile',
+		'postcss',
+	]);
+	grunt.registerTask('build-partials', [
+		'newer:puglint:lint',
+		'newer:pug:compile',
 		// 'usebanner',
 	]);
-	grunt.registerTask('server', [
-		'uglify',
+	grunt.registerTask('build-scripts', [
+		'newer:jshint:lint',
+		'build-server'
+	]);
+	grunt.registerTask('build-server', [
+		'newer:uglify',
 		'express:server',
-		// 'open:server',
-		'watch'
+		'watch',
 	]);
 };

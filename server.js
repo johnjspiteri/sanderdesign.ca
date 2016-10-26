@@ -43,24 +43,24 @@ mongoose
 	.set('debug', true);
 
 if ('production' === env) {
-	app.use(express.static(__dirname + '/client'));
-	app.use(express.static(__dirname + '/client/html'));
-	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/scripts'));
-	app.use(favicon(__dirname + '/client/favicon.ico'));
+	app.use(express.static(__dirname + '/public'));
+	app.use(express.static(__dirname + '/public/html'));
+	app.use(express.static(__dirname + '/public/css'));
+	app.use(express.static(__dirname + '/public/scripts'));
+	app.use(favicon(__dirname + '/public/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
-	app.use(express.static(__dirname + '/client'));
-	app.use(express.static(__dirname + '/client/html'));
-	app.use(express.static(__dirname + '/client/css'));
-	app.use(express.static(__dirname + '/client/scripts'));
+	app.use(express.static(__dirname + '/public'));
+	app.use(express.static(__dirname + '/public/html'));
+	app.use(express.static(__dirname + '/public/css'));
+	app.use(express.static(__dirname + '/public/scripts'));
 }
 
 app.use('/api/project', require('./server/api/project'));
 app.use('/api/contact', require('./server/api/contact'));
 
 app.all('/*', function(req, res, next) {
-	res.sendFile('./client/html/index.html', { root: __dirname });
+	res.sendFile('./public/html/index.html', { root: __dirname });
 });
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));

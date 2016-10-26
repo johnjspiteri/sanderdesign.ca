@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+            "folder_exclude_patterns": [
+                "_notes",
+                "node_modules",
+                "public/css",
+                "public/fonts",
+                "public/html",
+                "public/scripts/vendor",
+                "server/data/min"
+            ],
+            "file_exclude_patterns":
+            [
+                "*.min.js",
+            ],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}
