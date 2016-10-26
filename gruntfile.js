@@ -293,7 +293,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('build-partials', [
 		'newer:puglint:lint',
 		'newer:pug:compile',
-		// 'usebanner',
 	]);
 	grunt.registerTask('build-scripts', [
 		'newer:jshint:lint',
