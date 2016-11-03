@@ -4,7 +4,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
 		 var express = require('express'),
-			location = require('./server/config/development.json'),
+			location = require('./server/build/development.json'),
 			mongoose = require('mongoose'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),

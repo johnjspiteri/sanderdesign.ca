@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 	require('time-grunt')(grunt);
 
 	grunt.initConfig({
-		location: grunt.file.readJSON('server/config/development.json'),
+		location: grunt.file.readJSON('server/build/development.json'),
 		minjson: {
 			compile: {
 				files: {
@@ -126,18 +126,14 @@ module.exports = function (grunt) {
 		postcss: {
 			options: {
 				map: true,
-				// map: {
-				// 	inline: false, // save all sourcemaps as separate files...
-				// 	annotation: 'dist/css/maps/' // ...to the specified directory
-				// },
 				processors: [
-					require('pixrem')(), // add fallbacks for rem units
-					require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-					require('cssnano')() // minify the result
+					require('pixrem')(),
+					require('autoprefixer')({browsers: 'last 2 versions'}),
+					require('cssnano')()
 				]
 			},
 			dist: {
-				src: 'public/css/*.css'
+				src: 'public/css/index.css'
 			}
 		},
 		puglint: {
@@ -173,9 +169,10 @@ module.exports = function (grunt) {
 					extDot: 'last'
 				}]
 			}
-		},		newer: {
+		},
+		newer: {
 			options: {
-				cache: 'server/config/cache'
+				cache: 'server/build/cache'
 			}
 		},
 		jshint: {
@@ -206,13 +203,14 @@ module.exports = function (grunt) {
 			},
 			scripts: {
 				files: [
+					'gruntfile.js',
 					'public/scripts/**/*.js',
 					'server/**/*.js',
 					'!node_modules/**',
 					'!public/scripts/app.min.js',
 					'!public/scripts/vendor/**'
 				],
-				tasks: 'server',
+				tasks: 'build-server',
 				options: {
 					spawn: false
 				},
@@ -232,7 +230,7 @@ module.exports = function (grunt) {
 			custom: {
 				options: {
 					'web-port': 9000,
-					'web-host': '<%- config.ip %>',
+					'web-host': '<%- location.ip %>',
 					'debug-port': 5857,
 					'save-live-edit': true,
 					'no-preload': true,
@@ -281,7 +279,7 @@ module.exports = function (grunt) {
 		'concurrent:lint',
 		'concurrent:build',
 		'concurrent:process',
-		'newer:uglify',
+		'newer:uglify:target',
 		'express:server',
 		'open:server',
 		'watch'
@@ -296,10 +294,7 @@ module.exports = function (grunt) {
 	]);
 	grunt.registerTask('build-scripts', [
 		'newer:jshint:lint',
-		'build-server'
-	]);
-	grunt.registerTask('build-server', [
-		'newer:uglify',
+		'newer:uglify:target',
 		'express:server',
 		'watch',
 	]);

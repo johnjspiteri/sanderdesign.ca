@@ -149,6 +149,21 @@
 	],
 	"file_history":
 	[
+		"/Users/jj/Development/sander/sander.sublime-project",
+		"/Users/jj/Development/sander/package.json",
+		"/Users/jj/Development/interface-corporate/public/scripts/app/config.js",
+		"/Users/jj/Development/interface-corporate/gruntfile.js",
+		"/Users/jj/Development/interface-corporate/public/styl/320/block/block.styl",
+		"/Users/jj/Development/interface-corporate/public/styl/config.styl",
+		"/Users/jj/Development/interface-corporate/public/styl/base.styl",
+		"/Users/jj/Development/interface-corporate/README.md",
+		"/Users/jj/Development/interface-corporate/.gitignore",
+		"/Users/jj/Development/interface-corporate/public/styl/320/block/loader.styl",
+		"/Users/jj/Development/interface-corporate/public/styl/index.styl",
+		"/Users/jj/Development/interface-corporate/package.json",
+		"/Users/jj/Development/interface-corporate/public/styl/320/block/header.styl",
+		"/Users/jj/Development/interface-corporate/public/partials/index.pug",
+		"/Users/jj/Development/interface-corporate/server/data/interface/interface.md",
 		"/Users/jj/Development/interface-corporate/interface-corporate.sublime-project",
 		"/Users/jj/Development/interface-corporate/server/data/interface.md",
 		"/Users/jj/Development/automotive/auto/a1/README.md",
@@ -261,22 +276,7 @@
 		"/Users/jj/Development/bestdeals4moms.com/client/styl/360/card.styl",
 		"/Users/jj/Development/bestdeals4moms.com/client/js/index/index.email.modal.controller.js",
 		"/Users/jj/Development/bestdeals4moms.com/client/styl/320/card.styl",
-		"/Users/jj/Development/bestdeals4moms.com/server/api/mail/mail.controller.js",
-		"/Users/jj/Development/bestdeals4moms.com/client/js/vendor/angular-file-saver/src/dependencies/file-saver.service.js",
-		"/Users/jj/Development/bestdeals4moms.com/server/api/text/text.controller.js",
-		"/Users/jj/Development/automotive-v2/client/styl/index.styl",
-		"/Users/jj/Development/automotive-v2/client/jade/index/index.slide.jade",
-		"/Users/jj/Development/automotive-v2/client/styl/768/column.two.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/900/column.two.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/1100/column.two.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/1100/columns.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/900/columns.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/560/column.two.styl",
-		"/Users/jj/Development/automotive-v2/automotive-v2.sublime-project",
-		"/Users/jj/Development/automotive-v2/client/styl/768/columns.styl",
-		"/Users/jj/Development/automotive-v2/client/js/index.jade",
-		"/Users/jj/Development/automotive-v2/client/styl/480/column.two.styl",
-		"/Users/jj/Development/automotive-v2/client/styl/360/column.two.styl"
+		"/Users/jj/Development/bestdeals4moms.com/server/api/mail/mail.controller.js"
 	],
 	"find":
 	{
@@ -287,6 +287,7 @@
 		"height": 149.0,
 		"where_history":
 		[
+			"*.styl",
 			"*.js",
 			"*.styl",
 			"*.jade",
@@ -312,6 +313,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"1",
+			"2",
+			"3",
+			"6",
+			"backdrop",
+			"footer",
+			"loader",
+			"uglify",
+			"^",
 			" ",
 			"data:image/jpeg;base64,",
 			"\"",
@@ -430,16 +440,7 @@
 			"pharmacies",
 			"games",
 			"Users/jj/Development/bestdeals4moms.com/",
-			"best",
-			"boardwalk",
-			"best",
-			"nat10nal",
-			"21px",
-			"19px",
-			"24px",
-			"18px",
-			"23px",
-			"25px"
+			"best"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -526,6 +527,58 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"grunt",
+				"gruntfile.js"
+			],
+			[
+				"const",
+				"public/styl/config.styl"
+			],
+			[
+				"app",
+				"public/scripts/app/config.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"appcon",
+				"public/scripts/app/config.js"
+			],
+			[
+				"base",
+				"public/styl/base.styl"
+			],
+			[
+				"indst",
+				"public/styl/index.styl"
+			],
+			[
+				"32load",
+				"public/styl/320/block/loader.styl"
+			],
+			[
+				"appconfi",
+				"public/scripts/app/config.js"
+			],
+			[
+				"32head",
+				"public/styl/320/block/header.styl"
+			],
+			[
+				"ind",
+				"public/partials/index.pug"
+			],
+			[
+				"pack",
+				"package.json"
+			],
 			[
 				"finanfinj",
 				"client/jade/financing/financing.jade"
@@ -779,10 +832,6 @@
 				"client/styl/1100/header.styl"
 			],
 			[
-				"base",
-				"client/styl/base.styl"
-			],
-			[
 				"indja",
 				"client/js/index.jade"
 			],
@@ -831,10 +880,6 @@
 				"client/js/index.jade"
 			],
 			[
-				"grunt",
-				"server/gruntfile.js"
-			],
-			[
 				"panbacoc",
 				"client/js/panel/panel.backend.controller.js"
 			],
@@ -845,10 +890,6 @@
 			[
 				"apipans",
 				"server/api/panel/panel.controller.js"
-			],
-			[
-				"read",
-				"README.md"
 			],
 			[
 				"panmod",
@@ -869,10 +910,6 @@
 			[
 				"head",
 				"client/jade/header/header.jade"
-			],
-			[
-				"pack",
-				"package.json"
 			],
 			[
 				"4he",
@@ -939,10 +976,6 @@
 				"client/js/index/index.controller.js"
 			],
 			[
-				"32head",
-				"client/styl/320/header.styl"
-			],
-			[
 				"1c",
 				"client/styl/1100/card.styl"
 			],
@@ -1005,38 +1038,6 @@
 			[
 				"apitextcon",
 				"server/api/text/text.controller.js"
-			],
-			[
-				"apmail",
-				"server/api/mail/mail.controller.js"
-			],
-			[
-				"inst",
-				"client/styl/index.styl"
-			],
-			[
-				"hedja",
-				"client/jade/header/header.jade"
-			],
-			[
-				"36h",
-				"client/styl/360/header.styl"
-			],
-			[
-				"32hea",
-				"client/styl/320/header.styl"
-			],
-			[
-				"32colutw",
-				"client/styl/320/column.two.styl"
-			],
-			[
-				"inslidj",
-				"client/jade/index/index.slide.jade"
-			],
-			[
-				"11colu",
-				"client/styl/1100/columns.styl"
 			]
 		],
 		"width": 0.0
