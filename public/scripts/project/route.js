@@ -8,7 +8,7 @@
 				url: '/projects/',
 				views: {
 					'page@app': {
-						templateUrl: 'projects/list.html',
+						templateUrl: 'public/html/projects/list.html',
 						resolve: {
 							listResolve: ['project', function(project) {
 								return project.query().$promise;
@@ -22,7 +22,7 @@
 				url: '/projects/:id/',
 				views: {
 					'page@app': {
-						templateUrl: 'projects/view.html',
+						templateUrl: 'public/html/projects/view.html',
 						resolve: {
 							viewResolve: ['$stateParams', 'project', function( $stateParams, project) {
 								return project.show({id: $stateParams.id}).$promise;

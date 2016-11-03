@@ -8,7 +8,7 @@
 				url: '/media/',
 				views: {
 					'page@app': {
-						templateUrl: 'media/list.html',
+						templateUrl: 'public/html/media/list.html',
 					}
 				}
 			});

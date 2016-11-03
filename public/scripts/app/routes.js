@@ -10,18 +10,18 @@
 				url: '',
 				views: {
 					'document': {
-						templateUrl: 'document/document.html',
+						templateUrl: 'public/html/document/document.html',
 						controller: 'Document'
 					},
 					'navigation@': {
-						templateUrl: 'navigation/navigation.html',
+						templateUrl: 'public/html/navigation/navigation.html',
 						controller: 'Document'
 					},
 					'header@app': {
-						templateUrl: 'header/header.html'
+						templateUrl: 'public/html/header/header.html'
 					},
 					'footer': {
-						templateUrl: 'footer/footer.html',
+						templateUrl: 'public/html/footer/footer.html',
 						controller: 'Footer'
 					}
 				}

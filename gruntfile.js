@@ -119,7 +119,7 @@ module.exports = function (grunt) {
 					import: ['config.styl'],
 				},
 				files: {
-					'public/css/index.css': 'public/styl/index.styl',
+					'public/css/styles.css': 'public/styl/index.styl',
 				}
 			},
 		},
@@ -133,7 +133,7 @@ module.exports = function (grunt) {
 				]
 			},
 			dist: {
-				src: 'public/css/index.css'
+				src: 'public/css/styles.css'
 			}
 		},
 		puglint: {
@@ -210,7 +210,7 @@ module.exports = function (grunt) {
 					'!public/scripts/app.min.js',
 					'!public/scripts/vendor/**'
 				],
-				tasks: 'build-server',
+				tasks: 'build-scripts',
 				options: {
 					spawn: false
 				},
@@ -251,8 +251,8 @@ module.exports = function (grunt) {
 					logConcurrentOutput: true
 				},
 				tasks: [
-					'newer:puglint:lint',
-					'newer:jshint:lint'
+					'puglint:lint',
+					'jshint:lint'
 				],
 			},
 			build: {
@@ -260,8 +260,8 @@ module.exports = function (grunt) {
 					logConcurrentOutput: true
 				},
 				tasks: [
-					'newer:stylus:compile',
-					'newer:pug:compile',
+					'stylus:compile',
+					'pug:compile',
 				],
 			},
 			process: {
@@ -270,7 +270,7 @@ module.exports = function (grunt) {
 				},
 				tasks: [
 					'postcss',
-					'uglify'
+					'uglify:target'
 				],
 			},
 		}
@@ -279,7 +279,7 @@ module.exports = function (grunt) {
 		'concurrent:lint',
 		'concurrent:build',
 		'concurrent:process',
-		'newer:uglify:target',
+		'uglify:target',
 		'express:server',
 		'open:server',
 		'watch'
@@ -289,12 +289,12 @@ module.exports = function (grunt) {
 		'postcss',
 	]);
 	grunt.registerTask('build-partials', [
-		'newer:puglint:lint',
-		'newer:pug:compile',
+		'puglint:lint',
+		'pug:compile',
 	]);
 	grunt.registerTask('build-scripts', [
-		'newer:jshint:lint',
-		'newer:uglify:target',
+		'jshint:lint',
+		'uglify:target',
 		'express:server',
 		'watch',
 	]);

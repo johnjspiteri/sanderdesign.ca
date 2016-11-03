@@ -12,7 +12,7 @@
 				url: '/404',
 				views: {
 					'page@app': {
-						templateUrl: 'error/error.html'
+						templateUrl: 'public/html/error/error.html'
 					}
 				}
 			});

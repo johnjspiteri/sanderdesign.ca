@@ -45,24 +45,18 @@ mongoose
 	.set('debug', true);
 
 if ('production' === env) {
-	app.use(express.static(__dirname + '/public'));
-	app.use(express.static(__dirname + '/public/html'));
-	app.use(express.static(__dirname + '/public/css'));
-	app.use(express.static(__dirname + '/public/scripts'));
-	// app.use(favicon(__dirname + '/public/favicon.ico'));
+	app.use(express.static('./'));
+	// app.use(favicon('/public/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
-	app.use(express.static(__dirname + '/public'));
-	app.use(express.static(__dirname + '/public/html'));
-	app.use(express.static(__dirname + '/public/css'));
-	app.use(express.static(__dirname + '/public/scripts'));
+	app.use(express.static('./'));
 }
 
 app.use('/api/project', require('./server/api/project'));
 app.use('/api/contact', require('./server/api/contact'));
 
-app.all('/*', function(req, res, next) {
-	res.sendFile('./public/html/index.html', { root: __dirname });
+app.get('/*', function(req, res, next) {
+	res.sendFile(path.resolve('./public/html/index.html'));
 });
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));

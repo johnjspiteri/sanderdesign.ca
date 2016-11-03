@@ -8,7 +8,7 @@
 				url: '/contact/',
 				views: {
 					'page@app': {
-						templateUrl: 'contact/contact.html',
+						templateUrl: 'public/html/contact/contact.html',
 						controller: 'Contact'
 					}
 				}
