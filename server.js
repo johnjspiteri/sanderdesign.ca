@@ -7,12 +7,14 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 			location = require('./server/build/development.json'),
 				path = require('path'),
 			mongoose = require('mongoose'),
-			 // favicon = require('serve-favicon'),
+			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
 			  colors = require('colors'),
+			  logger = require('morgan'),
 	  methodOverride = require('method-override'),
 		 compression = require('compression'),
 		  bodyParser = require('body-parser'),
+		cookieParser = require('cookie-parser'),
 		errorHandler = require('errorhandler'),
 				 app = express(),
 				  ip = process.env.OPENSHIFT_NODEJS_IP || location.ip,
@@ -26,13 +28,14 @@ app.use(compression());
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(methodOverride());
+app.use(cookieParser());
 
 if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
-	connection = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ':' +
-	process.env.OPENSHIFT_MONGODB_DB_PASSWORD + '@' +
-	process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
-	process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
-	process.env.OPENSHIFT_APP_NAME;
+  connection = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ':' +
+  process.env.OPENSHIFT_MONGODB_DB_PASSWORD + '@' +
+  process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+  process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+  process.env.OPENSHIFT_APP_NAME;
 }
 
 mongoose.connect(connection);
@@ -41,7 +44,6 @@ db.on('error', console.error.bind(console, 'Error connecting to MongoDB'));
 db.once('open', function callback () {
 	console.log('Connected to MongoDB');
 });
-
 mongoose
 	.set('debug', true);
 
@@ -54,7 +56,7 @@ if ('development' === env || 'test' === env) {
 }
 
 app.use('/api/project', require('./server/api/project'));
-app.use('/api/contact', require('./server/api/contact'));
+// app.use('/api/contact', require('./server/api/contact'));
 
 app.get('/*', function(req, res, next) {
 	res.sendFile(path.resolve('./public/html/index.html'));
