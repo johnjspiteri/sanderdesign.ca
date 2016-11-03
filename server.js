@@ -7,7 +7,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 			location = require('./server/build/development.json'),
 				path = require('path'),
 			mongoose = require('mongoose'),
-			 favicon = require('serve-favicon'),
+			 // favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
 			  colors = require('colors'),
 	  methodOverride = require('method-override'),
@@ -41,6 +41,7 @@ db.on('error', console.error.bind(console, 'Error connecting to MongoDB'));
 db.once('open', function callback () {
 	console.log('Connected to MongoDB');
 });
+
 mongoose
 	.set('debug', true);
 
