@@ -1,17 +1,17 @@
 {
 	"name": "sanderApp",
+	"private": true,
 	"version": "0.1.0",
 	"homepage": "http://www.sanderdesign.ca",
 	"description": "Sander Design Application",
-	"private": true,
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
 	"author": {
 		"name": "John Spiteri",
 		"email": "john@johnspiteri.io",
 		"url": "http://johnspiteri.io"
-	},
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
 	},
 	"repository": {
 		"type": "git",
