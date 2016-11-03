@@ -47,7 +47,7 @@ if ('production' === env) {
 	app.use(express.static(__dirname + '/public/html'));
 	app.use(express.static(__dirname + '/public/css'));
 	app.use(express.static(__dirname + '/public/scripts'));
-	app.use(favicon(__dirname + '/public/favicon.ico'));
+	// app.use(favicon(__dirname + '/public/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
 	app.use(express.static(__dirname + '/public'));
