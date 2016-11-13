@@ -1,14 +1,14 @@
 /*jslint node: true */
 'use strict';
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 		 var express = require('express'),
-			location = require('./server/build/development.json'),
-				path = require('path'),
 			mongoose = require('mongoose'),
+			location = require('./server/build/development.json'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
+				path = require('path'),
 			  colors = require('colors'),
 			  logger = require('morgan'),
 	  methodOverride = require('method-override'),
@@ -49,7 +49,7 @@ mongoose
 
 if ('production' === env) {
 	app.use(express.static('./'));
-	// app.use(favicon('/public/favicon.ico'));
+	// app.use(favicon('/public/img/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
 	app.use(express.static('./'));
@@ -58,7 +58,7 @@ if ('development' === env || 'test' === env) {
 app.use('/api/project', require('./server/api/project'));
 // app.use('/api/contact', require('./server/api/contact'));
 
-app.get('/*', function(req, res, next) {
+app.all('/*', function(req, res, next) {
 	res.sendFile(path.resolve('./public/html/index.html'));
 });
 
