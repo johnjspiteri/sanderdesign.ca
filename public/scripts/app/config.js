@@ -1,21 +1,25 @@
 (function() {
 	"use strict";
 
-	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
 
 		$locationProvider.html5Mode(true);
 
-		$urlRouterProvider.otherwise("/404/");
-		$urlRouterProvider.rule(function($injector, $location) {
+		$urlRouterProvider
+			.rule(function($injector, $location) {
+				var path = $location.path(),
+				hasTrailingSlash = path[path.length-1] === '/';
+				if(!hasTrailingSlash) {
+					var newPath = path + '/';
+					return newPath;
+				}});
+		$urlRouterProvider
+			.otherwise("/404/");
 
-			var path = $location.path();
-			var hasTrailingSlash = path[path.length-1] === '/';
-
-			if(!hasTrailingSlash) {
-				var newPath = path + '/';
-				return newPath;
-			}
-		});
+		cfpLoadingBarProvider.latencyThreshold = 2;
+		cfpLoadingBarProvider.includeSpinner = true;
+		cfpLoadingBarProvider.includeBar = false;
+		cfpLoadingBarProvider.spinnerTemplate = '<div class=\'backdrop\'></div>';
 
 		uiGmapGoogleMapApiProvider.configure({
 			//    key: 'your api key',
@@ -29,17 +33,12 @@
 		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
 		ngMetaProvider.setDefaultTag('author', 'Sander Freedman');
 
-		// cfpLoadingBarProvider.spinnerTemplate = '<div class=\'loadbar\'><div class=\'loadbar__icon\'></div></div>';
-		// cfpLoadingBarProvider.latencyThreshold = 50;
-		// cfpLoadingBarProvider.includeSpinner = true;
-		// cfpLoadingBarProvider.includeBar = false;
-
 	}
 
 	angular
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

@@ -1,15 +1,15 @@
-md-sidenav.md-sidenav.md-closed(md-component-id="navigation", esc-key='close();')
+md-sidenav.md-sidenav.md-closed(md-component-id="navigation", esc-key='close()')
 	.navigation
-		.navigation__tile(ui-sref="app.index", data-ng-click="close();", data-ng-class="{active: $state.includes('app.index')}")
+		.navigation__tile(ui-sref="app.index", data-ng-click="close()", data-ng-class="{active: $state.includes('app.index')}")
 			h4.tk-usual Home
-		.navigation__tile(ui-sref="app.list", data-ng-click="close();", data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}")
+		.navigation__tile(ui-sref="app.list", data-ng-click="close()", data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}")
 			h4.tk-usual Projects
-		.navigation__tile(ui-sref="app.services", data-ng-click="close();", data-ng-class="{active: $state.includes('app.services')}")
+		.navigation__tile(ui-sref="app.services", data-ng-click="close()", data-ng-class="{active: $state.includes('app.services')}")
 			h4.tk-usual Services
-		.navigation__tile(ui-sref="app.media", data-ng-click="close();", data-ng-class="{active: $state.includes('app.media')}")
+		.navigation__tile(ui-sref="app.media", data-ng-click="close()", data-ng-class="{active: $state.includes('app.media')}")
 			h4.tk-usual Media
-		.navigation__tile(ui-sref="app.contact", data-ng-click="close();", data-ng-class="{active: $state.includes('app.contact')}")
+		.navigation__tile(ui-sref="app.contact", data-ng-click="close()", data-ng-class="{active: $state.includes('app.contact')}")
 			h4.tk-usual Contact
 
-	.navigation__close(data-ng-click="close();")
+	.navigation__close(data-ng-click="close()")
 		.fa.fa-angle-left

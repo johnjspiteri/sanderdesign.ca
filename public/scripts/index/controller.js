@@ -4,7 +4,7 @@
 	function Index ($scope, ngMeta) {
 
 		ngMeta.setTitle('Experienced Landscape Architecture');
-		ngMeta.setTag('description', 'Here is where you can edit the content on your home page.');
+		ngMeta.setTag('description', 'Sander Design provides fresh and insightful ideas to help visualize your dream landscape, or improve your existing environment.');
 
 		$scope.slides = [{
 			image: {

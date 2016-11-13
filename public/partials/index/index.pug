@@ -2,7 +2,7 @@
 	.slider
 		slick.index(dots='true', autoplay='true', speed='400', autoplay-Speed='4100', slidesToShow='1', draggable='true', arrows='false', easing='linear', accessibility='true', swipe='true', lazyLoad='progressive', variableWidth='false', infinite='true')
 			div(data-ng-repeat='slide in slides')
-				img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}', alt='', ui-sref='{{slide.route}}')
+				img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}', alt='', ui-sref='app.view({id:slide.route})')
 
 	.squares
 		.square.line
@@ -27,7 +27,7 @@
 
 	.testimonials
 		.testimonial.line
-			img.testimonial--image(src='/public/img/testimonial/320/testimonialB.jpg' alt='' ui-sref='app.view({id: \'modern-classic\'})')
+			img.testimonial--image(src='/public/img/testimonial/320/testimonialB.jpg' alt='' ui-sref='app.view({id:\'modern-classic\'})')
 			p.tk-usual Sander, you have transformed my rear yard in to an urban oasis; complete with a water feature. It has become such a terrific space. I regularly receive comments such as “this looks like a magazine photo".
 			//- p.desktop My front yard is receiving similar positive feedback from passing pedestrians and neighbours; the comments are particularly focused on the unique, modern appearance. Well done Sander, thank you!
 			h6.tk-usual W. Nichols - Toronto, Ontario

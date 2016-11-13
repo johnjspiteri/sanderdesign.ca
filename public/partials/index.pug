@@ -14,7 +14,7 @@ html(lang='en', ng-app='app')
 		div(ui-view='navigation')
 		.page(ui-view='document')
 		div(ui-view='footer')
-		div(id='panel', ng-show='display')
+		.backdrop(ng-show='display')
 
 		script(src='/public/scripts/app.min.js')
 		script.
