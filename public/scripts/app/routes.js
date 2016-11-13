@@ -1,9 +1,7 @@
 (function() {
 	"use strict";
 
-	function routes($locationProvider, $stateProvider, ngMetaProvider) {
-		$locationProvider.html5Mode(true);
-
+	function routes($stateProvider) {
 		$stateProvider
 			.state('app', {
 				abstract: true,
@@ -32,6 +30,6 @@
 		.module('app')
 		.config(routes);
 
-	routes.$inject = ['$locationProvider', '$stateProvider', 'ngMetaProvider'];
+	routes.$inject = ['$stateProvider'];
 
 })();

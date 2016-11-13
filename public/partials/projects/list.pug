@@ -1,19 +1,19 @@
 .container
 	.search
 		.search__option(data-ng-class='{\'active\': $state.includes(\'app.index\')}')
-			select(data-ng-model='search.category', data-ng-change='updateCategory(search.category);', ng-options="category for category in search.categories")
+			select.tk-usual(data-ng-model='search.category', data-ng-change='updateCategory(search.category);', ng-options="category for category in search.categories")
 			.select
-				p {{search.category}} #[span.caret]
+				p.tk-usual {{search.category}} #[span.caret]
 
 		.search__option
-			select(data-ng-model='search.style', data-ng-change='updateStyle(search.style)', ng-options="style for style in search.styles")
+			select.tk-usual(data-ng-model='search.style', data-ng-change='updateStyle(search.style)', ng-options="style for style in search.styles")
 			.select.last
-				p {{search.style}} #[span.caret]
+				p.tk-usual {{search.style}} #[span.caret]
 
 	.listings
 		.listing(data-ng-repeat='project in projects | categoryFilter: search.category | filter: search.filter', ui-sref='app.view({id:project.clean})')
 			.image
 				img(ng-src='data:{{project.thumb.filetype}};base64,{{project.thumb.base64}}')
-			h3(data-ng-bind='project.title')
-			p(data-ng-bind='project.location.neighbourhood + ","')
-			p.blue(data-ng-bind='project.location.city')
+			h3.tk-usual(data-ng-bind='project.title')
+			p.tk-usual(data-ng-bind='project.location.neighbourhood + ","')
+			p.tk-usual.blue(data-ng-bind='project.location.city')

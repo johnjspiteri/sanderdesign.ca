@@ -15,7 +15,6 @@ var ProjectSchema = new Schema({
 		neighbourhood: String,
 		province: String
 	},
-	style: String,
 	tags: Array,
 	thumb: Object,
 	title: String,

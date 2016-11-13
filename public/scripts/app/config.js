@@ -1,7 +1,21 @@
 (function() {
 	"use strict";
 
-	function config ($urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+
+		$locationProvider.html5Mode(true);
+
+		$urlRouterProvider.otherwise("/404/");
+		$urlRouterProvider.rule(function($injector, $location) {
+
+			var path = $location.path();
+			var hasTrailingSlash = path[path.length-1] === '/';
+
+			if(!hasTrailingSlash) {
+				var newPath = path + '/';
+				return newPath;
+			}
+		});
 
 		uiGmapGoogleMapApiProvider.configure({
 			//    key: 'your api key',
@@ -26,6 +40,6 @@
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

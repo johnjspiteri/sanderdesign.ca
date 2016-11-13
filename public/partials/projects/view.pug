@@ -7,8 +7,8 @@
 	.view
 		a(ui-sref='app.list')
 			.fa.fa-long-arrow-left
-		h3(data-ng-bind='project.title')
+		h3.tk-usual(data-ng-bind='project.title')
 		.row
-			h4(data-ng-bind='project.location.neighbourhood + ","')
-			h4.blue(data-ng-bind='project.location.city')
-		p(data-ng-bind='project.description')
+			h4.tk-usual(data-ng-bind='project.location.neighbourhood + ","')
+			h4.tk-usual.blue(data-ng-bind='project.location.city')
+		p.tk-usual(data-ng-bind='project.description')

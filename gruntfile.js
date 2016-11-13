@@ -15,25 +15,25 @@ module.exports = function (grunt) {
 					'server/data/min/commercial/condo-rooftop.min.json': 'server/data/source/commercial/condo-rooftop.json',
 					'server/data/min/commercial/st-barts-church.min.json': 'server/data/source/commercial/st-barts-church.json',
 					'server/data/min/commercial/symposium-cafe.min.json': 'server/data/source/commercial/symposium-cafe.json',
-					'server/data/min/residential/arts-crafts-country-garden.min.json': 'server/data/source/residential/arts-crafts-country-garden.json',
+					'server/data/min/residential/arts-crafts.min.json': 'server/data/source/residential/arts-crafts.json',
 					'server/data/min/residential/asian-fusion.min.json': 'server/data/source/residential/asian-fusion.json',
 					'server/data/min/residential/contemporary-court.min.json': 'server/data/source/residential/contemporary-court.json',
-					'server/data/min/residential/contemporary-entry.min.json': 'server/data/source/residential/contemporary-entry.json',
-					'server/data/min/residential/contemporary-front-entry.min.json': 'server/data/source/residential/contemporary-front-entry.json',
+					'server/data/min/residential/contemporary-entrance.min.json': 'server/data/source/residential/contemporary-entrance.json',
+					'server/data/min/residential/contemporary-front-entrance.min.json': 'server/data/source/residential/contemporary-front-entrance.json',
+					'server/data/min/residential/contemporary-gartenanlagen.min.json': 'server/data/source/residential/contemporary-gartenanlagen.json',
 					'server/data/min/residential/contemporary-yard.min.json': 'server/data/source/residential/contemporary-yard.json',
 					'server/data/min/residential/country-estate.min.json': 'server/data/source/residential/country-estate.json',
 					'server/data/min/residential/formal-garden.min.json': 'server/data/source/residential/formal-garden.json',
-					'server/data/min/residential/formal-gartenanlagen.min.json': 'server/data/source/residential/formal-gartenanlagen.json',
-					'server/data/min/residential/formal-urban-pocket-garden.min.json': 'server/data/source/residential/formal-urban-pocket-garden.json',
+					'server/data/min/residential/formal-urban-pocket.min.json': 'server/data/source/residential/formal-urban-pocket.json',
 					'server/data/min/residential/french-country.min.json': 'server/data/source/residential/french-country.json',
-					'server/data/min/residential/front-entry-court.min.json': 'server/data/source/residential/front-entry-court.json',
-					'server/data/min/residential/front-entry-garden.min.json': 'server/data/source/residential/front-entry-garden.json',
-					'server/data/min/residential/front-entry.min.json': 'server/data/source/residential/front-entry.json',
+					'server/data/min/residential/front-entrance-court.min.json': 'server/data/source/residential/front-entrance-court.json',
+					'server/data/min/residential/front-entrance-garden.min.json': 'server/data/source/residential/front-entrance-garden.json',
+					'server/data/min/residential/front-entrance.min.json': 'server/data/source/residential/front-entrance.json',
 					'server/data/min/residential/green-quad.min.json': 'server/data/source/residential/green-quad.json',
-					'server/data/min/residential/intimate-courtyard-garden.min.json': 'server/data/source/residential/intimate-courtyard-garden.json',
+					'server/data/min/residential/intimate-courtyard.min.json': 'server/data/source/residential/intimate-courtyard.json',
 					'server/data/min/residential/mediterranean-patio.min.json': 'server/data/source/residential/mediterranean-patio.json',
 					'server/data/min/residential/modern-classic.min.json': 'server/data/source/residential/modern-classic.json',
-					'server/data/min/residential/modern-contemporary-garden.min.json': 'server/data/source/residential/modern-contemporary-garden.json',
+					'server/data/min/residential/modern-contemporary.min.json': 'server/data/source/residential/modern-contemporary.json',
 					'server/data/min/residential/neo-georgian.min.json': 'server/data/source/residential/neo-georgian.json',
 					'server/data/min/residential/outdoor-room.min.json': 'server/data/source/residential/outdoor-room.json',
 					'server/data/min/residential/oval-garden.min.json': 'server/data/source/residential/oval-garden.json',
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 					'server/data/min/residential/urban-deck.min.json': 'server/data/source/residential/urban-deck.json',
 					'server/data/min/residential/young-residence.min.json': 'server/data/source/residential/young-residence.json',
 					'server/data/min/residential/zen-garden.min.json': 'server/data/source/residential/zen-garden.json',
-					'server/data/min/residential/zen-pocket-garden.min.json': 'server/data/source/residential/zen-pocket-garden.json',
+					'server/data/min/residential/zen-pocket.min.json': 'server/data/source/residential/zen-pocket.json',
 				}
 			}
 		},
@@ -253,7 +253,7 @@ module.exports = function (grunt) {
 				tasks: [
 					'puglint:lint',
 					'jshint:lint'
-				],
+				]
 			},
 			build: {
 				options: {
@@ -261,8 +261,8 @@ module.exports = function (grunt) {
 				},
 				tasks: [
 					'stylus:compile',
-					'pug:compile',
-				],
+					'pug:compile'
+				]
 			},
 			process: {
 				options: {
@@ -270,8 +270,9 @@ module.exports = function (grunt) {
 				},
 				tasks: [
 					'postcss',
-					'uglify:target'
-				],
+					'uglify:target',
+					'minjson'
+				]
 			},
 		}
 	});
@@ -294,6 +295,7 @@ module.exports = function (grunt) {
 	]);
 	grunt.registerTask('build-scripts', [
 		'jshint:lint',
+		'minjson',
 		'uglify:target',
 		'express:server',
 		'watch',

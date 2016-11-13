@@ -1,8 +1,7 @@
 (function() {
 	"use strict";
 
-	function routes($locationProvider, $stateProvider) {
-		$locationProvider.html5Mode(true);
+	function routes($stateProvider) {
 		$stateProvider
 			.state('app.list', {
 				url: '/projects/',
@@ -38,6 +37,6 @@
 		.module('app.project')
 		.config(routes);
 
-	routes.$inject = ['$locationProvider', '$stateProvider'];
+	routes.$inject = ['$stateProvider'];
 
 })();
