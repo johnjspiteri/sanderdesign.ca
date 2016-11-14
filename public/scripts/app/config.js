@@ -16,7 +16,7 @@
 		$urlRouterProvider
 			.otherwise("/404/");
 
-		cfpLoadingBarProvider.latencyThreshold = 2;
+		cfpLoadingBarProvider.latencyThreshold = 200;
 		cfpLoadingBarProvider.includeSpinner = true;
 		cfpLoadingBarProvider.includeBar = false;
 		cfpLoadingBarProvider.spinnerTemplate = '<div class=\'backdrop\'></div>';
