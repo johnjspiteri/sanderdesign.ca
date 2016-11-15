@@ -22,9 +22,9 @@
 		cfpLoadingBarProvider.spinnerTemplate = '<div class=\'backdrop\'></div>';
 
 		uiGmapGoogleMapApiProvider.configure({
-			//    key: 'your api key',
+			key: 'AIzaSyCDzFTLOKdyRRh3AxcluBO8U6ZHApytmBE',
 			v: '3.17',
-			libraries: 'weather,geometry,visualization'
+libraries: 'weather,geometry,visualization'
 		});
 
 		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
