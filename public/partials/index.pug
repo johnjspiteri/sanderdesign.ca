@@ -17,11 +17,14 @@ html(lang='en', ng-app='app')
 			ga('send', 'pageview');
 		base(href='/index.html')
 
-	body(data-ng-class='{"locked":display}')
-		div(ui-view='navigation')
-		.page(ui-view='document')
+	body(data-ng-class='{"locked":panel}')
+		div(ui-view='panel')
+		.page
+			div(ui-view='header')
+			.container
+				div(ui-view='page')
 		div(ui-view='footer')
-		.backdrop(ng-show='display')
+		.backdrop(ng-show='panel')
 
 		script(src='/public/scripts/app.min.js')
 		script.

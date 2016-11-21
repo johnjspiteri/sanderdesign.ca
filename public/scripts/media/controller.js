@@ -3,7 +3,7 @@
 
 	function Media ($scope, ngMeta) {
 
-		ngMeta.setTitle('Media Us');
+		ngMeta.setTitle('Media');
 		ngMeta.setTag('description', 'Here is where you can edit the content on the contact page.');
 
 	}

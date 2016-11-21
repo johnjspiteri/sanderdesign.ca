@@ -3,16 +3,12 @@
 
 	function runBlock ($rootScope, $state, $stateParams, Angularytics, ngMeta) {
 
-		// $rootScope.$on('$stateChangeError', function(event) {
-		//   $state.go('app.error');
-		// });
-
 		Angularytics.init();
 		ngMeta.init();
 
 		$rootScope.$state = $state;
 		$rootScope.$stateParams = $stateParams;
-		$rootScope.display = false;
+		$rootScope.panel = false;
 		$state.go('app.index');
 
 	}

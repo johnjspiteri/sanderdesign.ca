@@ -1,0 +1,13 @@
+.slider
+	slick(dots="true", autoplay="true", speed="400", autoplay-Speed="4100", slidesToShow='1', draggable="true", arrows="false", easing="linear", accessibility="true", swipe='true', lazyLoad="progressive", variableWidth="false", infinite="true",)
+		div(data-ng-repeat='image in project.images', data-thumb='data:{{image.filetype}};base64,{{image.base64}}')
+			img(ng-src='data:{{image.filetype}};base64,{{image.base64}}')
+
+.view
+	a(ui-sref='app.list')
+		.fa.fa-long-arrow-left
+	h3.tk-usual(data-ng-bind='project.title')
+	.row
+		h4.tk-usual(data-ng-bind='project.location.neighbourhood + ","')
+		h4.tk-usual.blue(data-ng-bind='project.location.city')
+	p.tk-usual(data-ng-bind='project.description')

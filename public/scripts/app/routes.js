@@ -7,19 +7,16 @@
 				abstract: true,
 				url: '',
 				views: {
-					'document': {
-						templateUrl: 'public/html/document/document.html',
-						controller: 'Document'
+					'panel': {
+						templateUrl: 'public/html/panel/index.html',
+						controller: 'Panel'
 					},
-					'navigation@': {
-						templateUrl: 'public/html/navigation/navigation.html',
-						controller: 'Document'
-					},
-					'header@app': {
-						templateUrl: 'public/html/header/header.html'
+					'header': {
+						templateUrl: 'public/html/header/index.html',
+						controller: 'Header'
 					},
 					'footer': {
-						templateUrl: 'public/html/footer/footer.html',
+						templateUrl: 'public/html/footer/index.html',
 						controller: 'Footer'
 					}
 				}

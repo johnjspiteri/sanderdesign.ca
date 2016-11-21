@@ -31,7 +31,6 @@
 			},
 			route: 'contemporary-entrance'
 		}];
-
 	}
 
 	angular

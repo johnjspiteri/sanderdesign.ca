@@ -5,7 +5,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 		 var express = require('express'),
 			mongoose = require('mongoose'),
-			// location = require('./server/build/development.json'),
+			location = require('./server/build/development.json'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
 				path = require('path'),
@@ -56,7 +56,6 @@ if ('development' === env || 'test' === env) {
 }
 
 app.use('/api/project', require('./server/api/project'));
-// app.use('/api/contact', require('./server/api/contact'));
 
 app.all('/*', function(req, res, next) {
 	res.sendFile(path.resolve('./public/html/index.html'));

@@ -1,0 +1,18 @@
+.search
+	.search__option(data-ng-class='{\'active\': $state.includes(\'app.index\')}')
+		select.tk-usual(data-ng-model='search.category', data-ng-change='updateTags(search.category);', ng-options="category for category in categories")
+		.search__select
+			p.tk-usual {{search.category}} #[span.caret]
+
+	.search__option
+		select.tk-usual(data-ng-model='search.tag', ng-options="tag for tag in tags" data-ng-disabled='!search.category')
+		.search__select.last
+			p.tk-usual {{search.tag}} #[span.caret]
+
+.listings
+	.listing(data-ng-repeat='project in projects | categoryFilter: search.category | tagFilter: search.tag', ui-sref='app.view({id:project.clean})')
+		.image
+			img(ng-src='data:{{project.thumb.filetype}};base64,{{project.thumb.base64}}')
+		h3.tk-usual(data-ng-bind='project.title')
+		p.tk-usual(data-ng-bind='project.location.neighbourhood + ","')
+		p.tk-usual.blue(data-ng-bind='project.location.city')
