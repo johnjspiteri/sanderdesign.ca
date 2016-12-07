@@ -3,9 +3,12 @@
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+if(process.env.NODE_ENV === 'development') {
+	var location = require('./server/build/development.json');
+}
+
 		 var express = require('express'),
 			mongoose = require('mongoose'),
-			// location = require('./server/build/development.json'),
 			 favicon = require('serve-favicon'),
 			  morgan = require('morgan'),
 				path = require('path'),
