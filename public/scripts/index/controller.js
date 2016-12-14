@@ -3,8 +3,20 @@
 
 	function Index ($scope, ngMeta) {
 
-		ngMeta.setTitle('Experienced Landscape Architecture');
-		ngMeta.setTag('description', 'Sander Design provides fresh and insightful ideas to help visualize your dream landscape, or improve your existing environment.');
+		$scope.slick = {
+			enabled: true,
+			accessibility: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: '4100',
+			dots: true,
+			draggable: true,
+			easing: 'linear',
+			infinite: true,
+			slidesToShow: '1',
+			speed: '400',
+			swipe: true,
+		};
 
 		$scope.slides = [{
 			image: {
@@ -31,6 +43,10 @@
 			},
 			route: 'contemporary-entrance'
 		}];
+
+		ngMeta.setTitle('Experienced Landscape Architecture');
+		ngMeta.setTag('description', 'Sander Design provides fresh and insightful ideas to help visualize your dream landscape, or improve your existing environment.');
+
 	}
 
 	angular

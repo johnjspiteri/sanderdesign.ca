@@ -1,6 +1,6 @@
 {
-  "name": "sanderApp",
-  "version": "0.1.0",
+  "name": "sander",
+  "version": "1.1.0",
   "dependencies": {
     "angular": "1.4.8",
     "angular-animate": "1.4.8",
@@ -11,18 +11,16 @@
     "angular-material": "~1.0.0",
     "angular-resource": "1.4.8",
     "angular-sanitize": "1.4.8",
-    "angular-elastic": "~2.5.1",
-    "angular-slick": "~0.1.7",
+    "angular-slick-carousel": "^3.1.7",
     "angular-ui-router": "~0.2.10",
     "es5-shim": "~3.1.1",
     "jquery": "~1.11.2",
     "json3": "~3.3.1",
-    "lodash": "~2.4.1",
+    "lodash": "~4.17.2",
     "angularytics": "^0.4.0",
     "ngMeta": "~0.3.3"
   },
   "resolutions": {
-    "angular": "1.4.8",
-    "lodash": "3.X - 4.X"
+    "angular": "1.4.8"
   }
 }

@@ -52,7 +52,7 @@ mongoose
 
 if ('production' === env) {
 	app.use(express.static('./'));
-	// app.use(favicon('/public/img/favicon.ico'));
+	app.use(favicon('./public/img/favicon.ico'));
 }
 if ('development' === env || 'test' === env) {
 	app.use(express.static('./'));
@@ -60,9 +60,16 @@ if ('development' === env || 'test' === env) {
 
 app.use('/api/project', require('./server/api/project'));
 
-app.all('/*', function(req, res, next) {
-	res.sendFile(path.resolve('./public/html/index.html'));
-});
+if ('production' === env) {
+	app.get('/*', function(req, res, next) {
+		res.sendFile(path.resolve('./public/html/index.html'));
+	});
+}
+if ('development' === env || 'test' === env) {
+	app.get('/*', function(req, res, next) {
+		res.sendFile(path.resolve('./public/html/development.html'));
+	});
+}
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 

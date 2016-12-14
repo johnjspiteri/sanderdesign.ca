@@ -1,0 +1,10 @@
+{
+	"disallowHtmlText": true,
+	"validateIndentation": "\t",
+	"disallowClassAttributeWithStaticValue": true,
+	"requireClassLiteralsBeforeAttributes": true,
+	"requireIdLiteralsBeforeAttributes": true,
+	"validateDivTags": true,
+	"disallowDuplicateAttributes": true,
+	"disallowMultipleLineBreaks": true
+}

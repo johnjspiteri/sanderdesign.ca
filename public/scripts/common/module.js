@@ -10,7 +10,7 @@
 			'ngMaterial',
 			'ngMeta',
 			'ngResource',
-			'slick',
+			'slickCarousel',
 			'ui.router',
 			'uiGmapgoogle-maps',
 		]);

@@ -1,7 +1,7 @@
 .slider
-	slick.index(dots='true', autoplay='true', speed='400', autoplay-Speed='4100', slidesToShow='1', draggable='true', arrows='false', easing='linear', accessibility='true', swipe='true', lazyLoad='progressive', variableWidth='false', infinite='true')
-		div(data-ng-repeat='slide in slides')
-			img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}', alt='', ui-sref='app.view({id:slide.route})')
+	slick.index(settings='slick' ng-if='slides')
+		div(ng-repeat='slide in slides')
+			img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}')
 
 .squares
 	.square.line

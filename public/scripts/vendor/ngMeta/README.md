@@ -3,6 +3,7 @@
 
 [![npm version](https://badge.fury.io/js/ng-meta.svg)](https://badge.fury.io/js/ng-meta) [![Build Status](https://travis-ci.org/vinaygopinath/ngMeta.svg?branch=master)](https://travis-ci.org/vinaygopinath/ngMeta)
 
+This is an Angular 1.x module. Angular2 module is available as [ng2-meta](https://github.com/vinaygopinath/ng2-meta)
 * [Demo](#demo)
 * [Install](#install)
 * [Getting Started](#getting-started)
@@ -27,6 +28,10 @@ npm install ng-meta --save
 via Bower:
 ```shell
 bower install ngMeta --save
+```
+via CDN:
+```shell
+https://cdnjs.cloudflare.com/ajax/libs/ng-meta/0.3.9/ngMeta.min.js
 ```
 
 or download the file from [dist](https://github.com/vinaygopinath/ngMeta/tree/master/dist).
@@ -131,16 +136,18 @@ angular.module('YourApp')
 .controller(function(ngMeta) {
   //These examples assume useTitleSuffix is enabled,
   //and default titleSuffix is set to 'Playlist'
-  
+
   //Custom title and titleSuffix
   ngMeta.setTitle('Eluvium', ' | Spotify'); //Title = Eluvium | Spotify
   //default titleSuffix
   ngMeta.setTitle('Eluvium'); //Title = Eluvium | Playlist
   //Clear the default titleSuffix
   ngMeta.setTitle('Eluvium',''); //Title = Eluvium
-  
+
   ngMeta.setTag('author', 'Matthew Cooper');
   ngMeta.setTag('image', 'http://placeholder.com/abc.jpg');
+
+  ngMeta.setDefaultTag('author', 'Default author');
 });
 ```
 
@@ -150,6 +157,7 @@ Note: Please use `setTitle` to modify the title and/or titleSuffix and `setTag` 
 | ------ | ------- | ------- |
 | **setTitle(String title, String titleSuffix)** |  Sets the current title based on the given params. When `useTitleSuffix` is enabled and titleSuffix is not provided, it uses the default titleSuffix. | ngMeta.setTitle('Title', ' - TitleSuffix')<br/><br/>ngMeta.setTitle('Title with default titleSuffix')<br/><br/>ngMeta.setTitle('Title with no titleSuffix','') |
 | **setTag(String tagName, String value)** | Sets the value of an arbitrary tag, using the default value of the tag when the second param is missing. The value is accessible as {{ngMeta.tagName}} from HTML. Calling setTag with `title` or `titleSuffix` as `tagName` results in an error. Title must be modified using `setTitle` instead.|ngMeta.setTag('author', 'John Smith')<br/><br/>ngMeta.setTag('ogImage', 'http://url.com/image.png')|
+| **setDefaultTag(String tagName, String value)** | Sets the default value of an arbitrary tag, overwriting previously set default values, but not the value set dynamically (using `setTitle`/`setTag`) or by the route/state. `title` and `titleSuffix` are accepted values.|ngMeta.setDefaultTag('image', 'http://default-image-url.com');<br/><br/>ngMeta.setDefaultTag('title','Default title');|
 
 ### Setting tags with custom data resolved by ui-router
 

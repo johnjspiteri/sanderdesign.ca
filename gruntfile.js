@@ -72,7 +72,7 @@ module.exports = function (grunt) {
 						'public/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
 						'public/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
 						'public/scripts/vendor/slick-carousel/slick/slick.js',
-						'public/scripts/vendor/angular-slick/dist/slick.js',
+						'public/scripts/vendor/angular-slick-carousel/dist/angular-slick.min.js',
 						'public/scripts/vendor/angularytics/dist/angularytics.min.js',
 						'public/scripts/vendor/angular-material/angular-material.js',
 						'public/scripts/vendor/ngMeta/dist/ngMeta.js',
@@ -137,21 +137,10 @@ module.exports = function (grunt) {
 			}
 		},
 		puglint: {
-			lint: {
-				options: {
-					config: {
-						disallowHtmlText: true,
-						validateIndentation: "\t",
-						disallowClassAttributeWithStaticValue: true,
-						requireClassLiteralsBeforeAttributes: true,
-						requireIdLiteralsBeforeAttributes: true,
-						validateDivTags: true,
-						disallowDuplicateAttributes: true,
-						disallowMultipleLineBreaks: true
-					}
-				},
-				src: ['public/partials/**/*.pug']
+			options: {
+				extends: '.pug-lintrc'
 			},
+			lint: ['public/partials/**/*.pug']
 		},
 		pug: {
 			compile: {
@@ -180,7 +169,7 @@ module.exports = function (grunt) {
 				reporter: require('jshint-stylish'),
 			},
 			jshintrc: ".jshintrc",
-			lint: [
+			all: [
 				'gruntfile.js',
 				'public/**/*.js',
 				'server/**/*.js',
@@ -246,57 +235,44 @@ module.exports = function (grunt) {
 			}
 		},
 		concurrent: {
-			lint: {
+			initial: {
 				options: {
 					logConcurrentOutput: true
 				},
 				tasks: [
-					'puglint:lint',
-					'jshint:lint'
+					'build-styles',
+					'build-partials',
+					'newer:jshint:all',
 				]
 			},
-			build: {
+			compile: {
 				options: {
 					logConcurrentOutput: true
 				},
 				tasks: [
-					'stylus:compile',
-					'pug:compile'
-				]
-			},
-			process: {
-				options: {
-					logConcurrentOutput: true
-				},
-				tasks: [
+					'uglify',
 					'postcss',
-					'uglify:target',
 					'minjson'
 				]
-			},
+			}
 		}
 	});
 	grunt.registerTask('default', [
-		'concurrent:lint',
-		'concurrent:build',
-		'concurrent:process',
-		'uglify:target',
+		'concurrent:initial',
+		'concurrent:compile',
 		'express:server',
 		'open:server',
-		'watch'
+		'watch',
 	]);
 	grunt.registerTask('build-styles', [
-		'stylus:compile',
-		'postcss',
+		'stylus',
 	]);
 	grunt.registerTask('build-partials', [
-		'puglint:lint',
-		'pug:compile',
+		'newer:puglint:lint',
+		'newer:pug:compile',
 	]);
 	grunt.registerTask('build-scripts', [
-		'jshint:lint',
-		'minjson',
-		'uglify:target',
+		'newer:jshint:all',
 		'express:server',
 		'watch',
 	]);
