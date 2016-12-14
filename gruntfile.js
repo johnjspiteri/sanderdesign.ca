@@ -72,7 +72,7 @@ module.exports = function (grunt) {
 						'public/scripts/vendor/angular-google-maps/dist/angular-google-maps.js',
 						'public/scripts/vendor/angular-ui-router/release/angular-ui-router.min.js',
 						'public/scripts/vendor/slick-carousel/slick/slick.js',
-						'public/scripts/vendor/angular-slick-carousel/dist/angular-slick.min.js',
+						'public/scripts/vendor/angular-slick-carousel/dist/angular-slick.js',
 						'public/scripts/vendor/angularytics/dist/angularytics.min.js',
 						'public/scripts/vendor/angular-material/angular-material.js',
 						'public/scripts/vendor/ngMeta/dist/ngMeta.js',

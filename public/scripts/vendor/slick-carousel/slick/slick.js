@@ -42,7 +42,7 @@
 				adaptiveHeight: false,
 				appendArrows: $(element),
 				appendDots: $(element),
-				arrows: true,
+				arrows: false,
 				asNavFor: null,
 				prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
 				nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
@@ -55,9 +55,6 @@
 					var thumb = $(slider.$slides[i]).data('thumb');
 					return '<img src="'+thumb+'"><span></span>';
 				},
-				// customPaging: function(slider, i) {
-				//     return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
-				// },
 				dots: true,
 				dotsClass: 'slick-dots',
 				draggable: true,

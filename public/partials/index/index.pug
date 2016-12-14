@@ -1,5 +1,5 @@
 .slider
-	slick.index(settings='slick' ng-if='slides')
+	slick.index(settings='slickConfig' ng-if='slides')
 		div(ng-repeat='slide in slides')
 			img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}')
 

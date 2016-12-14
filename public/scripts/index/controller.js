@@ -3,7 +3,7 @@
 
 	function Index ($scope, ngMeta) {
 
-		$scope.slick = {
+		$scope.slickConfig = {
 			enabled: true,
 			accessibility: true,
 			arrows: false,
