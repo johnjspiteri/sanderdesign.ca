@@ -7,36 +7,62 @@
 
 		self.projects = listResolve;
 		self.search = {
-			category: 'Categories',
-			tag: 'Tags'
+			category: '',
+			categories: [],
+			tag: '',
+			tags: []
 		};
 
-		function categoriesList(items) {
-			var categories = [];
-			angular.forEach(items, function(item) {
-				categories.push(item.category);
-			});
-			return categories.filter(function(elem, index, self) {
-				return index === self.indexOf(elem);
-			}).sort();
+		// Initialize local storage if any
+		self.search.category = localStorageService.get('category') || '';
+		self.search.tag = localStorageService.get('tag') || '';
+
+		// Build categories once
+		var output = [];
+		var i = 0;
+		var length = self.projects.length;
+
+		for(i; i<length; i++) {
+			output.push(self.projects[i].category);
 		}
 
-		self.categories = categoriesList(listResolve);
+		// Filter out duplicates
+		self.search.categories = output.filter(function(elem, index, self) {
+			return index === self.indexOf(elem);
+		});
 
-		self.updateTags = function() {
-			self.search.tag = 'Tags';
+		// Add empty first value
+		self.search.categories.sort().unshift('');
 
-				var tags = [],
-				holder = [];
-			angular.forEach(self.projects, function(item) {
-				if(item.category === self.search.category) {
-					tags = holder.concat(item.tags);
-					console.log(tags);
+		// Build tags on demand
+		self.buildTags = function() {
+			self.search.tags = [];
+			var holder = [];
+			var output = [];
+			var i = 0;
+			var length = self.projects.length;
+
+			for(i; i<length; i++) {
+				if(self.projects[i].category === self.search.category) {
+					holder = output;
+					output = holder.concat(self.projects[i].tags);
 				}
-			});
-			return tags.filter(function(elem, index, self) {
+			}
+
+			// Filter out duplicates
+			self.search.tags = output.filter(function(elem, index, self) {
 				return index === self.indexOf(elem);
 			});
+
+			// Add empty first value
+			self.search.tags.sort().unshift('');
+			localStorageService.set('category', self.search.category);
+			localStorageService.set('tag', self.search.tag);
+		};
+		self.buildTags();
+
+		self.changeTags = function() {
+			localStorageService.set('tag', self.search.tag);
 		};
 	}
 

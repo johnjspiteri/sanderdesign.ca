@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, localStorageServiceProvider, UIRouterMetatagsProvider, uiGmapGoogleMapApiProvider) {
+	function internal ($locationProvider, $urlRouterProvider, AngularyticsProvider, cfpLoadingBarProvider, localStorageServiceProvider, UIRouterMetatagsProvider, uiGmapGoogleMapApiProvider) {
 
 		$locationProvider.html5Mode(true);
 
@@ -13,7 +13,6 @@
 					var newPath = path + '/';
 					return newPath;
 				}})
-			// .when('/boardgames/:id/', '/boardgames/:id/review/')
 			.when(/(s).*/, '/services/')
 			.when(/(m).*/, '/media/')
 			.when(/(c).*/, '/contact/')
@@ -33,7 +32,7 @@ libraries: 'weather,geometry,visualization'
 		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
 		localStorageServiceProvider
-			.setPrefix('boardwalk')
+			.setPrefix('sander')
 			.setStorageType('localStorage')
 			.setNotify(true, true);
 
@@ -49,8 +48,8 @@ libraries: 'weather,geometry,visualization'
 
 	angular
 		.module('app')
-		.config(config);
+		.config(internal);
 
-	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'localStorageServiceProvider', 'UIRouterMetatagsProvider', 'uiGmapGoogleMapApiProvider'];
+	internal.$inject = ['$locationProvider', '$urlRouterProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'localStorageServiceProvider', 'UIRouterMetatagsProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

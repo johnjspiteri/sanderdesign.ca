@@ -2,8 +2,10 @@
 "use strict";
 
 module.exports = function (grunt) {
-	require('load-grunt-tasks')(grunt);
-	require('time-grunt')(grunt);
+	require('jit-grunt')(grunt, {
+		express: 'grunt-express-server',
+		ngtemplates: 'grunt-angular-templates'
+	});
 
 	grunt.initConfig({
 		location: grunt.file.readJSON('server/build/development.json'),
@@ -44,7 +46,7 @@ module.exports = function (grunt) {
 					'server/data/min/residential/urban-deck.min.json': 'server/data/source/residential/urban-deck.json',
 					'server/data/min/residential/young-residence.min.json': 'server/data/source/residential/young-residence.json',
 					'server/data/min/residential/zen-garden.min.json': 'server/data/source/residential/zen-garden.json',
-					'server/data/min/residential/zen-pocket.min.json': 'server/data/source/residential/zen-pocket.json',
+					'server/data/min/residential/zen-pocket.min.json': 'server/data/source/residential/zen-pocket.json'
 				}
 			}
 		},
@@ -116,12 +118,12 @@ module.exports = function (grunt) {
 					linenos: false,
 					compress: true,
 					firebug: false,
-					import: ['config.styl'],
+					import: ['config.styl']
 				},
 				files: {
-					'public/css/styles.css': 'public/styl/index.styl',
+					'public/css/styles.css': 'public/style/index.styl'
 				}
-			},
+			}
 		},
 		postcss: {
 			options: {
@@ -159,6 +161,12 @@ module.exports = function (grunt) {
 				}]
 			}
 		},
+		ngtemplates: {
+			app: {
+				src: ['public/html/**/*.html', '!public/html/index.html', '!public/html/development.html'],
+				dest: 'public/templates/index.js'
+			}
+		},
 		newer: {
 			options: {
 				cache: 'server/build/cache'
@@ -166,24 +174,17 @@ module.exports = function (grunt) {
 		},
 		jshint: {
 			options: {
-				reporter: require('jshint-stylish'),
+				reporter: require('jshint-stylish')
 			},
 			jshintrc: ".jshintrc",
-			all: [
-				'gruntfile.js',
-				'public/**/*.js',
-				'server/**/*.js',
-				'!public/scripts/app.min.js',
-				'!public/scripts/vendor/**/*.js',
-				'!node_modules/**/*.js'
-			]
+			all: ['gruntfile.js', 'public/**/*.js', 'server/**/*.js', '!public/scripts/app.min.js', '!public/scripts/vendor/**/*.js', '!node_modules/**/*.js']
 		},
 		watch: {
 			options: {
-				livereload: true,
+				livereload: true
 			},
 			styles: {
-				files: 'public/styl/**/*.styl',
+				files: 'public/style/**/*.styl',
 				tasks: 'build-styles'
 			},
 			partials: {
@@ -191,18 +192,11 @@ module.exports = function (grunt) {
 				tasks: 'build-partials'
 			},
 			scripts: {
-				files: [
-					'gruntfile.js',
-					'public/scripts/**/*.js',
-					'server/**/*.js',
-					'!node_modules/**',
-					'!public/scripts/app.min.js',
-					'!public/scripts/vendor/**'
-				],
+				files: ['gruntfile.js', 'public/scripts/**/*.js', 'server/**/*.js', '!node_modules/**', '!public/scripts/app.min.js', '!public/scripts/vendor/**'],
 				tasks: 'build-scripts',
 				options: {
 					spawn: false
-				},
+				}
 			},
 			gruntfile: {
 				files: ['gruntfile.js']
@@ -211,9 +205,9 @@ module.exports = function (grunt) {
 		express: {
 			server: {
 				options: {
-					script: './server.js',
-				},
-			},
+					script: './server.js'
+				}
+			}
 		},
 		'node-inspector': {
 			custom: {
@@ -239,21 +233,13 @@ module.exports = function (grunt) {
 				options: {
 					logConcurrentOutput: true
 				},
-				tasks: [
-					'build-styles',
-					'build-partials',
-					'newer:jshint:all',
-				]
+				tasks: ['build-styles', 'build-partials', 'newer:jshint:all']
 			},
 			compile: {
 				options: {
 					logConcurrentOutput: true
 				},
-				tasks: [
-					'uglify',
-					'postcss',
-					'minjson'
-				]
+				tasks: ['uglify', 'postcss', 'minjson']
 			}
 		}
 	});
@@ -262,18 +248,20 @@ module.exports = function (grunt) {
 		'concurrent:compile',
 		'express:server',
 		'open:server',
-		'watch',
+		'watch'
 	]);
 	grunt.registerTask('build-styles', [
 		'stylus',
+		// 'postcss'
 	]);
 	grunt.registerTask('build-partials', [
-		'newer:puglint:lint',
-		'newer:pug:compile',
+		'puglint:lint',
+		'pug:compile',
+		// 'ngtemplates:app'
 	]);
 	grunt.registerTask('build-scripts', [
 		'newer:jshint:all',
 		'express:server',
-		'watch',
+		'watch'
 	]);
 };

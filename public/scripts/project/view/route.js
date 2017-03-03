@@ -3,18 +3,21 @@
 
 	function internal($stateProvider) {
 		$stateProvider
-			.state('app.view', {
-				url: '/projects/:id/',
+			.state('app.project.view', {
+				url: ':id/',
 				resolve: {
 					viewResolve: ['$stateParams', 'project', function( $stateParams, project) {
 						return project.show({id: $stateParams.id}).$promise;
 					}]
 				},
 				metaTags: {
-					title: '',
-					description: ''
-					// ngMeta.setTitle($scope.project.title);
-					// ngMeta.setTag('description', $scope.project.description);
+					title: ['viewResolve', function(viewResolve) {
+						return viewResolve.title + ' - ' + viewResolve.category + ' - ' + viewResolve.year;
+					}],
+					description: ['viewResolve', function(viewResolve) {
+						console.log(viewResolve);
+						return viewResolve.description;
+					}]
 				},
 				views: {
 					'page@': {
