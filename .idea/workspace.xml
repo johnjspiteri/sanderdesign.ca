@@ -4,9 +4,7 @@
     <list default="true" id="178c1175-36ca-47fe-b536-60f5739db532" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gruntfile.js" afterPath="$PROJECT_DIR$/gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scripts/app.min.js" afterPath="$PROJECT_DIR$/public/scripts/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/footer/index.pug" afterPath="$PROJECT_DIR$/public/partials/footer/index.pug" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,12 +26,12 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/partials/projects/list/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="7" column="121" lean-forward="true" selection-start-line="7" selection-start-column="121" selection-end-line="7" selection-end-column="121" />
+                <state relative-caret-position="0">
+                  <caret line="7" column="121" lean-forward="false" selection-start-line="7" selection-start-column="121" selection-end-line="7" selection-end-column="121" />
                   <folding />
                 </state>
               </provider>
@@ -42,18 +40,18 @@
           <file leaf-file-name="development.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/partials/development.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="72" column="52" lean-forward="true" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+                <state relative-caret-position="481">
+                  <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
+          <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/scripts/footer/controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+                <state relative-caret-position="204">
+                  <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -62,7 +60,7 @@
           <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/scripts/project/list/controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
+                <state relative-caret-position="884">
                   <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
                   <folding>
                     <element signature="e#173#238#0" expanded="false" />
@@ -75,22 +73,40 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/scripts/project/list/controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
+                <state relative-caret-position="1734">
                   <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#173#238#0" expanded="false" />
+                    <marker date="1488557813000" expanded="true" signature="431:718" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gruntfile.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gruntfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gruntfile.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/gruntfile.js">
+          <file leaf-file-name="index.pug" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/partials/footer/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+                <state relative-caret-position="1156">
+                  <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+                  <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+                  <caret line="23" column="103" lean-forward="false" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
+                  <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+                  <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+                  <caret line="24" column="119" lean-forward="false" selection-start-line="24" selection-start-column="119" selection-end-line="24" selection-end-column="119" />
                   <folding />
                 </state>
               </provider>
@@ -168,6 +184,7 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/partials/footer/index.pug" />
       </list>
     </option>
   </component>
@@ -185,9 +202,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
     <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -215,9 +231,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="SearchEverywhereHistoryKey" value=".gitig&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/.gitignore&#10;dev&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/development.pug&#10;grunt&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/gruntfile.js&#10;server&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server.js&#10;comm/modul&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/common/module.js&#10;bower&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/bower.json&#10;ap/conf&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/app/config.js&#10;sunken&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/data/source/residential/sunken-garden.json&#10;art&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/data/source/residential/arts-crafts.json&#10;grun&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/gruntfile.js&#10;ind.st&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/style/index.styl&#10;pack&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/package.json&#10;packag&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/package.json&#10;readme&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/README.md&#10;list/contr&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;pro/view/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/view/route.js&#10;11/head&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1100/header.styl&#10;32/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/320/list.styl&#10;11/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1100/list.styl&#10;102/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1024/list.styl&#10;7/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/768/list.styl&#10;66/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/667/list.styl&#10;48/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/480/list.styl&#10;37/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/375/list.styl&#10;proje/mo&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/api/project/model.js&#10;pro/mo&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/api/project/model.js&#10;category&#9;null&#9;null&#10;proj/list/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;pro/list/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/projects/list/index.pug&#10;pro/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/img/projects/show/canada-blooms-2007/listing.jpg&#10;32/panels&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/320/panel.styl&#10;panel/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/panel/controller.js&#10;app/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/app/route.js&#10;panel/indepu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/panel/index.pug&#10;head/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/header/index.pug&#10;head/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/header/controller.js&#10;footer/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/footer/controller.js&#10;pan/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/panel/index.pug&#10;ind/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/index/controller.js&#10;ind/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/index/index.pug&#10;ind/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/index/route.js&#10;pro/list/ind&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/html/projects/list/index.html&#10;pro/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;project/list/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/routes.js&#10;deve&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/development.pug&#10;contact/contr&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/controller.js&#10;contac/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/routes.js&#10;conta/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/routes.js&#10;media/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/media/routes.js&#10;media/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/media/controller.js" />
+    <property name="SearchEverywhereHistoryKey" value="footer/inpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/footer/index.pug&#10;footer/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/footer/controller.js&#10;.gitig&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/.gitignore&#10;dev&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/development.pug&#10;grunt&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/gruntfile.js&#10;server&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server.js&#10;comm/modul&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/common/module.js&#10;bower&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/bower.json&#10;ap/conf&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/app/config.js&#10;sunken&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/data/source/residential/sunken-garden.json&#10;art&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/data/source/residential/arts-crafts.json&#10;grun&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/gruntfile.js&#10;ind.st&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/style/index.styl&#10;pack&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/package.json&#10;packag&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/package.json&#10;readme&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/README.md&#10;list/contr&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;pro/view/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/view/route.js&#10;11/head&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1100/header.styl&#10;32/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/320/list.styl&#10;11/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1100/list.styl&#10;102/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/1024/list.styl&#10;7/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/768/list.styl&#10;66/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/667/list.styl&#10;48/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/480/list.styl&#10;37/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/375/list.styl&#10;proje/mo&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/api/project/model.js&#10;pro/mo&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/server/api/project/model.js&#10;category&#9;null&#9;null&#10;proj/list/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;pro/list/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/projects/list/index.pug&#10;pro/list&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/img/projects/show/canada-blooms-2007/listing.jpg&#10;32/panels&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/styl/320/panel.styl&#10;panel/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/panel/controller.js&#10;app/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/app/route.js&#10;panel/indepu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/panel/index.pug&#10;head/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/header/index.pug&#10;head/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/header/controller.js&#10;pan/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/panel/index.pug&#10;ind/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/index/controller.js&#10;ind/indpu&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/index/index.pug&#10;ind/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/index/route.js&#10;pro/list/ind&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/html/projects/list/index.html&#10;pro/cont&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/controller.js&#10;project/list/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/project/list/routes.js&#10;deve&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/partials/development.pug&#10;contact/contr&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/controller.js&#10;contac/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/routes.js&#10;conta/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/contact/routes.js&#10;media/rout&#9;FILE&#9;file:///Users/jj/Development/sanderdesign.ca/public/scripts/media/routes.js" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -239,6 +256,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -275,27 +298,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="2560" height="1417" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73295045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73295045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,67 +332,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/scripts/project/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/project/list.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/contact/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/contact/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/services/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="13" column="70" lean-forward="false" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/project/view/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/project/list/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/project/list.controller.js" />
+    <entry file="file://$PROJECT_DIR$/public/scripts/contact/controller.js" />
+    <entry file="file://$PROJECT_DIR$/public/scripts/contact/routes.js" />
+    <entry file="file://$PROJECT_DIR$/public/scripts/services/routes.js" />
+    <entry file="file://$PROJECT_DIR$/public/scripts/project/view/routes.js" />
+    <entry file="file://$PROJECT_DIR$/public/scripts/project/list/routes.js" />
     <entry file="file://$PROJECT_DIR$/public/partials/projects/view/index.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -377,7 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -385,15 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#354#349431#0" expanded="false" />
-            <element signature="e#366#349395#0" expanded="false" />
-            <element signature="e#349433#620401#0" expanded="false" />
-            <element signature="e#349445#620370#0" expanded="false" />
-            <element signature="e#620403#900388#0" expanded="false" />
-            <element signature="e#620415#900356#0" expanded="false" />
-            <element signature="e#900402#1139103#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -411,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -419,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,15 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/footer/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -443,7 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -451,23 +401,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/320/panel.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styl/320/panel.styl" />
     <entry file="file://$PROJECT_DIR$/public/scripts/panel/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="2" column="197" lean-forward="false" selection-start-line="2" selection-start-column="157" selection-end-line="2" selection-end-column="197" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,89 +428,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/480/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/768/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/375/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/667/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/1024/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/320/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/1100/list.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styl/480/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/768/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/375/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/667/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/1024/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/320/list.styl" />
+    <entry file="file://$PROJECT_DIR$/public/styl/1100/list.styl" />
     <entry file="file://$PROJECT_DIR$/server/api/project/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styl/1100/header.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styl/1100/header.styl" />
     <entry file="file://$PROJECT_DIR$/../landonboardwalk.com/public/scripts/games/view/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="106" column="25" lean-forward="true" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1297">
           <caret line="47" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="887">
           <caret line="41" column="122" lean-forward="true" selection-start-line="41" selection-start-column="122" selection-end-line="41" selection-end-column="122" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="32" column="107" lean-forward="false" selection-start-line="32" selection-start-column="107" selection-end-line="32" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +486,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="34">
             <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -622,7 +496,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="374">
             <caret line="24" column="145" lean-forward="true" selection-start-line="24" selection-start-column="145" selection-end-line="24" selection-end-column="145" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -632,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="3" column="590" lean-forward="false" selection-start-line="3" selection-start-column="589" selection-end-line="3" selection-end-column="590" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +543,7 @@
         <state relative-caret-position="374">
           <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scripts/project/list/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="1734">
+          <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding>
             <element signature="e#173#238#0" expanded="false" />
             <marker date="1488557813000" expanded="true" signature="431:718" ph="{...}" />
@@ -707,32 +577,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/projects/list/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="7" column="121" lean-forward="true" selection-start-line="7" selection-start-column="121" selection-end-line="7" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/development.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="72" column="52" lean-forward="true" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="7" column="121" lean-forward="false" selection-start-line="7" selection-start-column="121" selection-end-line="7" selection-end-column="121" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/development.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/footer/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/footer/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <caret line="23" column="78" lean-forward="false" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+          <caret line="23" column="103" lean-forward="false" selection-start-line="23" selection-start-column="103" selection-end-line="23" selection-end-column="103" />
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+          <caret line="24" column="119" lean-forward="false" selection-start-line="24" selection-start-column="119" selection-end-line="24" selection-end-column="119" />
           <folding />
         </state>
       </provider>

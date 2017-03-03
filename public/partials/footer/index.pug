@@ -21,5 +21,5 @@ footer
 
 			.footer__map
 				#map_canvas
-					ui-gmap-google-map(center='map.location', zoom='map.zoom', options='map.options')
-						ui-gmap-marker(coords='map.marker.coords', options='map.marker.options', idkey='map.marker.id')
+					ui-gmap-google-map(center='self.map.location', zoom='self.map.zoom', options='self.map.options')
+						ui-gmap-marker(coords='self.map.marker.coords', options='self.map.marker.options', idkey='self.map.marker.id')
