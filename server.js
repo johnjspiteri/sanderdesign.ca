@@ -67,7 +67,7 @@ if ('production' === env) {
 }
 if ('development' === env || 'test' === env) {
 	app.get('/*', function(req, res, next) {
-		res.sendFile(path.resolve('./public/html/development.html'));
+		res.sendFile(path.resolve('./public/html/index.html'));
 	});
 }
 
