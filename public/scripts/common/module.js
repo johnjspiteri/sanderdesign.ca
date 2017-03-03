@@ -5,13 +5,14 @@
 		.module('app.common', [
 			'angularytics',
 			'angular-loading-bar',
+			'LocalStorageModule',
 			'ngAnimate',
 			'ngAria',
 			'ngMaterial',
-			'ngMeta',
 			'ngResource',
 			'slickCarousel',
 			'ui.router',
-			'uiGmapgoogle-maps',
+			'ui.router.metatags',
+			'uiGmapgoogle-maps'
 		]);
 })();

@@ -1,15 +1,17 @@
-md-sidenav.md-sidenav.md-closed(md-component-id="panel", esc-key='closePanel()')
+md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop esc-key='self.close()')
 	.panel
-		.panel__tile(ui-sref="app.index", data-ng-click="closePanel()", data-ng-class="{active: $state.includes('app.index')}")
+		.panel__tile(ui-sref='app.index' data-ng-click='self.close()' ui-sref-active='active')
 			h4.tk-usual Home
-		.panel__tile(ui-sref="app.list", data-ng-click="closePanel()", data-ng-class="{active: $state.includes('app.list') || $state.includes('app.view')}")
+		.panel__tile(ui-sref='app.project' data-ng-click='self.close()' ui-sref-active='active')
 			h4.tk-usual Projects
-		.panel__tile(ui-sref="app.services", data-ng-click="closePanel()", data-ng-class="{active: $state.includes('app.services')}")
+		.panel__tile(ui-sref='app.services' data-ng-click='self.close()' ui-sref-active='active')
 			h4.tk-usual Services
-		.panel__tile(ui-sref="app.media", data-ng-click="closePanel()", data-ng-class="{active: $state.includes('app.media')}")
+		.panel__tile(ui-sref='app.media' data-ng-click='self.close()' ui-sref-active='active')
 			h4.tk-usual Media
-		.panel__tile(ui-sref="app.contact", data-ng-click="closePanel()", data-ng-class="{active: $state.includes('app.contact')}")
+		.panel__tile(ui-sref='app.contact' data-ng-click='self.close()' ui-sref-active='active')
 			h4.tk-usual Contact
 
-	.panel__close(data-ng-click="closePanel()")
+	.panel__close(data-ng-click='self.close()')
 		.fa.fa-angle-left
+
+.backdrop(ng-show='self.backdrop')

@@ -8,19 +8,19 @@ header
 					.header__name
 						h1.tk-usual(ui-sref='app.index') SANDER DESIGN
 						h2.tk-usual Landscape Architecture
-					.header__mobile(data-ng-click='open();')
+					.header__mobile(data-ng-click='self.open()')
 						.bar
 						.bar.b
 						.bar.c
 
 			nav
-				.header__tile(ui-sref="app.index", data-ng-class="{'active': $state.includes('app.index')}")
+				.header__tile(ui-sref='app.index' ui-sref-active='active')
 					h2.tk-usual Home
-				.header__tile(ui-sref="app.list", data-ng-class="{'active': $state.includes('app.list') || $state.includes('app.view')}")
+				.header__tile(ui-sref='app.project' ui-sref-active='active')
 					h2.tk-usual Projects
-				.header__tile(ui-sref="app.services", data-ng-class="{'active': $state.includes('app.services')}")
+				.header__tile(ui-sref='app.services' ui-sref-active='active')
 					h2.tk-usual Services
-				.header__tile(ui-sref="app.media", data-ng-class="{'active': $state.includes('app.media')}")
+				.header__tile(ui-sref='app.media' ui-sref-active='active')
 					h2.tk-usual Media
-				.header__tile.end(ui-sref="app.contact", data-ng-class="{'active': $state.includes('app.contact')}")
+				.header__tile.end(ui-sref='app.contact' ui-sref-active='active')
 					h2.tk-usual Contact

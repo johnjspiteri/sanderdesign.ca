@@ -1,22 +1,20 @@
 (function() {
 	"use strict";
 
-	function runBlock ($rootScope, $state, $stateParams, Angularytics, ngMeta) {
+	function internal ($rootScope, $state, $stateParams, Angularytics, MetaTags) {
 
 		Angularytics.init();
-		ngMeta.init();
-
+		$rootScope.MetaTags = MetaTags;
 		$rootScope.$state = $state;
 		$rootScope.$stateParams = $stateParams;
 		$rootScope.panel = false;
 		$state.go('app.index');
-
 	}
 
 	angular
 		.module('app')
-		.run(runBlock);
+		.run(internal);
 
-	runBlock.$inject = ['$rootScope', '$state', '$stateParams', 'Angularytics', 'ngMeta'];
+	internal.$inject = ['$rootScope', '$state', '$stateParams', 'Angularytics', 'MetaTags'];
 
 })();

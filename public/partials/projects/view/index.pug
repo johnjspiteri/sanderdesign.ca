@@ -1,13 +1,13 @@
 .slider
-	slick(settings='slickConfig' ng-if='project.images')
-		div(data-ng-repeat='image in project.images', data-thumb='data:{{image.filetype}};base64,{{image.base64}}')
+	slick(settings='self.slickConfig' ng-if='self.project.images')
+		div(data-ng-repeat='image in self.project.images', data-thumb='data:{{image.filetype}};base64,{{image.base64}}')
 			img(ng-src='data:{{image.filetype}};base64,{{image.base64}}')
 
 .view
-	a(ui-sref='app.list')
+	a(ui-sref='app.project')
 		.fa.fa-long-arrow-left
-	h3.tk-usual(data-ng-bind='project.title')
+	h3.tk-usual(data-ng-bind='self.project.title')
 	.row
-		h4.tk-usual(data-ng-bind='project.location.neighbourhood + ","')
-		h4.tk-usual.blue(data-ng-bind='project.location.city')
-	p.tk-usual(data-ng-bind='project.description')
+		h4.tk-usual(data-ng-bind='self.project.location.neighbourhood + ","')
+		h4.tk-usual.blue(data-ng-bind='self.project.location.city')
+	p.tk-usual(data-ng-bind='self.project.description')

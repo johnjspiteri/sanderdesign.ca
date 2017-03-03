@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function routes($stateProvider) {
+	function internal($stateProvider) {
 		$stateProvider
 			.state('app', {
 				abstract: true,
@@ -9,15 +9,15 @@
 				views: {
 					'panel': {
 						templateUrl: 'public/html/panel/index.html',
-						controller: 'Panel'
+						controller: 'Panel as self'
 					},
 					'header': {
 						templateUrl: 'public/html/header/index.html',
-						controller: 'Header'
+						controller: 'Header as self'
 					},
 					'footer': {
 						templateUrl: 'public/html/footer/index.html',
-						controller: 'Footer'
+						controller: 'Footer as self'
 					}
 				}
 			});
@@ -25,8 +25,8 @@
 
 	angular
 		.module('app')
-		.config(routes);
+		.config(internal);
 
-	routes.$inject = ['$stateProvider'];
+	internal.$inject = ['$stateProvider'];
 
 })();

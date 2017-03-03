@@ -1,6 +1,6 @@
 .slider
-	slick.index(settings='slickConfig' ng-if='slides')
-		div(ng-repeat='slide in slides')
+	slick.index(settings='self.slickConfig' ng-if='self.slides')
+		div(ng-repeat='slide in self.slides')
 			img(ng-src='data:{{slide.image.filetype}};base64,{{slide.image.base64}}')
 
 .squares

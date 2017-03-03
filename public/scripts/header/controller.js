@@ -1,17 +1,18 @@
 (function () {
 	'use strict';
 
-	function Header ($rootScope, $scope, $state) {
+	function Internal ($rootScope) {
 
-		$scope.open = function () {
+		var self = this;
+		self.open = function () {
 			$rootScope.$emit("open", {});
 		};
 	}
 
 	angular
 		.module('app')
-		.controller('Header', Header);
+		.controller('Header', Internal);
 
-	Header.$inject = ['$rootScope', '$scope', '$state'];
+	Internal.$inject = ['$rootScope'];
 
 })();

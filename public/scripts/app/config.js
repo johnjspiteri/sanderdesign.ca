@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, ngMetaProvider, uiGmapGoogleMapApiProvider) {
+	function config ($locationProvider, $urlRouterProvider, $uiViewScrollProvider, $sceDelegateProvider, AngularyticsProvider, cfpLoadingBarProvider, localStorageServiceProvider, UIRouterMetatagsProvider, uiGmapGoogleMapApiProvider) {
 
 		$locationProvider.html5Mode(true);
 
@@ -12,8 +12,11 @@
 				if(!hasTrailingSlash) {
 					var newPath = path + '/';
 					return newPath;
-				}});
-		$urlRouterProvider
+				}})
+			// .when('/boardgames/:id/', '/boardgames/:id/review/')
+			.when(/(s).*/, '/services/')
+			.when(/(m).*/, '/media/')
+			.when(/(c).*/, '/contact/')
 			.otherwise("/404/");
 
 		cfpLoadingBarProvider.latencyThreshold = 200;
@@ -29,9 +32,18 @@ libraries: 'weather,geometry,visualization'
 
 		AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
-		ngMetaProvider.useTitleSuffix(true);
-		ngMetaProvider.setDefaultTitleSuffix(' | Sander Design');
-		ngMetaProvider.setDefaultTag('author', 'Sander Freedman');
+		localStorageServiceProvider
+			.setPrefix('boardwalk')
+			.setStorageType('localStorage')
+			.setNotify(true, true);
+
+		UIRouterMetatagsProvider
+			.setTitleSuffix(' | Sander Design');
+		// .setStaticProperties({
+		// 	'fb:app_id': 'your fb app id',
+		// 	'og:site_name': 'your site name'
+		// })
+		// .setOGURL(true);
 
 	}
 
@@ -39,6 +51,6 @@ libraries: 'weather,geometry,visualization'
 		.module('app')
 		.config(config);
 
-	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'ngMetaProvider', 'uiGmapGoogleMapApiProvider'];
+	config.$inject = ['$locationProvider', '$urlRouterProvider', '$uiViewScrollProvider', '$sceDelegateProvider', 'AngularyticsProvider', 'cfpLoadingBarProvider', 'localStorageServiceProvider', 'UIRouterMetatagsProvider', 'uiGmapGoogleMapApiProvider'];
 
 })();

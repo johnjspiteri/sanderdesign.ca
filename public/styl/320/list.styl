@@ -5,13 +5,16 @@
 	margin 0
 
 .listing
-	float left
+	display inline-block
+	vertical-align top
+	margin 0 1% 16px 0
+	font-size 16px
 	width 300px
-	padding 0 0 18px 0
+	padding 0 0 10px 0
 	margin 0 0 18px 10px
 	background $white
-	border $input-border
-	border-radius 2px
+	border $white-border
+	border-radius 4px
 	cursor pointer
 
 	h3
@@ -34,6 +37,29 @@
 	p.blue
 		color #97A018
 		margin 0
+
+	&__tags
+		float left
+		width 280px
+		padding 0
+		margin 28px 0 0 20px
+
+	&__tag
+		float left
+		padding 6px 12px 7px 12px
+		margin 0 7px 7px 0
+		background $black
+		border-radius 4px
+
+		h4
+			float left
+			padding 0
+			margin 0
+			font-weight 600
+			font-size 12px
+			line-height 12px
+			color $white
+			text-shadow $white-shadow
 
 	.image
 		float left

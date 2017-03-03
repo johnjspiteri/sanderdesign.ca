@@ -1,9 +1,10 @@
 (function() {
 	"use strict";
 
-	function Footer ($scope, uiGmapGoogleMapApi) {
+	function Internal (uiGmapGoogleMapApi) {
 
-		$scope.map = {
+		var self = this;
+		self.map = {
 			location: {
 				latitude: 43.648125,
 				longitude: -79.394845
@@ -32,14 +33,12 @@
 		};
 
 		uiGmapGoogleMapApi.then(function(maps) {});
-
-
 	}
 
 	angular
 		.module('app')
-		.controller('Footer', Footer);
+		.controller('Footer', Internal);
 
-	Footer.$inject = ['$scope', 'uiGmapGoogleMapApi'];
+	Internal.$inject = ['uiGmapGoogleMapApi'];
 
 })();

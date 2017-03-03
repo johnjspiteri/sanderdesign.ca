@@ -3,19 +3,22 @@
 
 	function routes($stateProvider) {
 		$stateProvider
-			.state('app.media', {
-				url: '/media/',
+			.state('app.services', {
+				url: '/services/',
+				metaTags: {
+					title: 'Services',
+					description: ''
+				},
 				views: {
 					'page@': {
-						templateUrl: 'public/html/media/index.html',
-					controller: 'Media'
+						templateUrl: 'public/html/services/index.html'
 					}
 				}
 			});
 	}
 
 	angular
-		.module('app.media')
+		.module('app.services')
 		.config(routes);
 
 	routes.$inject = ['$stateProvider'];

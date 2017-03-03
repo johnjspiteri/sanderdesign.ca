@@ -1,24 +1,22 @@
 (function() {
 	"use strict";
 
-	function Panel ($mdSidenav, $rootScope, $scope) {
+	function Panel ($mdSidenav, $rootScope) {
 
-		$scope.openPanel = function() {
-			$rootScope.panel = true;
-			$mdSidenav('panel')
-				.open()
-				.then(function() {});
-		};
+		var self = this;
 
-		$scope.closePanel = function() {
-			$rootScope.panel = false;
+		self.close = function() {
+			self.backdrop = false;
 			$mdSidenav('panel')
 				.close()
 				.then(function() {});
 		};
 
 		$rootScope.$on("open", function(){
-			$scope.openPanel();
+			self.backdrop = true;
+			$mdSidenav('panel')
+				.open()
+				.then(function() {});
 		});
 	}
 
@@ -26,6 +24,6 @@
 		.module('app')
 		.controller('Panel', Panel);
 
-	Panel.$inject = ['$mdSidenav', '$rootScope', '$scope'];
+	Panel.$inject = ['$mdSidenav', '$rootScope'];
 
 })();
