@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function Internal ($document, $state, viewResolve) {
+	function Internal (viewResolve) {
 
 		var self = this;
 
@@ -26,6 +26,6 @@
 		.module('app.project')
 		.controller('View', Internal);
 
-	Internal.$inject = ['$document', '$state', 'viewResolve'];
+	Internal.$inject = ['viewResolve'];
 
 })();

@@ -1,4 +1,3 @@
-/*jslint node: true */
 "use strict";
 
 function handleError(res, err) {
@@ -8,14 +7,14 @@ function handleError(res, err) {
 var mongoose = require('mongoose');
 var Project = require('./model');
 
-exports.index = function (req,res,next) {
+exports.index = function (req, res) {
 	Project.find({}, {"images": 0}, function (err, data) {
 		if(err) {return handleError(res,err);}
 		return res.status(200).json(data);
 	});
 };
 
-exports.show = function (req, res, next) {
+exports.show = function (req, res) {
 	Project.findOne({clean:req.params.id}, {}, function (err, data) {
 		if(err) { return handleError(res, err); }
 		if(!data) { return res.sendStatus(404); }

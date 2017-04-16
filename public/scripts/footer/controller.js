@@ -32,7 +32,7 @@
 			}
 		};
 
-		uiGmapGoogleMapApi.then(function(maps) {});
+		uiGmapGoogleMapApi.then(function() {});
 	}
 
 	angular

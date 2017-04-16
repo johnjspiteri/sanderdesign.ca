@@ -1,0 +1,32 @@
+engines:
+	csslint:
+    	enabled: true
+	duplication:
+  		enabled: true
+		config:
+			languages:
+				- javascript
+	eslint:
+        enabled: true
+	nodesecurity:
+        enabled: true
+	stylelint:
+        enabled: true
+
+ratings:
+	paths:
+		- public/css/**
+		- public/html/**
+		- public/scripts/**
+		- server/api/**
+		- server/data/**
+		- "**.js"
+		- "**.css"
+
+exclude_paths:
+	- 'gruntfile.js'
+	- 'karma.conf.js'
+	- 'node_modules/**/*'
+	- 'public/scripts/vendor/**/*'
+	- 'server/build/**/*'
+	- 'server/data/min/**/*'

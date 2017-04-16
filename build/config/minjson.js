@@ -1,0 +1,41 @@
+module.exports = {
+	compile: {
+		files: {
+			'server/data/min/commercial/condo-courtyard.min.json': 'server/data/source/commercial/condo-courtyard.json',
+			'server/data/min/commercial/condo-entrance.min.json': 'server/data/source/commercial/condo-entrance.json',
+			'server/data/min/commercial/condo-rooftop.min.json': 'server/data/source/commercial/condo-rooftop.json',
+			'server/data/min/commercial/st-barts-church.min.json': 'server/data/source/commercial/st-barts-church.json',
+			'server/data/min/commercial/symposium-cafe.min.json': 'server/data/source/commercial/symposium-cafe.json',
+			'server/data/min/residential/arts-crafts.min.json': 'server/data/source/residential/arts-crafts.json',
+			'server/data/min/residential/asian-fusion.min.json': 'server/data/source/residential/asian-fusion.json',
+			'server/data/min/residential/contemporary-court.min.json': 'server/data/source/residential/contemporary-court.json',
+			'server/data/min/residential/contemporary-entrance.min.json': 'server/data/source/residential/contemporary-entrance.json',
+			'server/data/min/residential/contemporary-front-entrance.min.json': 'server/data/source/residential/contemporary-front-entrance.json',
+			'server/data/min/residential/contemporary-gartenanlagen.min.json': 'server/data/source/residential/contemporary-gartenanlagen.json',
+			'server/data/min/residential/contemporary-yard.min.json': 'server/data/source/residential/contemporary-yard.json',
+			'server/data/min/residential/country-estate.min.json': 'server/data/source/residential/country-estate.json',
+			'server/data/min/residential/formal-garden.min.json': 'server/data/source/residential/formal-garden.json',
+			'server/data/min/residential/formal-urban-pocket.min.json': 'server/data/source/residential/formal-urban-pocket.json',
+			'server/data/min/residential/french-country.min.json': 'server/data/source/residential/french-country.json',
+			'server/data/min/residential/front-entrance-court.min.json': 'server/data/source/residential/front-entrance-court.json',
+			'server/data/min/residential/front-entrance-garden.min.json': 'server/data/source/residential/front-entrance-garden.json',
+			'server/data/min/residential/front-entrance.min.json': 'server/data/source/residential/front-entrance.json',
+			'server/data/min/residential/green-quad.min.json': 'server/data/source/residential/green-quad.json',
+			'server/data/min/residential/intimate-courtyard.min.json': 'server/data/source/residential/intimate-courtyard.json',
+			'server/data/min/residential/mediterranean-patio.min.json': 'server/data/source/residential/mediterranean-patio.json',
+			'server/data/min/residential/modern-classic.min.json': 'server/data/source/residential/modern-classic.json',
+			'server/data/min/residential/modern-contemporary.min.json': 'server/data/source/residential/modern-contemporary.json',
+			'server/data/min/residential/neo-georgian.min.json': 'server/data/source/residential/neo-georgian.json',
+			'server/data/min/residential/outdoor-room.min.json': 'server/data/source/residential/outdoor-room.json',
+			'server/data/min/residential/oval-garden.min.json': 'server/data/source/residential/oval-garden.json',
+			'server/data/min/residential/rock-garden.min.json': 'server/data/source/residential/rock-garden.json',
+			'server/data/min/residential/rustic-oasis.min.json': 'server/data/source/residential/rustic-oasis.json',
+			'server/data/min/residential/shade-garden.min.json': 'server/data/source/residential/shade-garden.json',
+			'server/data/min/residential/sunken-garden.min.json': 'server/data/source/residential/sunken-garden.json',
+			'server/data/min/residential/urban-deck.min.json': 'server/data/source/residential/urban-deck.json',
+			'server/data/min/residential/young-residence.min.json': 'server/data/source/residential/young-residence.json',
+			'server/data/min/residential/zen-garden.min.json': 'server/data/source/residential/zen-garden.json',
+			'server/data/min/residential/zen-pocket.min.json': 'server/data/source/residential/zen-pocket.json'
+		}
+	}
+};

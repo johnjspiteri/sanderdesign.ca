@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	function Internal ($document, $state, listResolve, localStorageService) {
+	function Internal (listResolve, localStorageService) {
 
 		var self = this;
 
@@ -70,6 +70,6 @@
 		.module('app.project')
 		.controller('List', Internal);
 
-	Internal.$inject = ['$document', '$state', 'listResolve', 'localStorageService'];
+	Internal.$inject = ['listResolve', 'localStorageService'];
 
 })();

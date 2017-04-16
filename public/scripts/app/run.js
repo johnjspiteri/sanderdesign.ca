@@ -8,7 +8,7 @@
 		$rootScope.$state = $state;
 		$rootScope.$stateParams = $stateParams;
 		$rootScope.panel = false;
-		$state.go('app.index');
+		$state.go('app.index', {});
 	}
 
 	angular
