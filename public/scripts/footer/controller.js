@@ -4,10 +4,11 @@
 	function Internal (uiGmapGoogleMapApi) {
 
 		var self = this;
+
 		self.map = {
 			location: {
-				latitude: 43.648125,
-				longitude: -79.394845
+				latitude: 43.677062,
+				longitude: -79.338811
 			},
 			zoom: 15,
 			options: {
