@@ -30,6 +30,7 @@ module.exports = {
 				'public/scripts/app/module.js',
 				'public/scripts/app/route.js',
 				'public/scripts/app/config.js',
+				'public/scripts/app/factory.js',
 				'public/scripts/app/run.js',
 				'public/scripts/common/module.js',
 				'public/scripts/common/directive/escape.js',

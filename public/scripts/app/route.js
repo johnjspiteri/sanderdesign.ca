@@ -9,15 +9,15 @@
 				views: {
 					'panel': {
 						templateUrl: 'public/html/panel/index.html',
-						controller: 'Panel as self'
+						controller: 'PanelController as self'
 					},
 					'header': {
 						templateUrl: 'public/html/header/index.html',
-						controller: 'Header as self'
+						controller: 'HeaderController as self'
 					},
 					'footer': {
 						templateUrl: 'public/html/footer/index.html',
-						controller: 'Footer as self'
+						controller: 'FooterController as self'
 					}
 				}
 			});

@@ -17,7 +17,7 @@
 								return project.query().$promise;
 							}]
 						},
-						controller: "List as self"
+						controller: "ListController as self"
 					}
 				}
 			});

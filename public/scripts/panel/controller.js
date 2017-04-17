@@ -1,6 +1,12 @@
 (function() {
 	"use strict";
 
+	angular
+		.module('app')
+		.controller('PanelController', Panel);
+
+	Panel.$inject = ['$mdSidenav', '$rootScope'];
+
 	function Panel ($mdSidenav, $rootScope) {
 
 		var self = this;
@@ -19,11 +25,4 @@
 				.then(function() {});
 		});
 	}
-
-	angular
-		.module('app')
-		.controller('Panel', Panel);
-
-	Panel.$inject = ['$mdSidenav', '$rootScope'];
-
 })();

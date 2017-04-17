@@ -1,6 +1,12 @@
 (function() {
 	"use strict";
 
+	angular
+		.module('app')
+		.controller('FooterController', Internal);
+
+	Internal.$inject = ['uiGmapGoogleMapApi'];
+
 	function Internal (uiGmapGoogleMapApi) {
 
 		var self = this;
@@ -24,8 +30,8 @@
 			marker: {
 				id: 1,
 				coords: {
-					latitude: 43.648125,
-					longitude: -79.394845
+					latitude: 43.677062,
+					longitude: -79.338811
 				},
 				options: {
 					draggable: false
@@ -35,11 +41,4 @@
 
 		uiGmapGoogleMapApi.then(function() {});
 	}
-
-	angular
-		.module('app')
-		.controller('Footer', Internal);
-
-	Internal.$inject = ['uiGmapGoogleMapApi'];
-
 })();

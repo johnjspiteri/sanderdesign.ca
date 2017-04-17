@@ -60,12 +60,12 @@ if ('development' === env || 'test' === env) {
 app.use('/api/project', require('./server/api/project'));
 
 if ('production' === env) {
-	app.get('/*', function(req, res, next) {
+	app.get('/*', function(req, res) {
 		res.sendFile(path.resolve('./public/html/index.html'));
 	});
 }
 if ('development' === env || 'test' === env) {
-	app.get('/*', function(req, res, next) {
+	app.get('/*', function(req, res) {
 		res.sendFile(path.resolve('./public/html/index.html'));
 	});
 }

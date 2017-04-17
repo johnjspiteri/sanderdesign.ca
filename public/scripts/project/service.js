@@ -1,7 +1,13 @@
 (function() {
 	"use strict";
 
-	function project ($resource) {
+	angular
+		.module('app.project')
+		.factory('project', internal);
+
+	internal.$inject = ['$resource'];
+
+	function internal ($resource) {
 		return $resource("/api/project/:id", { id: "@_id" },
 			{
 				'create':  { method: 'POST' },
@@ -13,11 +19,4 @@
 			}
 		);
 	}
-
-	angular
-		.module('app.project')
-		.factory('project', project);
-
-	project.$inject = ['$resource'];
-
 })();

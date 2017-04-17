@@ -12,7 +12,7 @@
 				views: {
 					'page@': {
 						templateUrl: 'public/html/index/index.html',
-						controller: "Index as self"
+						controller: "IndexController as self"
 					}
 				}
 			});

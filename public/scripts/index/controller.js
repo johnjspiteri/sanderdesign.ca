@@ -1,6 +1,12 @@
 (function() {
 	"use strict";
 
+	angular
+		.module('app.index')
+		.controller('IndexController', Internal);
+
+	Internal.$inject = [];
+
 	function Internal () {
 
 		var self = this;
@@ -45,11 +51,4 @@
 			route: 'contemporary-entrance'
 		}];
 	}
-
-	angular
-		.module('app.index')
-		.controller('Index', Internal);
-
-	Internal.$inject = [];
-
 })();

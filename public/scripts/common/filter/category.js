@@ -1,7 +1,11 @@
 (function() {
 	'use strict';
 
-	function categoryFilter() {
+	angular
+		.module('app.common')
+		.filter('categoryFilter', internal);
+
+	function internal() {
 		return function (projects, value) {
 			var filtered = [];
 
@@ -16,9 +20,4 @@
 			return filtered;
 		};
 	}
-
-	angular
-		.module('app.common')
-		.filter('categoryFilter', categoryFilter);
-
 })();

@@ -1,6 +1,12 @@
 (function() {
 	"use strict";
 
+	angular
+		.module('app.project')
+		.controller('ViewController', Internal);
+
+	Internal.$inject = ['viewResolve'];
+
 	function Internal (viewResolve) {
 
 		var self = this;
@@ -21,11 +27,4 @@
 			swipe: true
 		};
 	}
-
-	angular
-		.module('app.project')
-		.controller('View', Internal);
-
-	Internal.$inject = ['viewResolve'];
-
 })();

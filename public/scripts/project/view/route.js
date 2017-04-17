@@ -22,7 +22,7 @@
 				views: {
 					'page@': {
 						templateUrl: 'public/html/projects/view/index.html',
-						controller: 'View as self'
+						controller: 'ViewController as self'
 					}
 				}
 			});
