@@ -7,7 +7,7 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: 'public/partials',
+			cwd: 'source/partials',
 			src: '**/*.pug',
 			dest: 'public/html',
 			ext: '.html',

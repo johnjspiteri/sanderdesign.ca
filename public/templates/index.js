@@ -6,18 +6,13 @@ angular.module('app').run(['$templateCache', function($templateCache) {
   );
 
 
-  $templateCache.put('public/html/document/document.html',
-    ""
-  );
-
-
   $templateCache.put('public/html/error/index.html',
     "<div class=\"container\"><div class=\"contact\"><h1>The Page You Are Looking For Does Not Exist</h1><p>Please use the navigation above to start from the beginning.</p></div></div>"
   );
 
 
   $templateCache.put('public/html/footer/index.html',
-    "<footer><div class=\"footer\"><div class=\"footer__holder\"><div class=\"footer__company\"><h1 class=\"tk-usual\">SANDER DESIGN</h1><h2 class=\"tk-usual\">Landscape Architecture</h2><a class=\"tk-usual\" href=\"https://www.google.ca/maps/place/499+Jones+Ave,+Toronto,+ON+M4J+3G8/@43.677066,-79.3409998,17z/data=!4m13!1m7!3m6!1s0x89d4cc8117f62871:0xfe1395e8868c6d35!2s499+Jones+Ave,+Toronto,+ON+M4J+3G8!3b1!8m2!3d43.677066!4d-79.3388111!3m4!1s0x89d4cc8117f62871:0xfe1395e8868c6d35!8m2!3d43.677066!4d-79.3388111\">499 Jones Avenue, Toronto, Ontario, Canada</a><a class=\"tk-usual\" href=\"mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card\">hello@sanderdesign.ca<a class=\"tk-usual\" href=\"tel:+1-416-597-1703\">416 597-1703</a></a></div><div class=\"footer__about\"><div class=\"footer__cv\"><h1 class=\"tk-usual\">ABOUT</h1><p class=\"tk-usual\">Sander Freedman graduated in Landscape Architecture with an honours degree in 1987 at the University of Guelph.</p></div><div class=\"footer__social\"><a class=\"fa fa-houzz\" href=\"http://www.houzz.com/pro/sanderdesign/sander-design-landscape-architecture\" target=\"_blank\"></a><a class=\"fa fa-facebook\" href=\"https://www.facebook.com/pages/Sander-Design-Landscape-Architecture/353798814642180\" target=\"_blank\"></a><a class=\"fa fa-linkedin\" href=\"http://ca.linkedin.com/pub/sander-freedman/11/677/27a\" target=\"_blank\"></a></div></div><div class=\"footer__map\"><div id=\"map_canvas\"><ui-gmap-google-map center=\"self.map.location\" zoom=\"self.map.zoom\" options=\"self.map.options\"><ui-gmap-marker coords=\"self.map.marker.coords\" options=\"self.map.marker.options\" idkey=\"self.map.marker.id\"></ui-gmap-marker></ui-gmap-google-map></div></div></div></div></footer>"
+    "<footer><div class=\"footer\"><div class=\"footer__holder\"><div class=\"footer__company\"><h1 class=\"tk-usual\">SANDER DESIGN</h1><h2 class=\"tk-usual\">Landscape Architecture</h2><a class=\"tk-usual\" href=\"https://www.google.ca/maps/place/499+Jones+Ave,+Toronto,+ON+M4J+3G8/@43.677066,-79.3409998,17z/data=!4m13!1m7!3m6!1s0x89d4cc8117f62871:0xfe1395e8868c6d35!2s499+Jones+Ave,+Toronto,+ON+M4J+3G8!3b1!8m2!3d43.677066!4d-79.3388111!3m4!1s0x89d4cc8117f62871:0xfe1395e8868c6d35!8m2!3d43.677066!4d-79.3388111\">499 Jones Avenue, Toronto, Ontario, Canada</a><a class=\"tk-usual\" href=\"mailto:hello@sanderdesign.ca?subject=Online%20Contact%20Card\">hello@sanderdesign.ca<a class=\"tk-usual\" href=\"tel:+1-416-597-1703\">416 597-1703</a></a></div><div class=\"footer__about\"><div class=\"footer__cv\"><h1 class=\"tk-usual\">ABOUT</h1><p class=\"tk-usual\">Sander Freedman graduated in Landscape Architecture with an honours degree in 1987 at the University of Guelph.</p></div><div class=\"footer__social\"><a class=\"fa fa-houzz\" href=\"http://www.houzz.com/pro/sanderdesign/sander-design-landscape-architecture\" target=\"_blank\"></a><a class=\"fa fa-facebook\" href=\"https://www.facebook.com/pages/Sander-Design-Landscape-Architecture/353798814642180\" target=\"_blank\"></a><a class=\"fa fa-linkedin\" href=\"http://ca.linkedin.com/pub/sander-freedman/11/677/27a\" target=\"_blank\"></a></div></div><div class=\"footer__map\"><ng-map center=\"{{self.map.location}}\" zoom=\"{{self.map.zoom}}\"><marker position=\"{{self.map.location}}\"></marker></ng-map></div></div></div></footer>"
   );
 
 

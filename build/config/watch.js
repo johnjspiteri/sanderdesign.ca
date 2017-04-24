@@ -3,22 +3,29 @@ module.exports = {
 		livereload: true
 	},
 	data: {
-		files: 'server/data/source/**/*.json',
+		files: 'source/data/source/**/*.json',
 		tasks: 'build-data'
 	},
 	partials: {
-		files: 'public/partials/**/*.pug',
+		files: 'source/partials/**/*.pug',
 		tasks: 'build-partials'
 	},
 	scripts: {
-		files: ['gruntfile.js', 'public/scripts/**/*.js', 'server/**/*.js', '!node_modules/**', '!public/scripts/app.min.js', '!public/scripts/vendor/**'],
+		files: [
+			'api/**',
+			'gruntfile.js',
+			'!node_modules/**',
+			'!public/scripts/app.min.js',
+			'source/scripts/**/*.js',
+			'!source/scripts/vendor/**'
+		],
 		tasks: 'build-scripts',
 		options: {
 			spawn: false
 		}
 	},
 	styles: {
-		files: 'public/style/**/*.styl',
+		files: 'source/styles/**/*.styl',
 		tasks: 'build-styles'
 	},
 	gruntfile: {

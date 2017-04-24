@@ -2,5 +2,5 @@ module.exports = {
 	options: {
 		extends: '.pug-lintrc'
 	},
-	lint: ['public/partials/**/*.pug']
+	lint: ['source/partials/**/*.pug']
 };

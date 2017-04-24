@@ -7,7 +7,7 @@ module.exports = {
 			import: ['config.styl']
 		},
 		files: {
-			'public/css/styles.css': 'public/styles/index.styl'
+			'public/css/styles.css': 'source/styles/index.styl'
 		}
 	}
 }
