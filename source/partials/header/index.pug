@@ -6,8 +6,8 @@ header
 					.header__outline(ui-sref='app.index')
 						.header__white
 					.header__name
-						h1.tk-usual(ui-sref='app.index') SANDER DESIGN
-						h2.tk-usual Landscape Architecture
+						h1(ui-sref='app.index') SANDER DESIGN
+						h2 Landscape Architecture
 					.header__mobile(data-ng-click='self.open()')
 						.bar
 						.bar.b
@@ -15,12 +15,12 @@ header
 
 			nav
 				.header__tile(ui-sref='app.index' ui-sref-active='active')
-					h2.tk-usual Home
+					h2 Home
 				.header__tile(ui-sref='app.project' ui-sref-active='active')
-					h2.tk-usual Projects
+					h2 Projects
 				.header__tile(ui-sref='app.services' ui-sref-active='active')
-					h2.tk-usual Services
+					h2 Services
 				.header__tile(ui-sref='app.media' ui-sref-active='active')
-					h2.tk-usual Media
+					h2 Media
 				.header__tile.end(ui-sref='app.contact' ui-sref-active='active')
-					h2.tk-usual Contact
+					h2 Contact
