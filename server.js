@@ -3,7 +3,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if(process.env.NODE_ENV === 'development') {
-	var location = require('./server/build/development.json');
+	var location = require('./build/config/development.json');
 }
 
 		 var express = require('express'),
