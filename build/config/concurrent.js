@@ -9,6 +9,6 @@ module.exports = {
 		options: {
 			logConcurrentOutput: true
 		},
-		tasks: ['ngtemplates', 'postcss', 'uglify']
+		tasks: ['postcss', 'uglify']
 	}
 };

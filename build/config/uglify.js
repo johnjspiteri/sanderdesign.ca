@@ -54,7 +54,8 @@ module.exports = {
 				'source/scripts/contact/module.js',
 				'source/scripts/contact/route.js',
 				'source/scripts/error/module.js',
-				'source/scripts/error/route.js'
+				'source/scripts/error/route.js',
+				'public/templates/index.js'
 			]
 		}
 	}
