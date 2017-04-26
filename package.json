@@ -33,10 +33,10 @@
     "serve-favicon": "2.1.6"
   },
   "devDependencies": {
-    "autoprefixer": "6.5.1",
+    "autoprefixer": "6.7.7",
     "cssnano": "3.8.0",
     "eslint": "3.19.0",
-    "eslint-plugin-angular": "2.3.0",
+    "eslint-plugin-angular": "2.4.0",
     "grunt": "1.0.1",
     "grunt-angular-templates": "1.1.0",
     "grunt-cli": "1.2.0",
