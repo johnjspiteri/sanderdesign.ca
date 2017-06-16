@@ -1,0 +1,26 @@
+header
+	.header--container
+		.header
+			.header__brand
+				.header__logo
+					.header__outline(ui-sref='app.index')
+						.header__white
+					.header__name
+						h1(ui-sref='app.index') SANDER DESIGN
+						h2 Landscape Architecture
+					.header__mobile(data-ng-click='self.open()')
+						.bar
+						.bar.b
+						.bar.c
+
+			nav
+				.header__tile(ui-sref='app.index' ui-sref-active='active')
+					h2 Home
+				.header__tile(ui-sref='app.project' ui-sref-active='active')
+					h2 Projects
+				.header__tile(ui-sref='app.services' ui-sref-active='active')
+					h2 Services
+				.header__tile(ui-sref='app.media' ui-sref-active='active')
+					h2 Media
+				.header__tile.end(ui-sref='app.contact' ui-sref-active='active')
+					h2 Contact
