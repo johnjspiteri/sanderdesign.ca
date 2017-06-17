@@ -8,15 +8,15 @@
 				url: '',
 				views: {
 					'panel': {
-						templateUrl: 'public/html/panel/index.html',
+						templateUrl: 'public/html/panel/panel.html',
 						controller: 'PanelController as self'
 					},
 					'header': {
-						templateUrl: 'public/html/header/index.html',
+						templateUrl: 'public/html/header/header.html',
 						controller: 'HeaderController as self'
 					},
 					'footer': {
-						templateUrl: 'public/html/footer/index.html',
+						templateUrl: 'public/html/footer/footer.html',
 						controller: 'FooterController as self'
 					}
 				}

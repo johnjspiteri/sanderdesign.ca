@@ -11,7 +11,7 @@
 				},
 				views: {
 					'page@': {
-						templateUrl: 'public/html/media/index.html'
+						templateUrl: 'public/html/media/media.html'
 					}
 				}
 			});

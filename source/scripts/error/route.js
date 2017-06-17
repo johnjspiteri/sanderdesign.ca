@@ -7,7 +7,7 @@
 				url: '/404/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/error/index.html'
+						templateUrl: 'public/html/error/error.html'
 					}
 				}
 			});

@@ -11,7 +11,7 @@
 				},
 				views: {
 					'page@': {
-						templateUrl: 'public/html/contact/index.html'
+						templateUrl: 'public/html/contact/contact.html'
 					}
 				}
 			});

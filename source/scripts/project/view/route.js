@@ -21,7 +21,7 @@
 				},
 				views: {
 					'page@': {
-						templateUrl: 'public/html/projects/view/index.html',
+						templateUrl: 'public/html/projects/view/projects.view.html',
 						controller: 'ViewController as self'
 					}
 				}

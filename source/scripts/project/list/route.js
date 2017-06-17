@@ -11,7 +11,7 @@
 				},
 				views: {
 					'page@': {
-						templateUrl: 'public/html/projects/list/index.html',
+						templateUrl: 'public/html/projects/list/projects.list.html',
 						resolve: {
 							listResolve: ['project', function(project) {
 								return project.query().$promise;
