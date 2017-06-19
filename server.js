@@ -48,7 +48,7 @@ if ('development' === env || 'test' === env) {
     app.use(express.static('./'));
 }
 
-app.use('/api/project/project', require('./api/project/project'));
+app.use('/api/project/project.index', require('./api/project/project.index'));
 
 if ('production' === env) {
     app.get('/*', function(req, res) {
