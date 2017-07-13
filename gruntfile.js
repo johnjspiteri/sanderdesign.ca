@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	var path = require('path');
-	var location = grunt.file.readJSON('build/config/development.json');
+	var location = grunt.file.readJSON('build/development.json');
 
 	require('time-grunt')(grunt);
 	require('load-grunt-config')(grunt, {

@@ -5,7 +5,7 @@ function handleError(res, err) {
 }
 
 var mongoose = require('mongoose');
-var Project = require('./../../model/project');
+var Project = require('./../../model/model.project');
 
 exports.index = function (req, res) {
 	Project.find({}, {"images": 0}, function (err, data) {

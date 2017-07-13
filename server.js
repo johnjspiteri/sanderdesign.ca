@@ -3,7 +3,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if(process.env.NODE_ENV === 'development') {
-    var location = require('./build/config/development.json');
+    var location = require('./build/development.json');
 }
 
          var express = require('express'),
@@ -48,7 +48,7 @@ if ('development' === env || 'test' === env) {
     app.use(express.static('./'));
 }
 
-app.use('/api/project/project.index', require('./api/project/project.index'));
+app.use('/api/project/project.index', require('./api/project/api.project.index'));
 
 if ('production' === env) {
     app.get('/*', function(req, res) {

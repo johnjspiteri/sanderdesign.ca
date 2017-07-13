@@ -1,4 +1,4 @@
 .idea
 _notes
-build/config/development.json
+build/development.json
 build/cache/*
