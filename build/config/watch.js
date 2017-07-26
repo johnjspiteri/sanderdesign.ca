@@ -3,7 +3,7 @@ module.exports = {
 		livereload: true
 	},
 	data: {
-		files: 'source/data/source/**/*.json',
+		files: 'build/data/source/**/*.json',
 		tasks: 'build-data'
 	},
 	partials: {
