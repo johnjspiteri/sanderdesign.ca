@@ -4,7 +4,7 @@
 	function internal($stateProvider) {
 		$stateProvider
 			.state('app.project', {
-				url: '/projects/',
+				url: 'projects/',
 				metaTags: {
 					title: 'Project Listing',
 					description: 'A current list of Sander Design projects, concepts and proposals.'
@@ -17,7 +17,8 @@
 								return project.query().$promise;
 							}]
 						},
-						controller: "ListController as self"
+						controller: "ListController",
+						controllerAs: "self"
 					}
 				}
 			});

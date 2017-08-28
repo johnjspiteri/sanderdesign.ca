@@ -10,7 +10,7 @@
 			p.tk-usual {{self.search.tag || 'Tags'}} #[span.caret]
 
 .listings
-	.listing(data-ng-repeat='project in self.projects | categoryFilter: self.search.category | tagFilter: self.search.tag' ui-sref='app.project.view({id:project.clean})')
+	.listing(data-ng-repeat='project in self.projects | categoryFilter: self.search.category | tagFilter: self.search.tag' ui-sref='app.project.view({clean: project.clean})')
 		.image
 			img(ng-src='data:{{project.thumb.filetype}};base64,{{project.thumb.base64}}')
 		h3.tk-usual(data-ng-bind='project.title')

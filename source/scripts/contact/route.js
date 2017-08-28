@@ -4,7 +4,7 @@
 	function internal($stateProvider) {
 		$stateProvider
 			.state('app.contact', {
-				url: '/contact/',
+				url: 'contact/',
 				metaTags: {
 					title: '',
 					description: ''

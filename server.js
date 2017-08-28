@@ -40,15 +40,10 @@ if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
 
 mongoose.connect(connection);
 
-if ('production' === env) {
-    app.use(express.static('./'));
-    app.use(favicon('./public/img/favicon.ico'));
-}
-if ('development' === env || 'test' === env) {
-    app.use(express.static('./'));
-}
+app.use(express.static('./'));
+app.use(favicon('./public/images/favicon.ico'));
 
-app.use('/api/project/project.index', require('./api/project/api.project.index'));
+app.use('/api/project', require('./api/project/api.project.index'));
 
 if ('production' === env) {
     app.get('/*', function(req, res) {

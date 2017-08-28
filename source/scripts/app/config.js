@@ -1,21 +1,20 @@
-(function() {
-	"use strict";
+(function() { "use strict";
 
-	function internal ($locationProvider, $urlRouterProvider, AngularyticsProvider, cfpLoadingBarProvider, localStorageServiceProvider, UIRouterMetatagsProvider) {
+	function internal($locationProvider, $urlRouterProvider, AngularyticsProvider, cfpLoadingBarProvider, localStorageServiceProvider, UIRouterMetatagsProvider) {
 
 		$locationProvider.html5Mode(true);
 
 		$urlRouterProvider
 			.rule(function($injector, $location) {
 				var path = $location.path(),
-				hasTrailingSlash = path[path.length-1] === '/';
+					hasTrailingSlash = path[path.length-1] === '/';
 				if(!hasTrailingSlash) {
-					var newPath = path + '/';
-					return newPath;
-				}})
-			.when(/(s).*/, '/services/')
-			.when(/(m).*/, '/media/')
-			.when(/(c).*/, '/contact/')
+					return path + '/';
+				}});
+			// .when(/(s).*/, '/services/')
+			// .when(/(m).*/, '/media/')
+			// .when(/(c).*/, '/contact/')
+		$urlRouterProvider
 			.otherwise("/404/");
 
 		cfpLoadingBarProvider.latencyThreshold = 200;

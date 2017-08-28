@@ -4,10 +4,10 @@
 	function internal($stateProvider) {
 		$stateProvider
 			.state('app.project.view', {
-				url: ':id/',
+				url: ':clean/',
 				resolve: {
-					viewResolve: ['$stateParams', 'project', function( $stateParams, project) {
-						return project.show({id: $stateParams.id}).$promise;
+					viewResolve: ['$stateParams', 'project', function($stateParams, project) {
+						return project.show({clean: $stateParams.clean}).$promise;
 					}]
 				},
 				metaTags: {
@@ -22,7 +22,8 @@
 				views: {
 					'page@': {
 						templateUrl: 'public/html/projects/view/projects.view.html',
-						controller: 'ViewController as self'
+						controller: 'ViewController',
+						controllerAs: 'self'
 					}
 				}
 			});

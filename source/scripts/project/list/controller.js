@@ -1,17 +1,11 @@
-(function() {
-	"use strict";
-
-	angular
-		.module('app.project')
-		.controller('ListController', Internal);
-
-	Internal.$inject = ['listResolve', 'localStorageService'];
+(function() { "use strict";
 
 	function Internal (listResolve, localStorageService) {
 
 		var self = this;
 
 		self.projects = listResolve;
+
 		self.search = {
 			category: '',
 			categories: [],
@@ -71,4 +65,11 @@
 			localStorageService.set('tag', self.search.tag);
 		};
 	}
+
+	angular
+		.module('app.project')
+		.controller('ListController', Internal);
+
+	Internal.$inject = ['listResolve', 'localStorageService'];
+
 })();

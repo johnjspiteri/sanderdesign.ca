@@ -1,14 +1,7 @@
-(function() {
-	"use strict";
-
-	angular
-		.module('app.project')
-		.factory('project', internal);
-
-	internal.$inject = ['$resource'];
+(function() { "use strict";
 
 	function internal ($resource) {
-		return $resource("/api/project/:id", { id: "@_id" },
+		return $resource("/api/project/:clean", { clean: "@clean" },
 			{
 				'create':  { method: 'POST' },
 				'query':   { method: 'GET', isArray: true },
@@ -19,4 +12,11 @@
 			}
 		);
 	}
+
+	angular
+		.module('app.project')
+		.factory('project', internal);
+
+	internal.$inject = ['$resource'];
+
 })();

@@ -4,7 +4,7 @@
 	function routes($stateProvider) {
 		$stateProvider
 			.state('app.error', {
-				url: '/404/',
+				url: '404/',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/error/error.html'

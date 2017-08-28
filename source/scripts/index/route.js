@@ -4,7 +4,7 @@
 	function internal($stateProvider) {
 		$stateProvider
 			.state('app.index', {
-				url: '/',
+				url: '',
 				metaTags: {
 					title: 'Experienced Landscape Architecture',
 					description: 'Sander Design provides fresh and insightful ideas to help visualize your dream landscape, or improve your existing environment.'

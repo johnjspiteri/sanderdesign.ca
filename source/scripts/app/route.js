@@ -5,7 +5,7 @@
 		$stateProvider
 			.state('app', {
 				abstract: true,
-				url: '',
+				url: '/',
 				views: {
 					'panel': {
 						templateUrl: 'public/html/panel/panel.html',
